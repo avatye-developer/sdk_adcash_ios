@@ -25,17 +25,18 @@ Support to present Banner and Interstitial type Advertise.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license = {:type => "MIT", :file => "LICENSE"}
   s.author = {"LimJaeHyuk" => "lim0202jh@avatye.com"}
-  s.source = {:git => "https://bitbucket.org/avatye/sdk-ad-library-ios-src.git", :tag => "v" + s.version.to_s}
+  s.source = {:git => "https://github.com/avatye-developer/sdk_adcash_ios.git", :tag => "v" + s.version.to_s}
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = "11.0"
 
   s.swift_versions = "5.0"
 
-  s.source_files = "AvatyeAdCash/Classes/**/*.{m,h,swift}"
+  # s.source_files = "AvatyeAdCash/Classes/**/*.{m,h,swift}"
   s.resource_bundles = {
     "AvatyeAdCashResource" => ["AvatyeAdCash/Assets/Images.xcassets"]
   }
+  s.vendored_frameworks = "AvatyeAdCash.xcframework"
   # s.resources = ['AvatyeAdCash/Assets/AdCashImages.xcassets']
 
   s.static_framework = true
