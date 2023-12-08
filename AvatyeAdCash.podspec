@@ -33,11 +33,11 @@ Support to present Banner and Interstitial type Advertise.
   s.swift_versions = "5.0"
 
   # s.source_files = "AvatyeAdCash/Classes/**/*.{m,h,swift}"
-  s.resource_bundles = {
-    "AvatyeAdCashResource" => ["AvatyeAdCash/Assets/Images.xcassets"]
-  }
+  # s.resource_bundles = {
+  #   "AvatyeAdCashResource" => ["AvatyeAdCash/Assets/Images.xcassets"]
+  # }
+  s.resources = "AvatyeAdCash.bundle"
   s.vendored_frameworks = "AvatyeAdCash.xcframework"
-  # s.resources = ['AvatyeAdCash/Assets/AdCashImages.xcassets']
 
   s.static_framework = true
 
