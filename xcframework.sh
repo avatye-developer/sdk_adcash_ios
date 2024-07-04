@@ -3,8 +3,6 @@ YELLOW='\033[1;33m'
 NC='\033[0m'
 SIGNING_CERTIFICATE='UGVSN5Z6SK'
 SCHEME_NAME="AdCashFramework"
-#SCHEME_NAME="PointHomeFramework"
-FOLDER_NAME="sdk_adcash_ios"
 
 # build
 SPEC_VERSION=$(grep "spec.version" "./${SCHEME_NAME}.podspec" | cut -d "\"" -f2)
@@ -87,9 +85,9 @@ read -p "'$SPEC_VERSION'XCFramework Archive 스크립트를 실행 [yes or no] :
         
         if [ $isPrivacy == "yes" ]; then
             echo -e "${YELLOW}.. collect PrivacyInfo.xcprivacy${NC}"
-            cp "AdCashFramework/AdCashFramework/PrivacyInfo.xcprivacy" "./SDK/${SCHEME_NAME}.xcframework/ios-arm64/AdCashFramework.framework/"
+            cp "AdCashFramework/PrivacyInfo.xcprivacy" "./SDK/${SCHEME_NAME}.xcframework/ios-arm64/AdCashFramework.framework/"
 
-            cp "AdCashFramework/AdCashFramework/PrivacyInfo.xcprivacy" "./SDK/${SCHEME_NAME}.xcframework/ios-arm64_x86_64-simulator/AdCashFramework.framework/"
+            cp "AdCashFramework/PrivacyInfo.xcprivacy" "./SDK/${SCHEME_NAME}.xcframework/ios-arm64_x86_64-simulator/AdCashFramework.framework/"
             echo -e "${YELLOW}.. -> collect PrivacyInfo.xcprivacy -> finish${NC}"
         else
             echo -e "${YELLOW}.. -> not collect PrivacyInfo.xcprivacy -> finish${NC}"

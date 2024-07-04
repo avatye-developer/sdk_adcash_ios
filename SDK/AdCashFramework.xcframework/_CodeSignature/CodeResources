@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		JfExYRtVG6ZtrfLm3h46qE+UfAs=
+		fO8D7bAcV9JPMzT+jU8Ao6E6N1A=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
 		<data>
@@ -39,6 +39,10 @@
 		<key>ios-arm64/AdCashFramework.framework/Modules/module.modulemap</key>
 		<data>
 		zdFyFOP2c3BA/8C0Xda/rbUExTc=
+		</data>
+		<key>ios-arm64/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		zaCOXgDHU5i0JTuV+4O7ErFsirg=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -100,6 +104,10 @@
 		<data>
 		zdFyFOP2c3BA/8C0Xda/rbUExTc=
 		</data>
+		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		zaCOXgDHU5i0JTuV+4O7ErFsirg=
+		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
 		3YcXwZnOPwW1st15LHhEQOPD+H0=
@@ -115,11 +123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JfExYRtVG6ZtrfLm3h46qE+UfAs=
+			fO8D7bAcV9JPMzT+jU8Ao6E6N1A=
 			</data>
 			<key>hash2</key>
 			<data>
-			AsNu9bzhc9zreCUtXC7VzeXo8rEJVORx+NscKKK3ejU=
+			7Yh5te9Bi5O4tq0UQHAtWBv6634n3OGSPp/lLRmAKFw=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
@@ -208,6 +216,17 @@
 			<key>hash2</key>
 			<data>
 			kKoLUa1ujT1eQAQvwr1XWl7MH9fQJ6GGgTYfU3pjjuk=
+			</data>
+		</dict>
+		<key>ios-arm64/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zaCOXgDHU5i0JTuV+4O7ErFsirg=
+			</data>
+			<key>hash2</key>
+			<data>
+			gDOfge7bvc97/9rsR/slZXVTGcb+Uq22LBE3n2Yps1M=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
@@ -373,6 +392,17 @@
 			<key>hash2</key>
 			<data>
 			kKoLUa1ujT1eQAQvwr1XWl7MH9fQJ6GGgTYfU3pjjuk=
+			</data>
+		</dict>
+		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zaCOXgDHU5i0JTuV+4O7ErFsirg=
+			</data>
+			<key>hash2</key>
+			<data>
+			gDOfge7bvc97/9rsR/slZXVTGcb+Uq22LBE3n2Yps1M=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
