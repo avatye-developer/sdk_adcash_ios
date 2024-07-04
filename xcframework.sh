@@ -132,7 +132,7 @@ read -p "'$SPEC_VERSION'XCFramework Archive 스크립트를 실행 [yes or no] :
             git commit -m "feat: version v${SPEC_VERSION} update"
             git push
             git tag v${SPEC_VERSION}
-            git push orgin v${SPEC_VERSION}
+            git push origin v${SPEC_VERSION}
             echo -e "${YELLOW}${SCHEME_NAME} Git Upload Completed${NC}"
         else
             echo -e "${YELLOW}${SCHEME_NAME} Completed${NC}"
