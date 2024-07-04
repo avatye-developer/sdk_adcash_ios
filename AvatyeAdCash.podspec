@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/avatye-developer/sdk_adcash_ios"
   spec.license      = { :type => "MIT", :text => "Copyright (c) 2024 Avatye Corp." }
   spec.author       = {"LimJaeHyuk" => "lim0202jh@avatye.com"}
-  spec.source       = { :git => "https://github.com/avatye-developer/sdk_adcash_ios.git", :tag => "v"+${spec.version.to_s} }
+  spec.source       = { :git => "https://github.com/avatye-developer/sdk_adcash_ios.git", :tag => "v"+ spec.version.to_s }
 
   spec.ios.deployment_target = "12.0"
 
