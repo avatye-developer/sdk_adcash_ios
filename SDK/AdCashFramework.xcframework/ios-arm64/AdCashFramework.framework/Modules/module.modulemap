@@ -1,0 +1,6 @@
+framework module AdCashFramework {
+  umbrella header "AdCashFramework.h"
+  export *
+
+  module * { export * }
+}
