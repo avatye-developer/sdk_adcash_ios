@@ -5,7 +5,7 @@ SIGNING_CERTIFICATE='UGVSN5Z6SK'
 SCHEME_NAME="AdCashFramework"
 
 # build
-SPEC_VERSION=$(grep "spec.version" "./${SCHEME_NAME}.podspec" | cut -d "\"" -f2)
+SPEC_VERSION=$(grep 'spec.version' "./${SCHEME_NAME}.podspec" | head -n 1 | cut -d '"' -f2)
 echo -e "${YELLOW}StudioGuruBMSKit.podspec Version('$SPEC_VERSION')${NC}"
 echo -e "${YELLOW}++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++${NC}"
 echo -e ""
