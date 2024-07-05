@@ -43,7 +43,7 @@ public protocol InterAdModuleDelegate : AnyObject {
   @objc func onNativeFailed(_ apid: Swift.String, error: AvatyeAdCash.AdCashErrorModel)
   @objc func onNativeClicked(_ apid: Swift.String)
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class AdCashDefault : AdPopcornSSP.AdPopcornSSPNativeAd {
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class AdCashDefault : AdPopcornSSPNativeAd {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init!(frame: CoreFoundation.CGRect, key appKey: Swift.String!, placementId: Swift.String!, viewController: UIKit.UIViewController!)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -61,11 +61,11 @@ extension AvatyeAdCash.NativeAdLoader {
   @objc dynamic public func setNAMNativeAd(xibNamed: Swift.String)
   @objc dynamic public func setNativeAd(adPopAdapter: AvatyeAdCash.AdPopAdapter)
 }
-extension AvatyeAdCash.NativeAdLoader : AdPopcornSSP.APSSPNativeAdDelegate {
-  @objc dynamic public func apsspNativeAdClicked(_ nativeAd: AdPopcornSSP.AdPopcornSSPNativeAd!)
-  @objc dynamic public func apsspNativeAdImpression(_ nativeAd: AdPopcornSSP.AdPopcornSSPNativeAd!)
-  @objc dynamic public func apsspNativeAdLoadSuccess(_ nativeAd: AdPopcornSSP.AdPopcornSSPNativeAd!)
-  @objc dynamic public func apsspNativeAdLoadFail(_ nativeAd: AdPopcornSSP.AdPopcornSSPNativeAd!, error: AdPopcornSSP.AdPopcornSSPError!)
+extension AvatyeAdCash.NativeAdLoader : APSSPNativeAdDelegate {
+  @objc dynamic public func apsspNativeAdClicked(_ nativeAd: AdPopcornSSPNativeAd!)
+  @objc dynamic public func apsspNativeAdImpression(_ nativeAd: AdPopcornSSPNativeAd!)
+  @objc dynamic public func apsspNativeAdLoadSuccess(_ nativeAd: AdPopcornSSPNativeAd!)
+  @objc dynamic public func apsspNativeAdLoadFail(_ nativeAd: AdPopcornSSPNativeAd!, error: AdPopcornSSPError!)
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class AdCashErrorModel : ObjectiveC.NSObject {
   @objc final public let code: Swift.Int
@@ -213,28 +213,28 @@ extension AvatyeAdCash.BannerAdLoader : AvatyeAdCash.AdViewDelegate {
   @objc public func requestAd()
   @objc deinit
 }
-extension AvatyeAdCash.InterstitialAdLoader : AdPopcornSSP.APSSPInterstitialAdDelegate {
-  @objc dynamic public func apsspInterstitialAdClosed(_ interstitialAd: AdPopcornSSP.AdPopcornSSPInterstitialAd!)
-  @objc dynamic public func apsspInterstitialAdClicked(_ interstitialAd: AdPopcornSSP.AdPopcornSSPInterstitialAd!)
-  @objc dynamic public func apsspInterstitialAdLoadSuccess(_ interstitialAd: AdPopcornSSP.AdPopcornSSPInterstitialAd!)
-  @objc dynamic public func apsspInterstitialAdShowSuccess(_ interstitialAd: AdPopcornSSP.AdPopcornSSPInterstitialAd!)
-  @objc dynamic public func apsspInterstitialAdLoadFail(_ interstitialAd: AdPopcornSSP.AdPopcornSSPInterstitialAd!, error: AdPopcornSSP.AdPopcornSSPError!)
-  @objc dynamic public func apsspInterstitialAdShowFail(_ interstitialAd: AdPopcornSSP.AdPopcornSSPInterstitialAd!, error: AdPopcornSSP.AdPopcornSSPError!)
+extension AvatyeAdCash.InterstitialAdLoader : APSSPInterstitialAdDelegate {
+  @objc dynamic public func apsspInterstitialAdClosed(_ interstitialAd: AdPopcornSSPInterstitialAd!)
+  @objc dynamic public func apsspInterstitialAdClicked(_ interstitialAd: AdPopcornSSPInterstitialAd!)
+  @objc dynamic public func apsspInterstitialAdLoadSuccess(_ interstitialAd: AdPopcornSSPInterstitialAd!)
+  @objc dynamic public func apsspInterstitialAdShowSuccess(_ interstitialAd: AdPopcornSSPInterstitialAd!)
+  @objc dynamic public func apsspInterstitialAdLoadFail(_ interstitialAd: AdPopcornSSPInterstitialAd!, error: AdPopcornSSPError!)
+  @objc dynamic public func apsspInterstitialAdShowFail(_ interstitialAd: AdPopcornSSPInterstitialAd!, error: AdPopcornSSPError!)
 }
-extension AvatyeAdCash.InterstitialAdLoader : AdPopcornSSP.APSSPInterstitialVideoAdDelegate {
-  @objc dynamic public func apsspInterstitialVideoAdClosed(_ interstitialVideoAd: AdPopcornSSP.AdPopcornSSPInterstitialVideoAd!)
-  @objc dynamic public func apsspInterstitialVideoAdShowFail(_ interstitialVideoAd: AdPopcornSSP.AdPopcornSSPInterstitialVideoAd!)
-  @objc dynamic public func apsspInterstitialVideoAdLoadSuccess(_ interstitialVideoAd: AdPopcornSSP.AdPopcornSSPInterstitialVideoAd!)
-  @objc dynamic public func apsspInterstitialVideoAdShowSuccess(_ interstitialVideoAd: AdPopcornSSP.AdPopcornSSPInterstitialVideoAd!)
-  @objc dynamic public func apsspInterstitialVideoAdLoadFail(_ interstitialVideoAd: AdPopcornSSP.AdPopcornSSPInterstitialVideoAd!, error: AdPopcornSSP.AdPopcornSSPError!)
+extension AvatyeAdCash.InterstitialAdLoader : APSSPInterstitialVideoAdDelegate {
+  @objc dynamic public func apsspInterstitialVideoAdClosed(_ interstitialVideoAd: AdPopcornSSPInterstitialVideoAd!)
+  @objc dynamic public func apsspInterstitialVideoAdShowFail(_ interstitialVideoAd: AdPopcornSSPInterstitialVideoAd!)
+  @objc dynamic public func apsspInterstitialVideoAdLoadSuccess(_ interstitialVideoAd: AdPopcornSSPInterstitialVideoAd!)
+  @objc dynamic public func apsspInterstitialVideoAdShowSuccess(_ interstitialVideoAd: AdPopcornSSPInterstitialVideoAd!)
+  @objc dynamic public func apsspInterstitialVideoAdLoadFail(_ interstitialVideoAd: AdPopcornSSPInterstitialVideoAd!, error: AdPopcornSSPError!)
 }
-extension AvatyeAdCash.InterstitialAdLoader : AdPopcornSSP.APSSPRewardVideoAdDelegate {
-  @objc dynamic public func apsspRewardVideoAdClosed(_ rewardVideoAd: AdPopcornSSP.AdPopcornSSPRewardVideoAd!)
-  @objc dynamic public func apsspRewardVideoAdShowFail(_ rewardVideoAd: AdPopcornSSP.AdPopcornSSPRewardVideoAd!)
-  @objc dynamic public func apsspRewardVideoAdLoadSuccess(_ rewardVideoAd: AdPopcornSSP.AdPopcornSSPRewardVideoAd!)
-  @objc dynamic public func apsspRewardVideoAdShowSuccess(_ rewardVideoAd: AdPopcornSSP.AdPopcornSSPRewardVideoAd!)
-  @objc dynamic public func apsspRewardVideoAdLoadFail(_ rewardVideoAd: AdPopcornSSP.AdPopcornSSPRewardVideoAd!, error: AdPopcornSSP.AdPopcornSSPError!)
-  @objc dynamic public func apsspRewardVideoAdPlayCompleted(_ rewardVideoAd: AdPopcornSSP.AdPopcornSSPRewardVideoAd!, adNetworkNo: Swift.Int, completed: Swift.Bool)
+extension AvatyeAdCash.InterstitialAdLoader : APSSPRewardVideoAdDelegate {
+  @objc dynamic public func apsspRewardVideoAdClosed(_ rewardVideoAd: AdPopcornSSPRewardVideoAd!)
+  @objc dynamic public func apsspRewardVideoAdShowFail(_ rewardVideoAd: AdPopcornSSPRewardVideoAd!)
+  @objc dynamic public func apsspRewardVideoAdLoadSuccess(_ rewardVideoAd: AdPopcornSSPRewardVideoAd!)
+  @objc dynamic public func apsspRewardVideoAdShowSuccess(_ rewardVideoAd: AdPopcornSSPRewardVideoAd!)
+  @objc dynamic public func apsspRewardVideoAdLoadFail(_ rewardVideoAd: AdPopcornSSPRewardVideoAd!, error: AdPopcornSSPError!)
+  @objc dynamic public func apsspRewardVideoAdPlayCompleted(_ rewardVideoAd: AdPopcornSSPRewardVideoAd!, adNetworkNo: Swift.Int, completed: Swift.Bool)
 }
 extension AvatyeAdCash.InterstitialAdLoader : AvatyeAdCash.InterAdModuleDelegate {
   public func onInterModuleOpen()
