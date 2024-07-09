@@ -14,18 +14,12 @@ let package = Package(
             targets: ["AdPopcornSSP", "AvatyeAdCashTarget"]
         ),
     ],
-    dependencies: [
-        .package(name: "AdPopcornSSP",
-                 url: "https://github.com/IGAWorksDev/AdPopcornSSP-iOS",
-                 Version(2,6,5)..<Version(2,7,2)
-                )
-    ],
+    dependencies: [],
     targets: [
-        .target(
-            name: "AdpopcornSSP",
-            dependencies: [
-                .product(name: "AdPopcornSSP", package: "AdPopcornSSP"),
-            ],
+        .binaryTarget(
+            name: "AdPopcornSSP",
+            url: "https://github.com/IGAWorksDev/AdPopcornSDK/raw/master/AdPopcornSSP/02-ios-sdk/AdPopcornSSP_v2.7.2in.zip",
+            checksum: "eb94c945b1a6897d5158b67d55dc5a37e46731423bf8c37391ae6c7e59ba6469"
         ),
         .binaryTarget(
             name: "AvatyeAdCashTarget",
