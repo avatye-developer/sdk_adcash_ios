@@ -11,9 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "AvatyeAdCash",
-            targets: [
-                "AvatyeAdCashTarget"
-             ]
+            targets: ["AdPopcornSSP", "AvatyeAdCashTarget"]
         ),
     ],
     dependencies: [
@@ -23,6 +21,12 @@ let package = Package(
                 )
     ],
     targets: [
+        .target(
+            name: "AdpopcornSSP",
+            dependencies: [
+                .product(name: "AdPopcornSSP", package: "AdPopcornSSP"),
+            ],
+        ),
         .binaryTarget(
             name: "AvatyeAdCashTarget",
             path: "./AvatyeAdCash.xcframework"
