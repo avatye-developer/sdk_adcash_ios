@@ -7090,14 +7090,14 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AvatyeAdCash\/Network\/APIConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1045,
+      "offset": 998,
       "length": 24,
       "value": "\"\/advertising\/appADUnit\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AvatyeAdCash\/Network\/APIConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 1120,
       "length": 38,
       "value": "\"\/advertising\/appADUnitNetworkSetting\""
     },
@@ -7195,6 +7195,13 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AvatyeAdCash\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
+      "offset": 799,
+      "length": 18,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AvatyeAdCash\/Network\/Model\/AdCashErrorModel.swift",
+      "kind": "IntegerLiteral",
       "offset": 520,
       "length": 1,
       "value": "0"
@@ -7275,6 +7282,13 @@
       "offset": 779,
       "length": 10,
       "value": "11"
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AvatyeAdCash\/Network\/Model\/AdCashErrorModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 799,
+      "length": 18,
+      "value": "12"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AvatyeAdCash\/Util\/AdTypeSize.swift",
