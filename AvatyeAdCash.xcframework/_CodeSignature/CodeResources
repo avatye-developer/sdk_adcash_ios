@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/AvatyeAdCash.framework/AvatyeAdCash</key>
 		<data>
-		m10XnaSzQoeHQeyKXPW3eGxnNT0=
+		QKrbOwgJcZr03b1Z5e2QmPLXpaY=
 		</data>
 		<key>ios-arm64/AvatyeAdCash.framework/Info.plist</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AvatyeAdCash.framework/AvatyeAdCash</key>
 		<data>
-		JPV07daE7a3nWdYvV2TFD5v09U4=
+		3zB0bSPoMQR7cTv5TYbZURkrj9Y=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AvatyeAdCash.framework/Info.plist</key>
 		<data>
@@ -118,11 +118,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			m10XnaSzQoeHQeyKXPW3eGxnNT0=
+			QKrbOwgJcZr03b1Z5e2QmPLXpaY=
 			</data>
 			<key>hash2</key>
 			<data>
-			AvqUXRrwZBg6iGdPv3nWLxvlHX7BvNe2DSNh9rLJtX8=
+			6xW+Oo3RASLdPPnB2TIQFLTo2dH3lspXeUWorUbkq0E=
 			</data>
 		</dict>
 		<key>ios-arm64/AvatyeAdCash.framework/Info.plist</key>
@@ -228,11 +228,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JPV07daE7a3nWdYvV2TFD5v09U4=
+			3zB0bSPoMQR7cTv5TYbZURkrj9Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			t71J0BkoIhGMfa1uQO8jl9hEMevp2dD9t/vFIEwvPZg=
+			TqevgsdYnuRsl0wmrMWQp41/y5PKJG7GoQtoA5iRRsM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AvatyeAdCash.framework/Info.plist</key>
