@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "AvatyeAdCash"
+  spec.name         = "AdCashFramework"
   spec.version      = "3.1.8"
   spec.summary      = "Avatye AdCash support framework"
   spec.description  = <<-DESC
