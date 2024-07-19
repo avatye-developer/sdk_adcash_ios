@@ -23,7 +23,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "AvatyeAdCashTarget",
-            path: "./AvatyeAdCash.xcframework"
+            path: "./AdCashFramework.xcframework"
         )
     ]
 )
