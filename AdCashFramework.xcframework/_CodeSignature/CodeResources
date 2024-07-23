@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		O6X6B3+oeN5+Ng0DfTUJayTud+Y=
+		6JtGns9/lhTMlZpUOemu072gGlU=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		zaCOXgDHU5i0JTuV+4O7ErFsirg=
+		rrdZ2wj6YssrkaxFcyMWXLTn96M=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gJ/8O6V3v4j2byOYeMiKZ4ffLBo=
+		UBSGxJKNisqP4Yt5YwMwcw5a3Bw=
 		</data>
 		<key>ios-arm64/Resources/Assets.car</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		Af9jYIvXsZDu7fVNzyCL4MTt6TU=
+		PiSH90+8H4oftgxb/qO9De1uBVY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Assets.car</key>
 		<data>
@@ -90,11 +90,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
 		<data>
-		zaCOXgDHU5i0JTuV+4O7ErFsirg=
+		rrdZ2wj6YssrkaxFcyMWXLTn96M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ZiTR08ntqM6H2Mi2SL6mJbkes0g=
+		53JpfkZh7JirEAsbao6RZ2wFf7I=
 		</data>
 		<key>ios-arm64_x86_64-simulator/Resources/Assets.car</key>
 		<data>
@@ -107,11 +107,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O6X6B3+oeN5+Ng0DfTUJayTud+Y=
+			6JtGns9/lhTMlZpUOemu072gGlU=
 			</data>
 			<key>hash2</key>
 			<data>
-			3jad5grRbA+nH3ZZz2QCvJNElenr6559aUc4IEiYpno=
+			gzfRCY3vJzmwC+Ble6V7eYvwBvrk1k508aEsdNvA390=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
@@ -184,22 +184,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zaCOXgDHU5i0JTuV+4O7ErFsirg=
+			rrdZ2wj6YssrkaxFcyMWXLTn96M=
 			</data>
 			<key>hash2</key>
 			<data>
-			gDOfge7bvc97/9rsR/slZXVTGcb+Uq22LBE3n2Yps1M=
+			6wGv4yDbnXjCaZXHaNs7CS9MBTR9YA05sQNoqzLwlnE=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			gJ/8O6V3v4j2byOYeMiKZ4ffLBo=
+			UBSGxJKNisqP4Yt5YwMwcw5a3Bw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bBXxfHaOfk0OVMG+RvUDj+QnHZoFI4yr5Sk90oKr2aA=
+			UwV7ZY3fRiHWWWofCQ+bZNlph8eJt/1QS5PH7WoxhP8=
 			</data>
 		</dict>
 		<key>ios-arm64/Resources/Assets.car</key>
@@ -217,11 +217,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Af9jYIvXsZDu7fVNzyCL4MTt6TU=
+			PiSH90+8H4oftgxb/qO9De1uBVY=
 			</data>
 			<key>hash2</key>
 			<data>
-			1NFV8k6YYkQQSUcGUGBJl11DDXRxVLbcqVh4Krxad8M=
+			Uisk6GsnbVBp9sWx6W2NuMiRMsumZF0cTYFNpRnWzxA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Assets.car</key>
@@ -338,22 +338,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zaCOXgDHU5i0JTuV+4O7ErFsirg=
+			rrdZ2wj6YssrkaxFcyMWXLTn96M=
 			</data>
 			<key>hash2</key>
 			<data>
-			gDOfge7bvc97/9rsR/slZXVTGcb+Uq22LBE3n2Yps1M=
+			6wGv4yDbnXjCaZXHaNs7CS9MBTR9YA05sQNoqzLwlnE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZiTR08ntqM6H2Mi2SL6mJbkes0g=
+			53JpfkZh7JirEAsbao6RZ2wFf7I=
 			</data>
 			<key>hash2</key>
 			<data>
-			7Isx/0eoBuH2ZxHRRb32KbT/SKLpMZkT6m5hG5igLu0=
+			YzG6Xke3mVDb2eYjQUHZJPBX+D1mmP0Mtl6uDwYF1+k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/Resources/Assets.car</key>
