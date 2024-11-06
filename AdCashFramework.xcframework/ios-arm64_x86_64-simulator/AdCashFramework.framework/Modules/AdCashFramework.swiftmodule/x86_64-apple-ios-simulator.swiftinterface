@@ -178,11 +178,12 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
 }
 @objc(AVABannerAdLoader) public class BannerAdLoader : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdCashFramework.BannerAdLoaderDelegate)?
-  @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize, adView: UIKit.UIView? = nil)
+  @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize, adView: UIKit.UIView? = nil, width: Swift.Double = UIScreen.main.bounds.size.width)
   @discardableResult
   @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc public func requestAd()
   @objc public func removeAd()
+  public func setNAMNative(with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UINib) -> Swift.Void)
   @objc deinit
 }
 extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {

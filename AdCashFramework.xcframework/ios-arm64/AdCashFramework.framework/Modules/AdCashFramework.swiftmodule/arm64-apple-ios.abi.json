@@ -4706,7 +4706,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(rootVC:placementId:size:adView:)",
+            "printedName": "init(rootVC:placementId:size:adView:width:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4746,13 +4746,20 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "hasDefaultArg": true,
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)initWithRootVC:placementId:size:adView:",
-            "mangledName": "$s15AdCashFramework06BannerA6LoaderC6rootVC11placementId4size6adViewACSo16UIViewControllerC_SSAA0dA4SizeOSo0M0CSgtcfc",
+            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)initWithRootVC:placementId:size:adView:width:",
+            "mangledName": "$s15AdCashFramework06BannerA6LoaderC6rootVC11placementId4size6adView5widthACSo16UIViewControllerC_SSAA0dA4SizeOSo0N0CSgSdtcfc",
             "moduleName": "AdCashFramework",
-            "objc_name": "initWithRootVC:placementId:size:adView:",
+            "objc_name": "initWithRootVC:placementId:size:adView:width:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -4836,6 +4843,58 @@
             "declAttributes": [
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNAMNative",
+            "printedName": "setNAMNative(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdPopcornSSP.AdPopcornSSPNativeAd, UIKit.UINib) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AdPopcornSSP.AdPopcornSSPNativeAd, UIKit.UINib)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdPopcornSSPNativeAd",
+                        "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd",
+                        "usr": "c:objc(cs)AdPopcornSSPNativeAd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UINib",
+                        "printedName": "UIKit.UINib",
+                        "usr": "c:objc(cs)UINib"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework06BannerA6LoaderC12setNAMNative4withyySo0a16PopcornSSPNativeA0C_So5UINibCtc_tF",
+            "mangledName": "$s15AdCashFramework06BannerA6LoaderC12setNAMNative4withyySo0a16PopcornSSPNativeA0C_So5UINibCtc_tF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -6962,518 +7021,511 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "IntegerLiteral",
       "offset": 636,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "IntegerLiteral",
       "offset": 642,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "IntegerLiteral",
       "offset": 652,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "IntegerLiteral",
       "offset": 665,
       "length": 3,
       "value": "250"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "BooleanLiteral",
       "offset": 728,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "BooleanLiteral",
-      "offset": 1140,
+      "offset": 1156,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "StringLiteral",
-      "offset": 1289,
+      "offset": 1305,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1386,
       "length": 12,
       "value": "\"icon_close\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "BooleanLiteral",
-      "offset": 1549,
+      "offset": 1565,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/InterstitialAdModule.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
       "kind": "StringLiteral",
       "offset": 342,
       "length": 20,
       "value": "\"AdCashFramework.InterstitialAdModule\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdCashLogger.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdCashLogger.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdCashLogger.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdCashLogger.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdCashLogger.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 203,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdCashLogger.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/NativeAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 821,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/NativeAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
       "kind": "StringLiteral",
       "offset": 519,
       "length": 14,
       "value": "\"AdCashFramework.NativeAdLoader\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/APIConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 998,
-      "length": 24,
-      "value": "\"\/advertising\/appADUnit\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/APIConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1120,
-      "length": 38,
-      "value": "\"\/advertising\/appADUnitNetworkSetting\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "StringLiteral",
       "offset": 134,
       "length": 16,
       "value": "\"AdCashFramework.AdCashErrorModel\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 520,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 531,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 555,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 624,
       "length": 12,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 15,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 21,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 719,
       "length": 16,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 745,
       "length": 24,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 779,
       "length": 10,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 799,
       "length": 18,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 520,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 531,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 555,
       "length": 17,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 605,
       "length": 9,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 624,
       "length": 12,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 663,
       "length": 15,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 688,
       "length": 21,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 719,
       "length": 16,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 745,
       "length": 24,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 779,
       "length": 10,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Model\/AdCashErrorModel.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 799,
       "length": 18,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdTypeSize.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdTypeSize.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 207,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdTypeSize.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 226,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdTypeSize.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 188,
       "length": 9,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdTypeSize.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 207,
       "length": 9,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/AdTypeSize.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 226,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/AdPopAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/AdPopAdView.swift",
       "kind": "StringLiteral",
       "offset": 133,
       "length": 11,
       "value": "\"AdCashFramework.AdPopAdView\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/BannerAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "BooleanLiteral",
       "offset": 753,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Services.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Services.swift",
       "kind": "StringLiteral",
       "offset": 256,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Network\/Services.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Services.swift",
       "kind": "StringLiteral",
       "offset": 1261,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/BannerAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1098,
+      "offset": 1139,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/BannerAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "StringLiteral",
       "offset": 504,
       "length": 14,
       "value": "\"AdCashFramework.BannerAdLoader\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdCashInit.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdCashInit.swift",
       "kind": "BooleanLiteral",
-      "offset": 299,
+      "offset": 349,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/Util\/CommonUtil.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/CommonUtil.swift",
       "kind": "StringLiteral",
       "offset": 161,
       "length": 22,
       "value": "\"AvatyeAdCashResource\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/InterstitialAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1128,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/InterstitialAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "BooleanLiteral",
       "offset": 1189,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/InterstitialAdLoader.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "StringLiteral",
       "offset": 572,
       "length": 20,
       "value": "\"AdCashFramework.InterstitialAdLoader\""
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 266,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 299,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 862,
+      "offset": 757,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1044,
+      "offset": 938,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1237,
+      "offset": 1131,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1438,
+      "offset": 1332,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1623,
+      "offset": 1517,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1680,
+      "offset": 1574,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1936,
+      "offset": 1830,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1992,
+      "offset": 1886,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 12,
-      "value": "\"AdCashFramework.NativeAdView\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/Library\/Developer\/Xcode\/DerivedData\/AdCashFramework-fvxmoxyhrqwefhbjmqfbyseeogat\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AdCashFramework\/IntermediateBuildFilesPath\/AdCashFramework.build\/Release-iphoneos\/AdCashFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/imjaehyeog\/Library\/Developer\/Xcode\/DerivedData\/AdCashFramework-dcwxzzuxipmowmhaxtseiaqzfdhc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AdCashFramework\/IntermediateBuildFilesPath\/AdCashFramework.build\/Release-iphoneos\/AdCashFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 732,
       "length": 12,
