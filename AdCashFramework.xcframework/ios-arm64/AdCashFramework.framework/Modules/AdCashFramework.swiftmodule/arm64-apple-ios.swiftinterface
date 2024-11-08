@@ -159,6 +159,7 @@ public enum CustomInterAdType {
   @discardableResult
   @objc @_Concurrency.MainActor(unsafe) public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc @_Concurrency.MainActor(unsafe) public func setBannerAd(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize)
+  @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UINib) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func requestAd()
   @objc @_Concurrency.MainActor(unsafe) public func removeAd()
   @objc @_Concurrency.MainActor(unsafe) public func releaseAd()
@@ -183,7 +184,7 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
   @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc public func requestAd()
   @objc public func removeAd()
-  public func setNAMNative(with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UINib) -> Swift.Void)
+  @objc public func setNAMNative(with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UINib) -> Swift.Void)
   @objc deinit
 }
 extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {

@@ -220,7 +220,7 @@
 		</data>
 		<key>GFPNativeSimpleAdView.nib</key>
 		<data>
-		Pd3tvKOVOd8tCNwMHwh8qToEOsk=
+		calWTgjBH2zCmAs7pMPdt2tdvRM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -228,11 +228,11 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		lfqhvwxuBJND7s/xh9/0tRtsu4w=
+		aBuY3fa78sI6gKOBeW59pe6pOOA=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gM6VdAiKe4oJMzKBMklO3C9eqzE=
+		LWwg8pKtvjeyNUcTZESkCegeoec=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -240,19 +240,19 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gM6VdAiKe4oJMzKBMklO3C9eqzE=
+		LWwg8pKtvjeyNUcTZESkCegeoec=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XplMswQQ4ujuQVkBS+9OdUO7pgo=
+		VrUluxiaf8Roi2dF9ylvO2dmXuc=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lfqhvwxuBJND7s/xh9/0tRtsu4w=
+		aBuY3fa78sI6gKOBeW59pe6pOOA=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		gm3rEo3XY14jBtPTxCW34X1cJa4=
+		Wr4OH+S8dgBa3jb6SEhaMSBsajg=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -260,11 +260,11 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		gm3rEo3XY14jBtPTxCW34X1cJa4=
+		Wr4OH+S8dgBa3jb6SEhaMSBsajg=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		XFhWxePCn/ZE+buLgdoD8h2fJGk=
+		r1oSW/KDEvJ27h7ypfb5U1i4dEc=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -638,21 +638,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MdFazWr+I+9AWEe5JkQxnBBRteCbdSNk5wjfkl5zlxI=
+			4tJZzeQG78Ic7Y248RMAuR9urHBh+omJfKHM84HzFKM=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PalY2iV0afBpSZ44OBU+NnaTMakDffeKiYnpehjw3k4=
+			iaxNwhtpcWk00cjM0Tns9qpaBY8ckp48uF9rpr21DJE=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2JEEWhD158EdVgcXaFu+rjlFG5luhP7w6lS83rZz0E=
+			uhjLK3vWHIV250ynceh76Nm4WFMS6oOq1oPQjHv1znk=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -666,28 +666,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			T2JEEWhD158EdVgcXaFu+rjlFG5luhP7w6lS83rZz0E=
+			uhjLK3vWHIV250ynceh76Nm4WFMS6oOq1oPQjHv1znk=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dWNOtSIjqAyMdeMIrZcg2w9oqafbqSOtJTGK8Qf/RIs=
+			YWRyDZMdRjnSvdzZJlPM9J1lPeEAtf877qcLw2ZGBYs=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PalY2iV0afBpSZ44OBU+NnaTMakDffeKiYnpehjw3k4=
+			iaxNwhtpcWk00cjM0Tns9qpaBY8ckp48uF9rpr21DJE=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lBlM684j7uTko4tA2YIfZdC6BIsQCcsmByVUHkRyDhk=
+			+Ty2vVNm+p46weXSPQEkkJVoEaH2RHIHzXDRTJ9WW0k=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -701,14 +701,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lBlM684j7uTko4tA2YIfZdC6BIsQCcsmByVUHkRyDhk=
+			+Ty2vVNm+p46weXSPQEkkJVoEaH2RHIHzXDRTJ9WW0k=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GxzuCEcQTv69ceMkgHNcmUG6BCmP/sWZ+TBfHSN9d7w=
+			neRBM7Y2T/yfVGVVpLtLjlqvkCBFLR3nC6E+lhhFuz0=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

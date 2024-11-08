@@ -220,7 +220,7 @@
 		</data>
 		<key>GFPNativeSimpleAdView.nib</key>
 		<data>
-		Pd3tvKOVOd8tCNwMHwh8qToEOsk=
+		calWTgjBH2zCmAs7pMPdt2tdvRM=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -228,11 +228,11 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		EAxTFkKQm0x+lGI2HDyoQRogJR4=
+		KCjyQT6ia9RCYvFQ0/u8R4yUbcQ=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ltfOcBZHv6r4los7o1X22viv09E=
+		/wz5/eFrNyre6eysKEBZcKekN0k=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -240,11 +240,11 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ltfOcBZHv6r4los7o1X22viv09E=
+		/wz5/eFrNyre6eysKEBZcKekN0k=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		42Z1u3nFDaR4mu9wE5p5LLkjrKk=
+		3FRkzF1qlAt08UOhwdoUuJqQTns=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -618,21 +618,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MdFazWr+I+9AWEe5JkQxnBBRteCbdSNk5wjfkl5zlxI=
+			4tJZzeQG78Ic7Y248RMAuR9urHBh+omJfKHM84HzFKM=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			T716pnyWD+Ta3TazPTOWXAenATZ6viSeij1kP1VIYfk=
+			aLY6ewQOjI6sZ6vHkvZEV0igHmnNPL1vyKUfQ+k+rQY=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r/WMy6hAIrk0Yo1cLTOVMF962gWLJ6qpKY9jRLabE9w=
+			YpnGWskqUCxt6XaSDk10dsK+Sol3hgb3C78Rf+OZ4a0=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -646,14 +646,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			r/WMy6hAIrk0Yo1cLTOVMF962gWLJ6qpKY9jRLabE9w=
+			YpnGWskqUCxt6XaSDk10dsK+Sol3hgb3C78Rf+OZ4a0=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UDulxvIhLXg9Vk3HHRs4j6bptgQkMt9bIia6/i8otwU=
+			f8e9g+379t8CGrcVQVxWI6gUWcCrafRjRA/wiBZhO1c=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
