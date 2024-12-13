@@ -5,14 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "AvatyeAdCash",
-    defaultLocalization: "ko",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v11)
     ],
     products: [
         .library(
             name: "AvatyeAdCash",
-            targets: ["AdPopcornSSP", "AvatyeAdCashTarget", "AvatyeAdCashResources"]
+            targets: ["AdPopcornSSP", "AvatyeAdCashTarget"]
         ),
     ],
     dependencies: [],
@@ -25,14 +24,6 @@ let package = Package(
         .binaryTarget(
             name: "AvatyeAdCashTarget",
             path: "./AdCashFramework.xcframework"
-        ),
-        .target(
-            name: "AvatyeAdCashResources",
-            dependencies: [],
-            resources: [
-                .process("Resources")
-            ],
-            publicHeadersPath: nil
         )
     ]
 )
