@@ -102,15 +102,6 @@ public protocol AdViewDelegate : AnyObject {
   func onViewFailed(error: AdCashFramework.AdCashErrorModel)
   func onViewClicked()
 }
-@objc public enum NAMType : Swift.Int {
-  case Image
-  case Smart
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc public enum BannerAdSize : Swift.Int {
   case W320XH50
   case W320XH100
@@ -168,8 +159,7 @@ public enum CustomInterAdType {
   @discardableResult
   @objc @_Concurrency.MainActor(unsafe) public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc @_Concurrency.MainActor(unsafe) public func setBannerAd(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize)
-  @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UINib) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = UIScreen.main.bounds.size.width, with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UIView) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UINib) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func requestAd()
   @objc @_Concurrency.MainActor(unsafe) public func removeAd()
   @objc @_Concurrency.MainActor(unsafe) public func releaseAd()
@@ -189,13 +179,12 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
 }
 @objc(AVABannerAdLoader) public class BannerAdLoader : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdCashFramework.BannerAdLoaderDelegate)?
-  @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize, adView: UIKit.UIView? = nil)
+  @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize, adView: UIKit.UIView? = nil, width: Swift.Double = UIScreen.main.bounds.size.width)
   @discardableResult
   @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc public func requestAd()
   @objc public func removeAd()
-  @objc public func setNAMNative(with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UINib) -> Swift.Void)
-  @objc public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = UIScreen.main.bounds.size.width, with configuration: @escaping (AdPopcornSSPNativeAd, UIKit.UIView) -> Swift.Void)
+  @objc public func setNAMNative(with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UINib) -> Swift.Void)
   @objc deinit
 }
 extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
@@ -269,12 +258,14 @@ extension AdCashFramework.InterstitialAdLoader : AdCashFramework.InterAdModuleDe
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc public class AdCashNativeAd : ObjectiveC.NSObject {
+  public init(nativeAd: AdPopcornSSPNativeAd)
+  public func setNAMRenderer(_ namNativeAdRenderer: Any!, superView: UIKit.UIView)
+  @objc deinit
+}
 extension AdCashFramework.LogLevel : Swift.Equatable {}
 extension AdCashFramework.LogLevel : Swift.Hashable {}
 extension AdCashFramework.LogLevel : Swift.RawRepresentable {}
-extension AdCashFramework.NAMType : Swift.Equatable {}
-extension AdCashFramework.NAMType : Swift.Hashable {}
-extension AdCashFramework.NAMType : Swift.RawRepresentable {}
 extension AdCashFramework.BannerAdSize : Swift.Equatable {}
 extension AdCashFramework.BannerAdSize : Swift.Hashable {}
 extension AdCashFramework.BannerAdSize : Swift.RawRepresentable {}
