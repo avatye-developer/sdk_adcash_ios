@@ -2531,6 +2531,214 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "NAMType",
+        "printedName": "NAMType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "Image",
+            "printedName": "Image",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.NAMType.Type) -> AdCashFramework.NAMType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NAMType",
+                    "printedName": "AdCashFramework.NAMType",
+                    "usr": "c:@M@AdCashFramework@E@NAMType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.NAMType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NAMType",
+                        "printedName": "AdCashFramework.NAMType",
+                        "usr": "c:@M@AdCashFramework@E@NAMType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdCashFramework@E@NAMType@NAMTypeImage",
+            "mangledName": "$s15AdCashFramework7NAMTypeO5ImageyA2CmF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "Smart",
+            "printedName": "Smart",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.NAMType.Type) -> AdCashFramework.NAMType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NAMType",
+                    "printedName": "AdCashFramework.NAMType",
+                    "usr": "c:@M@AdCashFramework@E@NAMType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.NAMType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NAMType",
+                        "printedName": "AdCashFramework.NAMType",
+                        "usr": "c:@M@AdCashFramework@E@NAMType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdCashFramework@E@NAMType@NAMTypeSmart",
+            "mangledName": "$s15AdCashFramework7NAMTypeO5SmartyA2CmF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdCashFramework.NAMType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NAMType",
+                    "printedName": "AdCashFramework.NAMType",
+                    "usr": "c:@M@AdCashFramework@E@NAMType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15AdCashFramework7NAMTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15AdCashFramework7NAMTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "AdCashFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AdCashFramework7NAMTypeO8rawValueSivp",
+            "mangledName": "$s15AdCashFramework7NAMTypeO8rawValueSivp",
+            "moduleName": "AdCashFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AdCashFramework7NAMTypeO8rawValueSivg",
+                "mangledName": "$s15AdCashFramework7NAMTypeO8rawValueSivg",
+                "moduleName": "AdCashFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AdCashFramework@E@NAMType",
+        "mangledName": "$s15AdCashFramework7NAMTypeO",
+        "moduleName": "AdCashFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BannerAdSize",
         "printedName": "BannerAdSize",
         "children": [
@@ -4153,6 +4361,73 @@
           },
           {
             "kind": "Function",
+            "name": "setNAMNative",
+            "printedName": "setNAMNative(type:width:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NAMType",
+                "printedName": "AdCashFramework.NAMType",
+                "usr": "c:@M@AdCashFramework@E@NAMType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdCashNativeAd, UIKit.UIView) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AdCashFramework.AdCashNativeAd, UIKit.UIView)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdCashNativeAd",
+                        "printedName": "AdCashFramework.AdCashNativeAd",
+                        "usr": "c:@M@AdCashFramework@objc(cs)AdCashNativeAd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdView(im)setNAMNativeWithType:width:with:",
+            "mangledName": "$s15AdCashFramework06BannerA4ViewC12setNAMNative4type5width4withyAA7NAMTypeO_12CoreGraphics7CGFloatVyAA0ab6NativeA0C_So6UIViewCtctF",
+            "moduleName": "AdCashFramework",
+            "objc_name": "setNAMNativeWithType:width:with:",
+            "declAttributes": [
+              "Custom",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "requestAd",
             "printedName": "requestAd()",
             "children": [
@@ -4760,7 +5035,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(rootVC:placementId:size:adView:width:)",
+            "printedName": "init(rootVC:placementId:size:adView:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4800,20 +5075,13 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "hasDefaultArg": true,
-                "usr": "s:Sd"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)initWithRootVC:placementId:size:adView:width:",
-            "mangledName": "$s15AdCashFramework06BannerA6LoaderC6rootVC11placementId4size6adView5widthACSo16UIViewControllerC_SSAA0dA4SizeOSo0N0CSgSdtcfc",
+            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)initWithRootVC:placementId:size:adView:",
+            "mangledName": "$s15AdCashFramework06BannerA6LoaderC6rootVC11placementId4size6adViewACSo16UIViewControllerC_SSAA0dA4SizeOSo0M0CSgtcfc",
             "moduleName": "AdCashFramework",
-            "objc_name": "initWithRootVC:placementId:size:adView:width:",
+            "objc_name": "initWithRootVC:placementId:size:adView:",
             "declAttributes": [
               "AccessControl",
               "ObjC",
@@ -4951,6 +5219,72 @@
               "AccessControl",
               "ObjC",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNAMNative",
+            "printedName": "setNAMNative(type:width:with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NAMType",
+                "printedName": "AdCashFramework.NAMType",
+                "usr": "c:@M@AdCashFramework@E@NAMType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdCashNativeAd, UIKit.UIView) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(AdCashFramework.AdCashNativeAd, UIKit.UIView)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdCashNativeAd",
+                        "printedName": "AdCashFramework.AdCashNativeAd",
+                        "usr": "c:@M@AdCashFramework@objc(cs)AdCashNativeAd"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)setNAMNativeWithType:width:with:",
+            "mangledName": "$s15AdCashFramework06BannerA6LoaderC12setNAMNative4type5width4withyAA7NAMTypeO_12CoreGraphics7CGFloatVyAA0ab6NativeA0C_So6UIViewCtctF",
+            "moduleName": "AdCashFramework",
+            "objc_name": "setNAMNativeWithType:width:with:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7068,11 +7402,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:15AdCashFramework0ab6NativeA0C06nativeA0ACSo0a16PopcornSSPNativeA0C_tcfc",
+            "usr": "c:@M@AdCashFramework@objc(cs)AdCashNativeAd(im)initWithNativeAd:",
             "mangledName": "$s15AdCashFramework0ab6NativeA0C06nativeA0ACSo0a16PopcornSSPNativeA0C_tcfc",
             "moduleName": "AdCashFramework",
+            "objc_name": "initWithNativeAd:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -7107,11 +7443,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:15AdCashFramework0ab6NativeA0C14setNAMRenderer_9superViewyypSg_So6UIViewCtF",
+            "usr": "c:@M@AdCashFramework@objc(cs)AdCashNativeAd(im)setNAMRenderer:superView:",
             "mangledName": "$s15AdCashFramework0ab6NativeA0C14setNAMRenderer_9superViewyypSg_So6UIViewCtF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7556,42 +7893,56 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 188,
+      "offset": 165,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 165,
+      "length": 5,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
+      "kind": "IntegerLiteral",
+      "offset": 253,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 207,
+      "offset": 272,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 291,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 188,
+      "offset": 253,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 207,
+      "offset": 272,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 291,
       "length": 7,
       "value": "3"
     },
@@ -7625,8 +7976,15 @@
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 744,
+      "length": 19,
+      "value": "\"nativeAdView init\""
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1139,
+      "offset": 1231,
       "length": 5,
       "value": "false"
     },
@@ -7675,79 +8033,58 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 140,
+      "offset": 146,
       "length": 14,
       "value": "\"AdCashFramework.AdCashNativeAd\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 624,
+      "offset": 642,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 657,
+      "offset": 675,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 812,
+      "length": 28,
+      "value": "\"apSSPNativeAdRenderer init\""
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 994,
+      "length": 27,
+      "value": "\"adPopcornSSPNativeAd init\""
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1115,
+      "offset": 1157,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1296,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 1276,
+      "length": 24,
+      "value": "\"apSSPNativeAdView init\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1489,
+      "offset": 1391,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1690,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1875,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1932,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2188,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2244,
-      "length": 2,
-      "value": "15"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/Library\/Developer\/Xcode\/DerivedData\/AdCashFramework-dcwxzzuxipmowmhaxtseiaqzfdhc\/Build\/Intermediates.noindex\/ArchiveIntermediates\/AdCashFramework\/IntermediateBuildFilesPath\/AdCashFramework.build\/Release-iphoneos\/AdCashFramework.build\/DerivedSources\/GeneratedAssetSymbols.swift",
