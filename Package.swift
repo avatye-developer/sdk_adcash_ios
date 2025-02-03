@@ -18,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AdPopcornSSP",
-            url: "https://github.com/IGAWorksDev/AdPopcornSDK/raw/refs/heads/master/AdPopcornSSP/02-ios-sdk/AdPopcornSSP_v2.9.0in.zip",
-            checksum: "7597828427595a7e8f9503939383895e6021f6eb5853f1efea71e9400d78bc5e"
+            url: "https://github.com/IGAWorksDev/AdPopcornSDK/raw/refs/heads/master/AdPopcornSSP/02-ios-sdk/AdPopcornSSP_v2.9.1in.zip",
+            checksum: "a7203577976fab1cd1dafcf5f8d20c3fcc163848c9c057f9a92cf78d0ea91915"
         ),
         .binaryTarget(
             name: "AvatyeAdCashTarget",
