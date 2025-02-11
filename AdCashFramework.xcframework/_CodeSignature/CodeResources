@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		tlHsYVWLuK5LfWw/0QOV2Qf1v2k=
+		VcCQocQDxmjcN7SOrZUvcPJqXzo=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -220,7 +220,7 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
 		<data>
-		vqnSsayvxTAqh3KJQaJNn4ez+Hk=
+		uLH1+LAe94AO27LDds1kCifwCAs=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
 		<data>
@@ -228,23 +228,23 @@
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Info.plist</key>
 		<data>
-		GsSIZFFZWedrWYJDEvp3jixg/zg=
+		HfsTFRq4nSXtBO52TaCvxCeZpuM=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		y65Eqq4M1Ut6GnQczu6dxljI0Zs=
+		sNzkqKV9uxFahjYHzF2ioBp3paE=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		7/tW6bNmv5TeqpgVUCfZAHpNq5s=
+		WrbLaxcpkcTdC7Rn+bq/rFlqtTM=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		Rz8oqxU/YhmHkqi6o2IJZYO69bs=
+		aOwCeTcNP1vcuc8XMEdcwNHT52A=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		7/tW6bNmv5TeqpgVUCfZAHpNq5s=
+		WrbLaxcpkcTdC7Rn+bq/rFlqtTM=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -252,11 +252,11 @@
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		ERVmbTb56pQaInImxa7tCql3ZRc=
+		Sngblkdr528qbZon+Ys/HRAMckg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		k5zz39g02eshpayyXc87XEItwe8=
+		ycZKdQ/ouykdUbNWil14CxE0P+k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -470,7 +470,7 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Assets.car</key>
 		<data>
-		vqnSsayvxTAqh3KJQaJNn4ez+Hk=
+		uLH1+LAe94AO27LDds1kCifwCAs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
 		<data>
@@ -478,39 +478,39 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Info.plist</key>
 		<data>
-		xPUrSAzcdh4aB63ubIZvyesWBr0=
+		YbhYcVJNBXHD8gTsUboaw5jG4AE=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vQaTQ4V1GSAB9W0MXj5LII/frfM=
+		i7AP/THXDmCLNaHU++y1qt7wKxw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Y7+jKyb6wFrn2e/E1wfjwOSuZKs=
+		IpXBvmUfEYLUdbk8kBzAIDV7DX8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3Iq4S/hjOSskLjQeLXQ8Bp4bZFg=
+		ksDprHVkI34KEUXH6pDcSljqscw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Y7+jKyb6wFrn2e/E1wfjwOSuZKs=
+		IpXBvmUfEYLUdbk8kBzAIDV7DX8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vQaTQ4V1GSAB9W0MXj5LII/frfM=
+		i7AP/THXDmCLNaHU++y1qt7wKxw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		9RcpAhSAIXzOWK538dD4EBKbF1o=
+		hGgDLfEWjqXYgNOV8M17tJwhsyU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		5mQGI74FOWBwS9jB1YkqVfLI9Ik=
+		7fBgciBHV88Klc2HxWJaa0ZMGek=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		9RcpAhSAIXzOWK538dD4EBKbF1o=
+		hGgDLfEWjqXYgNOV8M17tJwhsyU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -518,7 +518,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Ao8envz/s4R3KxIoUYHnbCXcZX8=
+		azaAFaLr+KQ0QuJqqyyenFo6NO8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -527,11 +527,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tlHsYVWLuK5LfWw/0QOV2Qf1v2k=
+			VcCQocQDxmjcN7SOrZUvcPJqXzo=
 			</data>
 			<key>hash2</key>
 			<data>
-			PIb+AGQ3RN1n4RtNNS9oAlGuhI244wUDwgwVTUj9hLM=
+			PuNg1fHsiszLrBiLoyIMhc/MxehWBuZJ3ZnotEwGp0Q=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
@@ -1092,11 +1092,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqnSsayvxTAqh3KJQaJNn4ez+Hk=
+			uLH1+LAe94AO27LDds1kCifwCAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			MSxXXjXZwPS8tEvG/2qef+BeM2UoyA05EEt5Dp6Jh1I=
+			hy8tmy35T86ibSMV8m3t1J9M05eD5kNUANjQmH0JqD4=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
@@ -1114,55 +1114,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GsSIZFFZWedrWYJDEvp3jixg/zg=
+			HfsTFRq4nSXtBO52TaCvxCeZpuM=
 			</data>
 			<key>hash2</key>
 			<data>
-			xDyAdeiwJH6Lq7wA1NxbO5mq7P671FUIr4u+OIxSc7o=
+			D8jxaN7wQuzDAYpiKDBR2C+Fxd6jNyvTeUF8S72+rso=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y65Eqq4M1Ut6GnQczu6dxljI0Zs=
+			sNzkqKV9uxFahjYHzF2ioBp3paE=
 			</data>
 			<key>hash2</key>
 			<data>
-			jczSZLnrSt6AYW1mH/pzZu4afMqXKP2tJWg+mo5X8tk=
+			1arCnSwMqganbfWJLwV5ntwMdNV5gGpigsfXDlTlWlU=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7/tW6bNmv5TeqpgVUCfZAHpNq5s=
+			WrbLaxcpkcTdC7Rn+bq/rFlqtTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			96CnXNR+nK8W/3N2ZHl6DT6iGJIpXvi14zMPE9hs7+g=
+			+gsmHpaZqesGtP4CzxYujiMrqDul8cqnXIEiNiIKgJU=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rz8oqxU/YhmHkqi6o2IJZYO69bs=
+			aOwCeTcNP1vcuc8XMEdcwNHT52A=
 			</data>
 			<key>hash2</key>
 			<data>
-			vjP5tXW/EAEHrEdcxYVPEjysR8Kl05sO0p8XeJIMxP4=
+			sYrNVg9iVW0aByRC2nosTUqHHHziJ9y88JeF9miOfmY=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7/tW6bNmv5TeqpgVUCfZAHpNq5s=
+			WrbLaxcpkcTdC7Rn+bq/rFlqtTM=
 			</data>
 			<key>hash2</key>
 			<data>
-			96CnXNR+nK8W/3N2ZHl6DT6iGJIpXvi14zMPE9hs7+g=
+			+gsmHpaZqesGtP4CzxYujiMrqDul8cqnXIEiNiIKgJU=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
@@ -1180,22 +1180,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ERVmbTb56pQaInImxa7tCql3ZRc=
+			Sngblkdr528qbZon+Ys/HRAMckg=
 			</data>
 			<key>hash2</key>
 			<data>
-			A1caQ+DfxcRODY16z+i/xjWRUuzF2CVMt/7BSwFC3W0=
+			bEmECmTINBi1dEHGCYCtA9Pc9e8Ra06WUMTG4qOIr1U=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdCashFramework</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			k5zz39g02eshpayyXc87XEItwe8=
+			ycZKdQ/ouykdUbNWil14CxE0P+k=
 			</data>
 			<key>hash2</key>
 			<data>
-			YBUjj0iHPMVU6+5RvZAjcpx8SEx8IJK1uudw7GR/41I=
+			KIAXx95PwImFXzFtJD5Utr/7CD5eoP3deA2cTjH+jPo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
@@ -1756,11 +1756,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vqnSsayvxTAqh3KJQaJNn4ez+Hk=
+			uLH1+LAe94AO27LDds1kCifwCAs=
 			</data>
 			<key>hash2</key>
 			<data>
-			MSxXXjXZwPS8tEvG/2qef+BeM2UoyA05EEt5Dp6Jh1I=
+			hy8tmy35T86ibSMV8m3t1J9M05eD5kNUANjQmH0JqD4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
@@ -1778,99 +1778,99 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xPUrSAzcdh4aB63ubIZvyesWBr0=
+			YbhYcVJNBXHD8gTsUboaw5jG4AE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZzTNMk2qx8kvOVzFUfJ49qHHF62SRC6GGJ3IZ7An/wI=
+			GBfltL2f/RJQG8Mhc6W4Y2isz5zhogrHHoBI7KU43zs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vQaTQ4V1GSAB9W0MXj5LII/frfM=
+			i7AP/THXDmCLNaHU++y1qt7wKxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ly8tdMaw3XmoboRYfV5NQE+pQUWIHVinr5Rrv42hW5Q=
+			FkYZ+ul2skr26pfGxCv4V/2I+Frnv0ZhjAXSZocOvOo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y7+jKyb6wFrn2e/E1wfjwOSuZKs=
+			IpXBvmUfEYLUdbk8kBzAIDV7DX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dREBA14Wyz4mM8CiohXp9W/p916nizlCr4fEVTJ23ow=
+			17QVP43ESKOiW29JFtOZ8xzuy2kVl6krFgXL3wLlCF0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Iq4S/hjOSskLjQeLXQ8Bp4bZFg=
+			ksDprHVkI34KEUXH6pDcSljqscw=
 			</data>
 			<key>hash2</key>
 			<data>
-			bSBxCzG+UFqFt1BYU1XHbvQcMjJdwz+TCFY6zJvB03A=
+			0g6VNorQWmI84WgjeiA4QDECJ3sN3SEgGMDni5MNMH0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y7+jKyb6wFrn2e/E1wfjwOSuZKs=
+			IpXBvmUfEYLUdbk8kBzAIDV7DX8=
 			</data>
 			<key>hash2</key>
 			<data>
-			dREBA14Wyz4mM8CiohXp9W/p916nizlCr4fEVTJ23ow=
+			17QVP43ESKOiW29JFtOZ8xzuy2kVl6krFgXL3wLlCF0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vQaTQ4V1GSAB9W0MXj5LII/frfM=
+			i7AP/THXDmCLNaHU++y1qt7wKxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ly8tdMaw3XmoboRYfV5NQE+pQUWIHVinr5Rrv42hW5Q=
+			FkYZ+ul2skr26pfGxCv4V/2I+Frnv0ZhjAXSZocOvOo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9RcpAhSAIXzOWK538dD4EBKbF1o=
+			hGgDLfEWjqXYgNOV8M17tJwhsyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QwN2ORU/YeKFUDBpQ28Rj+EUjNlJsaJtpKThPtgRRhc=
+			c94c3wo2KQd4DcVqTq+8EfGvZip3QtihRk3A9WFVCKQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5mQGI74FOWBwS9jB1YkqVfLI9Ik=
+			7fBgciBHV88Klc2HxWJaa0ZMGek=
 			</data>
 			<key>hash2</key>
 			<data>
-			IE7xJ+WPB3gZpOc/x4fgFdHed7qZHt7s24zOwsAZ8GU=
+			NHKXWfZK43w+UEmhVwr0dIsMFJx2V5uirKPlQWVF8rw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9RcpAhSAIXzOWK538dD4EBKbF1o=
+			hGgDLfEWjqXYgNOV8M17tJwhsyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QwN2ORU/YeKFUDBpQ28Rj+EUjNlJsaJtpKThPtgRRhc=
+			c94c3wo2KQd4DcVqTq+8EfGvZip3QtihRk3A9WFVCKQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
@@ -1888,11 +1888,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ao8envz/s4R3KxIoUYHnbCXcZX8=
+			azaAFaLr+KQ0QuJqqyyenFo6NO8=
 			</data>
 			<key>hash2</key>
 			<data>
-			DMXvYDLxYZ+6nBwO5dmwq3VjdDQCFl3cuUq9NRtJsn4=
+			KHH/UxmFm8iAlyfm1W+Ea772F3YKt3vJXpgeYqhSKiA=
 			</data>
 		</dict>
 	</dict>
