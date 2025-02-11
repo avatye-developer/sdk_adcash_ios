@@ -170,7 +170,7 @@ public enum CustomInterAdType {
   @objc @_Concurrency.MainActor(unsafe) public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc @_Concurrency.MainActor(unsafe) public func setBannerAd(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize)
   @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UINib) -> Swift.Void)
-  @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = UIScreen.main.bounds.size.width, with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UIView) -> Swift.Void)
+  @objc @_Concurrency.MainActor(unsafe) public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = 0, with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UIView) -> Swift.Void)
   @objc @_Concurrency.MainActor(unsafe) public func requestAd()
   @objc @_Concurrency.MainActor(unsafe) public func removeAd()
   @objc @_Concurrency.MainActor(unsafe) public func releaseAd()
@@ -196,7 +196,7 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
   @objc public func requestAd()
   @objc public func removeAd()
   @objc public func setNAMNative(with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UINib) -> Swift.Void)
-  @objc public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = UIScreen.main.bounds.size.width, with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UIView) -> Swift.Void)
+  @objc public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = 0, with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UIView) -> Swift.Void)
   @objc deinit
 }
 extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
