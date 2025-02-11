@@ -10356,274 +10356,288 @@
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3649,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3754,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3829,
+      "offset": 3915,
       "length": 4,
       "value": "75.0"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3836,
+      "offset": 3922,
       "length": 5,
       "value": "360.0"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3844,
+      "offset": 3930,
       "length": 3,
       "value": "225"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3850,
+      "offset": 3936,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3918,
+      "offset": 4004,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3924,
+      "offset": 4010,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 3954,
+      "offset": 4040,
       "length": 65,
       "value": "\"setNativeNAM size \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4018,
+      "offset": 4104,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4311,
+      "offset": 4397,
       "length": 22,
       "value": "\"AvatyeAdCashResource\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4350,
+      "offset": 4436,
       "length": 8,
       "value": "\"bundle\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4446,
+      "offset": 4532,
       "length": 23,
       "value": "\"GFPNativeSimpleAdView\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4556,
+      "offset": 4642,
       "length": 47,
       "value": "\"Failed to load GFPNativeSimpleAdView from XIb\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4694,
+      "offset": 4780,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4700,
+      "offset": 4786,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4783,
+      "offset": 4869,
       "length": 104,
       "value": "\"namNativeSimpleAdView frame \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4848,
+      "offset": 4934,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4886,
+      "offset": 4972,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5159,
+      "offset": 5245,
       "length": 23,
       "value": "\"GFPNativeSimpleAdView\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5269,
+      "offset": 5355,
       "length": 47,
       "value": "\"Failed to load GFPNativeSimpleAdView from XIb\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5407,
+      "offset": 5493,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5413,
+      "offset": 5499,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5496,
+      "offset": 5582,
       "length": 104,
       "value": "\"namNativeSimpleAdView frame \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5561,
+      "offset": 5647,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 5599,
+      "offset": 5685,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 6476,
+      "offset": 6562,
       "length": 15,
       "value": "\"Dynamic frame\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 7061,
+      "offset": 7147,
       "length": 23,
       "value": "\"AdPopcorn Native open\""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 7254,
+      "offset": 7340,
       "length": 39,
       "value": "\"nativeAd size \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 7291,
+      "offset": 7377,
       "length": 2,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7522,
+      "offset": 7608,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7609,
+      "offset": 7695,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7710,
+      "offset": 7796,
       "length": 4,
       "value": "9999"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7837,
+      "offset": 7923,
       "length": 4,
       "value": "2000"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7843,
+      "offset": 7929,
       "length": 4,
       "value": "2030"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7923,
+      "offset": 8009,
       "length": 4,
       "value": "2100"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8038,
+      "offset": 8124,
       "length": 4,
       "value": "2200"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8135,
+      "offset": 8221,
       "length": 4,
       "value": "3200"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8223,
+      "offset": 8309,
       "length": 4,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8328,
+      "offset": 8414,
       "length": 4,
       "value": "5001"
     },
     {
       "filePath": "\/Users\/jun\/Dev\/avatye\/adcash-ios-sdk\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8334,
+      "offset": 8420,
       "length": 4,
       "value": "5002"
     },

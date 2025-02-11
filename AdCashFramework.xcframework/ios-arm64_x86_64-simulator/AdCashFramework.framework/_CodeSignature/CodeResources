@@ -228,7 +228,7 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		i7AP/THXDmCLNaHU++y1qt7wKxw=
+		sUHqHbuAm/mi9nMiEyqUNfgd55I=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -244,11 +244,11 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dmfzgX2ERTIzn7BuJDGqlSKf1y4=
+		apVhqYGbyoKLIeo41q8qGS0kPtU=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		i7AP/THXDmCLNaHU++y1qt7wKxw=
+		sUHqHbuAm/mi9nMiEyqUNfgd55I=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -264,7 +264,7 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/0g49IbVD2QYMrSeCOnTV1lk6Xk=
+		6rYXxTRhLwF1kMTx8HRfsQPmnm4=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -645,7 +645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FkYZ+ul2skr26pfGxCv4V/2I+Frnv0ZhjAXSZocOvOo=
+			+P6lXft7KaNQAFi4bBTt1MY0PEIaSGN1c3hfpID42zs=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -673,14 +673,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pDBxCJBHh6xvT+IRjMpsu1v7yY14A/A2SoRf+nf/NlA=
+			WPcsnJildxdwHfbq5l+nEPAo+i/RwuAb7VxSixEiF7w=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FkYZ+ul2skr26pfGxCv4V/2I+Frnv0ZhjAXSZocOvOo=
+			+P6lXft7KaNQAFi4bBTt1MY0PEIaSGN1c3hfpID42zs=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -708,7 +708,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BLjjjX4rgfsQsd681Je8cuqkJttUFBaORKsINv7PJ+0=
+			xTyPJ26w0d5qJe64lQL0UBbS2hzG6oEJPMsRdOpyeWs=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
