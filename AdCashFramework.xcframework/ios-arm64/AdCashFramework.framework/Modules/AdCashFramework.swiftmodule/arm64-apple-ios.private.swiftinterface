@@ -1,12 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AdCashFramework
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AdCashFramework
 import AdPopcornSSP
 import AdSupport
 import AppTrackingTransparency
 import DeveloperToolsSupport
 import Foundation
+import LibADPlus
 import Swift
 import SwiftUI
 import UIKit
@@ -74,6 +74,25 @@ extension AdCashFramework.NativeAdLoader : APSSPNativeAdDelegate {
   @objc final public let message: Swift.String
   @objc final public let desc: Swift.String
   @objc deinit
+}
+@objc public enum mediaAgeLevel : Swift.Int {
+  case over13Age = 0
+  case under13Age
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum genderType : Swift.Int {
+  case Male = 0
+  case Female
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public struct AppAdUnitInput : Swift.Codable {
   public let appID: Swift.String
@@ -197,6 +216,8 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
   @objc public func removeAd()
   @objc public func setNAMNative(with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UINib) -> Swift.Void)
   @objc public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = 0, with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UIView) -> Swift.Void)
+  @objc public func setMezzo(adKeyword: Swift.String, adOther: Swift.String, mediaAge: AdCashFramework.mediaAgeLevel, appId: Swift.String, appName: Swift.String, storeUrl: Swift.String, sms: Swift.Bool, tel: Swift.Bool, calendar: Swift.Bool, storePicture: Swift.Bool, inlineVideo: Swift.Bool)
+  @objc public func setMezzoUserInfo(gender: AdCashFramework.genderType, age: Swift.Int, userID: Swift.String, email: Swift.String, userLocationAgree: Swift.Bool)
   @objc deinit
 }
 extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
@@ -210,6 +231,16 @@ extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
   @objc public static func devModeChange(value: Swift.String? = nil)
   @objc public static func trackSetting()
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class AdCashMediation : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc public func initializeAppLovin(_ sdkKey: Swift.String)
+  @objc public func initializeCauly(appId: Swift.String, appCode: Swift.String)
+  @objc public func initializeMintegral(appID: Swift.String, apiKey: Swift.String)
+  @objc public func initializeVungle(_ vungleKey: Swift.String)
+  @objc public func initializeGAM()
+  @objc public func initializePangle(_ pangleKey: Swift.String)
   @objc deinit
 }
 @objc public protocol InterstitialAdDelegate : ObjectiveC.NSObjectProtocol {
@@ -278,6 +309,12 @@ extension AdCashFramework.InterstitialAdLoader : AdCashFramework.InterAdModuleDe
 extension AdCashFramework.LogLevel : Swift.Equatable {}
 extension AdCashFramework.LogLevel : Swift.Hashable {}
 extension AdCashFramework.LogLevel : Swift.RawRepresentable {}
+extension AdCashFramework.mediaAgeLevel : Swift.Equatable {}
+extension AdCashFramework.mediaAgeLevel : Swift.Hashable {}
+extension AdCashFramework.mediaAgeLevel : Swift.RawRepresentable {}
+extension AdCashFramework.genderType : Swift.Equatable {}
+extension AdCashFramework.genderType : Swift.Hashable {}
+extension AdCashFramework.genderType : Swift.RawRepresentable {}
 extension AdCashFramework.NAMType : Swift.Equatable {}
 extension AdCashFramework.NAMType : Swift.Hashable {}
 extension AdCashFramework.NAMType : Swift.RawRepresentable {}

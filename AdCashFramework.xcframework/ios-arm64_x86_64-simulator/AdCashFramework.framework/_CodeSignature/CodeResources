@@ -216,7 +216,7 @@
 		</dict>
 		<key>Assets.car</key>
 		<data>
-		uLH1+LAe94AO27LDds1kCifwCAs=
+		vqnSsayvxTAqh3KJQaJNn4ez+Hk=
 		</data>
 		<key>GFPNativeSimpleAdView.nib</key>
 		<data>
@@ -224,47 +224,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YbhYcVJNBXHD8gTsUboaw5jG4AE=
+		xPUrSAzcdh4aB63ubIZvyesWBr0=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		vJrmzn0ansMfThAQ9BWP1KWeVig=
+		ceRe1yCMnbu2pcdbEjB8644EnRU=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NvWl1x8i6+oYd5k1MwS0gPmH9xg=
+		mKxjMGGy03xNhswyOW7ZOPWyDeo=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ksDprHVkI34KEUXH6pDcSljqscw=
+		3Iq4S/hjOSskLjQeLXQ8Bp4bZFg=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NvWl1x8i6+oYd5k1MwS0gPmH9xg=
+		mKxjMGGy03xNhswyOW7ZOPWyDeo=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ysHcFJxZFVoUO8ON5Hn/rYc4Vh4=
+		8Lj6FFzmKg5W9ojBNhxkoeTYlyA=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vJrmzn0ansMfThAQ9BWP1KWeVig=
+		ceRe1yCMnbu2pcdbEjB8644EnRU=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		cIpAAqiNojwXjwyaEyw9S5RDxVk=
+		Ev+BfiHHOaSsNWwpJvtpNb35fJc=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		7fBgciBHV88Klc2HxWJaa0ZMGek=
+		5mQGI74FOWBwS9jB1YkqVfLI9Ik=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		cIpAAqiNojwXjwyaEyw9S5RDxVk=
+		Ev+BfiHHOaSsNWwpJvtpNb35fJc=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		sryU+vOy9LETE5NigC8/VT73pTU=
+		Ui396bnyn4NhpGm2jNVOzwnvReY=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -631,7 +631,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hy8tmy35T86ibSMV8m3t1J9M05eD5kNUANjQmH0JqD4=
+			MSxXXjXZwPS8tEvG/2qef+BeM2UoyA05EEt5Dp6Jh1I=
 			</data>
 		</dict>
 		<key>GFPNativeSimpleAdView.nib</key>
@@ -645,70 +645,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XxLoMJSXRJpKH6TzjAI5cuPCJoc/oYZ62+uDhNJe21Y=
+			LQxl8s7kXrRV+xntqF9QYL1anH1lHxGH5I/Wu9fc2Uw=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ocDOAv7qIkqxdqiRPfbb/k8V4zipVnSu1msWj/J1is=
+			MXEBXv7rMZCfeCJxb8Hp+g3WN2gNUXBgqbPYBg/sFF4=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0g6VNorQWmI84WgjeiA4QDECJ3sN3SEgGMDni5MNMH0=
+			bSBxCzG+UFqFt1BYU1XHbvQcMjJdwz+TCFY6zJvB03A=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ocDOAv7qIkqxdqiRPfbb/k8V4zipVnSu1msWj/J1is=
+			MXEBXv7rMZCfeCJxb8Hp+g3WN2gNUXBgqbPYBg/sFF4=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TpjDWHpOBfVc5LdVqE3MblrNQ42W5hcxBkFdbtoyPic=
+			1YHM0nAgGmV7sufQhh616VHQp/+SdNeF0i+kGUVLciQ=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XxLoMJSXRJpKH6TzjAI5cuPCJoc/oYZ62+uDhNJe21Y=
+			LQxl8s7kXrRV+xntqF9QYL1anH1lHxGH5I/Wu9fc2Uw=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4G5Nu98Zk+Wf74Q8hQJ79+sKqnMtk/mV4iMhI/8HZE=
+			ttp6LU0gWUmz2fHg3TrYJEg7KBAKUj80EixMdh/laFU=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NHKXWfZK43w+UEmhVwr0dIsMFJx2V5uirKPlQWVF8rw=
+			IE7xJ+WPB3gZpOc/x4fgFdHed7qZHt7s24zOwsAZ8GU=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4G5Nu98Zk+Wf74Q8hQJ79+sKqnMtk/mV4iMhI/8HZE=
+			ttp6LU0gWUmz2fHg3TrYJEg7KBAKUj80EixMdh/laFU=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HOpnrVLSA+G1g54Vc8QXph1ekZHh6iCIKJlm39tfXvU=
+			DYPcqj1VzUhVh2w2r+OzcQgWrL7VVL+hCExOtrjDbRI=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
