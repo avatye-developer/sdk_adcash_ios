@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		nzStaw6fhVafw82zAeQaGR5EGeA=
+		y6DlEBmhTX0vasik6Qhq8cXgXzE=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -256,7 +256,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		3AUtEJtWv5xkdlxDUVuBJ3p2tWQ=
+		cOAi6Y4Ui7LHgoKylP0J4AnwI7g=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -527,11 +527,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nzStaw6fhVafw82zAeQaGR5EGeA=
+			y6DlEBmhTX0vasik6Qhq8cXgXzE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ICnVxd8JbIIXQs33fwMl5POfN0y7vRb90bshHcKrvU8=
+			DypY9IQ9si5HRfe/vzfuQneF3HdmwaG5suipRFkamuA=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
@@ -1191,11 +1191,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3AUtEJtWv5xkdlxDUVuBJ3p2tWQ=
+			cOAi6Y4Ui7LHgoKylP0J4AnwI7g=
 			</data>
 			<key>hash2</key>
 			<data>
-			zut0Aq67MVFXS8lvzxFUPnibVGcryDIs1afJBq9XpR4=
+			1LR9Dxcj4atCMWEwtS4o7Xyz1ZsyuICW/VYpYL74aMM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
