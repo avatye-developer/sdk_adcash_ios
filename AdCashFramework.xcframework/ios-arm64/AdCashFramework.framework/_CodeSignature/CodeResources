@@ -222,17 +222,21 @@
 		<data>
 		calWTgjBH2zCmAs7pMPdt2tdvRM=
 		</data>
+		<key>Headers/AdCashFramework-Swift.h</key>
+		<data>
+		8iuPVoJ0AutUPMt3Aiu2mljyBq0=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		GsSIZFFZWedrWYJDEvp3jixg/zg=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2oF/WefXMyMNySJfMTWLCnB06I0=
+		Gl5nLyd+IyH8j6BBzt62z0y99LM=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		jtoNyk1jyx1vTzHN8/NoVzZaHaQ=
+		Vq6AV7+9W1KMuLmOstjxFZxvvT8=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -240,11 +244,15 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		jtoNyk1jyx1vTzHN8/NoVzZaHaQ=
+		Vq6AV7+9W1KMuLmOstjxFZxvvT8=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7fQlyWsdeatB9jx3CQUPfSsZqkk=
+		XPHIW7Xy4yXDRPArmqKP7pEzk2Y=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		IaI7OVG3J1M6GNUHytRNmGHqGhc=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -621,18 +629,25 @@
 			4tJZzeQG78Ic7Y248RMAuR9urHBh+omJfKHM84HzFKM=
 			</data>
 		</dict>
+		<key>Headers/AdCashFramework-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KPvUqFi4rCXPqbhxzLyKx62yo3/D4JLEfDG2tatWklQ=
+			</data>
+		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RHQKQyb48YMTxDrw4RL3wfhe2T5oN4pL+zH4KyBlO0I=
+			odlGZ4gy/6luHejr1/k1HTM/Eci2U7GR+qG7pjRk+Do=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2utAOt0I0dk3JjRkDl5UII7IophD7nfqIfAfUSS3sI=
+			BXcFVCEpYGyDeGQuKypIcI0NOwkeXmwmFYBAhAiPBos=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -646,14 +661,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2utAOt0I0dk3JjRkDl5UII7IophD7nfqIfAfUSS3sI=
+			BXcFVCEpYGyDeGQuKypIcI0NOwkeXmwmFYBAhAiPBos=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b/Xvgj1dvHTrdHLm5BoB8AHCEeeA4SKaWHOozLgR+xw=
+			XA1gpsRMzAakslqM2uKxhwUjb/2kCTM91fikBScEqSo=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HBagU/PwwaB6x/nEw+mZP8av9KaZJZAT7D/gcWBZBEo=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

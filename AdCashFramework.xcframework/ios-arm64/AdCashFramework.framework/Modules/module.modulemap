@@ -1,0 +1,4 @@
+framework module AdCashFramework {
+  header "AdCashFramework-Swift.h"
+  requires objc
+}

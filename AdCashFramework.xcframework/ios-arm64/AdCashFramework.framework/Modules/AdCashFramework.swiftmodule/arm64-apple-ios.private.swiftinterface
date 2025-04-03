@@ -52,15 +52,10 @@ public protocol InterAdModuleDelegate : AnyObject {
 @objc @objcMembers public class NativeAdLoader : ObjectiveC.NSObject {
   @objc public var delegate: (any AdCashFramework.NativeAdLoaderDelegate)?
   @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, nativeAd: AdCashFramework.AdCashDefault)
-  @objc @discardableResult
-  public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
+  @discardableResult
+  @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc public func requestAd()
   @objc deinit
-}
-extension AdCashFramework.NativeAdLoader {
-  @objc dynamic public func setGAMNativeAd(xibNamed: Swift.String)
-  @objc dynamic public func setNAMNativeAd(xibNamed: Swift.String)
-  @objc dynamic public func setNativeAd(adPopAdapter: AdCashFramework.AdPopAdapter)
 }
 extension AdCashFramework.NativeAdLoader : APSSPNativeAdDelegate {
   @objc dynamic public func apsspNativeAdClicked(_ nativeAd: AdPopcornSSPNativeAd!)
@@ -94,29 +89,6 @@ extension AdCashFramework.NativeAdLoader : APSSPNativeAdDelegate {
     get
   }
 }
-public struct AppAdUnitInput : Swift.Codable {
-  public let appID: Swift.String
-  public let placementID: Swift.String
-  public init(aid: Swift.String, pid: Swift.String)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct PlacementModel : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct AppAdUnitModel : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct AdUnitNetworkInput : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct AdUnitNetwork : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
 public protocol AdViewDelegate : AnyObject {
   func onViewLoad(adView: UIKit.UIView)
   func onViewFailed(error: AdCashFramework.AdCashErrorModel)
@@ -139,40 +111,6 @@ public protocol AdViewDelegate : AnyObject {
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum HouseBannerAdSize {
-  case W320XH50
-  case W320XH100
-  case W300XH250
-  case W320XH480
-  public static func == (a: AdCashFramework.HouseBannerAdSize, b: AdCashFramework.HouseBannerAdSize) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum InterAdType {
-  case INTERSTITIAL
-  case INTERSTITIAL_BOX
-  case INTERSTITIAL_VIDEO
-  case INTERSTITIAL_REWARD_VIDEO
-  case INTERSTITIAL_HOUSE
-  case INTERSTITIAL_NATIVE
-  public static func == (a: AdCashFramework.InterAdType, b: AdCashFramework.InterAdType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum CustomInterAdType {
-  case INTERSTITIAL_BOX
-  case INTERSTITIAL_HOUSE
-  case INTERSTITIAL_NATIVE
-  public static func == (a: AdCashFramework.CustomInterAdType, b: AdCashFramework.CustomInterAdType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
     get
   }
 }
@@ -321,9 +259,3 @@ extension AdCashFramework.NAMType : Swift.RawRepresentable {}
 extension AdCashFramework.BannerAdSize : Swift.Equatable {}
 extension AdCashFramework.BannerAdSize : Swift.Hashable {}
 extension AdCashFramework.BannerAdSize : Swift.RawRepresentable {}
-extension AdCashFramework.HouseBannerAdSize : Swift.Equatable {}
-extension AdCashFramework.HouseBannerAdSize : Swift.Hashable {}
-extension AdCashFramework.InterAdType : Swift.Equatable {}
-extension AdCashFramework.InterAdType : Swift.Hashable {}
-extension AdCashFramework.CustomInterAdType : Swift.Equatable {}
-extension AdCashFramework.CustomInterAdType : Swift.Hashable {}
