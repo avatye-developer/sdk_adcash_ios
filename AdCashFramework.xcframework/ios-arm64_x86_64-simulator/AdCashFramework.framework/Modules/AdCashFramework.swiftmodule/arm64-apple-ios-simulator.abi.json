@@ -4170,6 +4170,40 @@
           {
             "kind": "Function",
             "name": "setNAMNative",
+            "printedName": "setNAMNative(type:width:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NAMType",
+                "printedName": "AdCashFramework.NAMType",
+                "usr": "c:@M@AdCashFramework@E@NAMType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework06BannerA6LoaderC12setNAMNative4type5widthyAA7NAMTypeO_14CoreFoundation7CGFloatVtF",
+            "mangledName": "$s15AdCashFramework06BannerA6LoaderC12setNAMNative4type5widthyAA7NAMTypeO_12CoreGraphics7CGFloatVtF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNAMNative",
             "printedName": "setNAMNative(with:)",
             "children": [
               {
@@ -4216,8 +4250,7 @@
             "objc_name": "setNAMNativeWith:",
             "declAttributes": [
               "AccessControl",
-              "ObjC",
-              "RawDocComment"
+              "ObjC"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7403,63 +7436,70 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "StringLiteral",
-      "offset": 585,
+      "offset": 531,
+      "length": 7,
+      "value": "\"AppID\""
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 569,
       "length": 9,
       "value": "\"appName\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "StringLiteral",
-      "offset": 626,
+      "offset": 610,
       "length": 10,
       "value": "\"StoreURL\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 661,
+      "offset": 645,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 691,
+      "offset": 675,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 726,
+      "offset": 710,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 765,
+      "offset": 749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 803,
+      "offset": 787,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1563,
+      "offset": 1547,
       "length": 3,
       "value": "320"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1576,
+      "offset": 1560,
       "length": 2,
       "value": "50"
     },
@@ -7578,7 +7618,14 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 4933,
+      "offset": 4697,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5258,
       "length": 1,
       "value": "0"
     },
@@ -7683,7 +7730,14 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3642,
+      "offset": 3581,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7726,
       "length": 1,
       "value": "0"
     },

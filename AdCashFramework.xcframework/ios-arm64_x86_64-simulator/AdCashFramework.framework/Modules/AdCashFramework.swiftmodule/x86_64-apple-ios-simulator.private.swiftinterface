@@ -152,6 +152,7 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
   @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc public func requestAd()
   @objc public func removeAd()
+  public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = 0)
   @objc public func setNAMNative(with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UINib) -> Swift.Void)
   @objc public func setNAMNative(type: AdCashFramework.NAMType, width: CoreFoundation.CGFloat = 0, with configuration: @escaping (AdCashFramework.AdCashNativeAd, UIKit.UIView) -> Swift.Void)
   @objc public func setMezzo(adKeyword: Swift.String, adOther: Swift.String, mediaAge: AdCashFramework.mediaAgeLevel, appId: Swift.String, appName: Swift.String, storeUrl: Swift.String, sms: Swift.Bool, tel: Swift.Bool, calendar: Swift.Bool, storePicture: Swift.Bool, inlineVideo: Swift.Bool)
