@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "AdCashFramework",
+    "printedName": "AdCashFramework",
     "children": [
       {
         "kind": "Import",
@@ -139,6 +139,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -404,6 +420,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -611,7 +641,23 @@
           "AccessControl",
           "ObjCMembers"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -748,6 +794,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -833,6 +895,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override"
             ],
@@ -874,6 +937,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required"
             ],
@@ -885,6 +949,7 @@
         "mangledName": "$s15AdCashFramework0aB7DefaultC",
         "moduleName": "AdCashFramework",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -898,6 +963,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1399,6 +1478,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1717,6 +1810,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1774,480 +1881,6 @@
         "moduleName": "AdCashFramework",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "LibADPlus",
-        "printedName": "LibADPlus",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "mediaAgeLevel",
-        "printedName": "mediaAgeLevel",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "over13Age",
-            "printedName": "over13Age",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.mediaAgeLevel.Type) -> AdCashFramework.mediaAgeLevel",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "mediaAgeLevel",
-                    "printedName": "AdCashFramework.mediaAgeLevel",
-                    "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.mediaAgeLevel.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "mediaAgeLevel",
-                        "printedName": "AdCashFramework.mediaAgeLevel",
-                        "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AdCashFramework@E@mediaAgeLevel@mediaAgeLevelOver13Age",
-            "mangledName": "$s15AdCashFramework13mediaAgeLevelO06over13E0yA2CmF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "under13Age",
-            "printedName": "under13Age",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.mediaAgeLevel.Type) -> AdCashFramework.mediaAgeLevel",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "mediaAgeLevel",
-                    "printedName": "AdCashFramework.mediaAgeLevel",
-                    "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.mediaAgeLevel.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "mediaAgeLevel",
-                        "printedName": "AdCashFramework.mediaAgeLevel",
-                        "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AdCashFramework@E@mediaAgeLevel@mediaAgeLevelUnder13Age",
-            "mangledName": "$s15AdCashFramework13mediaAgeLevelO07under13E0yA2CmF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "unknown",
-            "printedName": "unknown",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.mediaAgeLevel.Type) -> AdCashFramework.mediaAgeLevel",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "mediaAgeLevel",
-                    "printedName": "AdCashFramework.mediaAgeLevel",
-                    "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.mediaAgeLevel.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "mediaAgeLevel",
-                        "printedName": "AdCashFramework.mediaAgeLevel",
-                        "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AdCashFramework@E@mediaAgeLevel@mediaAgeLevelUnknown",
-            "mangledName": "$s15AdCashFramework13mediaAgeLevelO7unknownyA2CmF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdCashFramework.mediaAgeLevel?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "mediaAgeLevel",
-                    "printedName": "AdCashFramework.mediaAgeLevel",
-                    "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15AdCashFramework13mediaAgeLevelO8rawValueACSgSi_tcfc",
-            "mangledName": "$s15AdCashFramework13mediaAgeLevelO8rawValueACSgSi_tcfc",
-            "moduleName": "AdCashFramework",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15AdCashFramework13mediaAgeLevelO8rawValueSivp",
-            "mangledName": "$s15AdCashFramework13mediaAgeLevelO8rawValueSivp",
-            "moduleName": "AdCashFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15AdCashFramework13mediaAgeLevelO8rawValueSivg",
-                "mangledName": "$s15AdCashFramework13mediaAgeLevelO8rawValueSivg",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@AdCashFramework@E@mediaAgeLevel",
-        "mangledName": "$s15AdCashFramework13mediaAgeLevelO",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "genderType",
-        "printedName": "genderType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "Male",
-            "printedName": "Male",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.genderType.Type) -> AdCashFramework.genderType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "genderType",
-                    "printedName": "AdCashFramework.genderType",
-                    "usr": "c:@M@AdCashFramework@E@genderType"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.genderType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "genderType",
-                        "printedName": "AdCashFramework.genderType",
-                        "usr": "c:@M@AdCashFramework@E@genderType"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AdCashFramework@E@genderType@genderTypeMale",
-            "mangledName": "$s15AdCashFramework10genderTypeO4MaleyA2CmF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "Female",
-            "printedName": "Female",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.genderType.Type) -> AdCashFramework.genderType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "genderType",
-                    "printedName": "AdCashFramework.genderType",
-                    "usr": "c:@M@AdCashFramework@E@genderType"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.genderType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "genderType",
-                        "printedName": "AdCashFramework.genderType",
-                        "usr": "c:@M@AdCashFramework@E@genderType"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@AdCashFramework@E@genderType@genderTypeFemale",
-            "mangledName": "$s15AdCashFramework10genderTypeO6FemaleyA2CmF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdCashFramework.genderType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "genderType",
-                    "printedName": "AdCashFramework.genderType",
-                    "usr": "c:@M@AdCashFramework@E@genderType"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15AdCashFramework10genderTypeO8rawValueACSgSi_tcfc",
-            "mangledName": "$s15AdCashFramework10genderTypeO8rawValueACSgSi_tcfc",
-            "moduleName": "AdCashFramework",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15AdCashFramework10genderTypeO8rawValueSivp",
-            "mangledName": "$s15AdCashFramework10genderTypeO8rawValueSivp",
-            "moduleName": "AdCashFramework",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15AdCashFramework10genderTypeO8rawValueSivg",
-                "mangledName": "$s15AdCashFramework10genderTypeO8rawValueSivg",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@AdCashFramework@E@genderType",
-        "mangledName": "$s15AdCashFramework10genderTypeO",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
         ]
       },
       {
@@ -2376,6 +2009,22 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -2558,6 +2207,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2851,6 +2514,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3073,6 +2750,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3097,8 +2790,9 @@
             "moduleName": "AdCashFramework",
             "declAttributes": [
               "HasInitialValue",
-              "HasStorage",
+              "Preconcurrency",
               "Custom",
+              "HasStorage",
               "ReferenceOwnership",
               "AccessControl",
               "ObjC"
@@ -3218,6 +2912,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl",
@@ -3254,6 +2949,7 @@
             "moduleName": "AdCashFramework",
             "objc_name": "setConfigWithAppId:appSecretKey:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -3297,6 +2993,7 @@
             "moduleName": "AdCashFramework",
             "objc_name": "setBannerAdWithRootVC:placementId:size:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC",
@@ -3352,6 +3049,7 @@
             "moduleName": "AdCashFramework",
             "objc_name": "setNAMNativeWith:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -3419,6 +3117,7 @@
             "moduleName": "AdCashFramework",
             "objc_name": "setNAMNativeWithType:width:with:",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -3441,6 +3140,7 @@
             "mangledName": "$s15AdCashFramework06BannerA4ViewC07requestA0yyF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -3463,6 +3163,7 @@
             "mangledName": "$s15AdCashFramework06BannerA4ViewC06removeA0yyF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -3485,6 +3186,7 @@
             "mangledName": "$s15AdCashFramework06BannerA4ViewC07releaseA0yyF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -3528,6 +3230,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3565,6 +3268,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3596,6 +3300,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3627,6 +3332,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "AccessControl"
             ],
@@ -3640,6 +3346,7 @@
         "moduleName": "AdCashFramework",
         "objc_name": "AVABannerAdView",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC",
@@ -3656,10 +3363,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "BannerAdLoaderDelegate",
-            "printedName": "BannerAdLoaderDelegate",
-            "usr": "c:@M@AdCashFramework@objc(pl)BannerAdLoaderDelegate",
-            "mangledName": "$s15AdCashFramework06BannerA14LoaderDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -3730,6 +3444,13 @@
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
             "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BannerAdLoaderDelegate",
+            "printedName": "BannerAdLoaderDelegate",
+            "usr": "c:@M@AdCashFramework@objc(pl)BannerAdLoaderDelegate",
+            "mangledName": "$s15AdCashFramework06BannerA14LoaderDelegateP"
           }
         ]
       },
@@ -3914,6 +3635,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4170,40 +3907,6 @@
           {
             "kind": "Function",
             "name": "setNAMNative",
-            "printedName": "setNAMNative(type:width:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NAMType",
-                "printedName": "AdCashFramework.NAMType",
-                "usr": "c:@M@AdCashFramework@E@NAMType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGFloat",
-                "printedName": "CoreGraphics.CGFloat",
-                "hasDefaultArg": true,
-                "usr": "s:14CoreFoundation7CGFloatV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework06BannerA6LoaderC12setNAMNative4type5widthyAA7NAMTypeO_14CoreFoundation7CGFloatVtF",
-            "mangledName": "$s15AdCashFramework06BannerA6LoaderC12setNAMNative4type5widthyAA7NAMTypeO_12CoreGraphics7CGFloatVtF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setNAMNative",
             "printedName": "setNAMNative(with:)",
             "children": [
               {
@@ -4250,7 +3953,8 @@
             "objc_name": "setNAMNativeWith:",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4314,147 +4018,6 @@
             "mangledName": "$s15AdCashFramework06BannerA6LoaderC12setNAMNative4type5width4withyAA7NAMTypeO_12CoreGraphics7CGFloatVyAA0ab6NativeA0C_So6UIViewCtctF",
             "moduleName": "AdCashFramework",
             "objc_name": "setNAMNativeWithType:width:with:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setMezzo",
-            "printedName": "setMezzo(adKeyword:adOther:mediaAge:appId:appName:storeUrl:sms:tel:calendar:storePicture:inlineVideo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "mediaAgeLevel",
-                "printedName": "AdCashFramework.mediaAgeLevel",
-                "usr": "c:@M@AdCashFramework@E@mediaAgeLevel"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)setMezzoWithAdKeyword:adOther:mediaAge:appId:appName:storeUrl:sms:tel:calendar:storePicture:inlineVideo:",
-            "mangledName": "$s15AdCashFramework06BannerA6LoaderC8setMezzo9adKeyword0H5Other8mediaAge5appId0M4Name8storeUrl3sms3tel8calendar0P7Picture11inlineVideoySS_SSAA0kL5LevelOS3SS5btF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "setMezzoWithAdKeyword:adOther:mediaAge:appId:appName:storeUrl:sms:tel:calendar:storePicture:inlineVideo:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setMezzoUserInfo",
-            "printedName": "setMezzoUserInfo(gender:age:userID:email:userLocationAgree:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "genderType",
-                "printedName": "AdCashFramework.genderType",
-                "usr": "c:@M@AdCashFramework@E@genderType"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)setMezzoUserInfoWithGender:age:userID:email:userLocationAgree:",
-            "mangledName": "$s15AdCashFramework06BannerA6LoaderC16setMezzoUserInfo6gender3age6userID5email0L13LocationAgreeyAA0J4TypeO_SiS2SSbtF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "setMezzoUserInfoWithGender:age:userID:email:userLocationAgree:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -4581,10 +4144,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "AdViewDelegate",
-            "printedName": "AdViewDelegate",
-            "usr": "s:15AdCashFramework0A12ViewDelegateP",
-            "mangledName": "$s15AdCashFramework0A12ViewDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4634,6 +4204,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AdViewDelegate",
+            "printedName": "AdViewDelegate",
+            "usr": "s:15AdCashFramework0A12ViewDelegateP",
+            "mangledName": "$s15AdCashFramework0A12ViewDelegateP"
           }
         ]
       },
@@ -4658,13 +4235,6 @@
         "kind": "Import",
         "name": "AppTrackingTransparency",
         "printedName": "AppTrackingTransparency",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework"
-      },
-      {
-        "kind": "Import",
-        "name": "LibADPlus",
-        "printedName": "LibADPlus",
         "declKind": "Import",
         "moduleName": "AdCashFramework"
       },
@@ -4852,6 +4422,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5142,6 +4726,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5386,6 +4984,22 @@
           "AccessControl",
           "ObjC",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6473,10 +6087,17 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "InterAdModuleDelegate",
-            "printedName": "InterAdModuleDelegate",
-            "usr": "s:15AdCashFramework05InterA14ModuleDelegateP",
-            "mangledName": "$s15AdCashFramework05InterA14ModuleDelegateP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6526,6 +6147,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "InterAdModuleDelegate",
+            "printedName": "InterAdModuleDelegate",
+            "usr": "s:15AdCashFramework05InterA14ModuleDelegateP",
+            "mangledName": "$s15AdCashFramework05InterA14ModuleDelegateP"
           }
         ]
       },
@@ -6566,6 +6194,7 @@
             "mangledName": "$s15AdCashFramework0A10PopAdapterC7setIconyACXDSo11UIImageViewCF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "DiscardableResult"
@@ -6594,6 +6223,7 @@
             "mangledName": "$s15AdCashFramework0A10PopAdapterC8setTitleyACXDSo7UILabelCF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "DiscardableResult"
@@ -6622,6 +6252,7 @@
             "mangledName": "$s15AdCashFramework0A10PopAdapterC7setDescyACXDSo7UILabelCF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "DiscardableResult"
@@ -6650,6 +6281,7 @@
             "mangledName": "$s15AdCashFramework0A10PopAdapterC12setMainImageyACXDSo11UIImageViewCF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "DiscardableResult"
@@ -6683,6 +6315,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Override",
               "AccessControl"
@@ -6724,6 +6357,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Preconcurrency",
               "Custom",
               "Required",
               "AccessControl"
@@ -6736,6 +6370,7 @@
         "mangledName": "$s15AdCashFramework0A10PopAdapterC",
         "moduleName": "AdCashFramework",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "AccessControl",
           "ObjC"
@@ -6748,6 +6383,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6953,6 +6602,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7098,34 +6761,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/InterstitialAdModule.swift",
-      "kind": "StringLiteral",
-      "offset": 342,
-      "length": 20,
-      "value": "\"AdCashFramework.InterstitialAdModule\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 185,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 203,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
-      "kind": "IntegerLiteral",
-      "offset": 222,
-      "length": 1,
-      "value": "3"
-    },
-    {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
       "offset": 185,
@@ -7154,20 +6789,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 14,
-      "value": "\"AdCashFramework.NativeAdLoader\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "StringLiteral",
-      "offset": 134,
-      "length": 16,
-      "value": "\"AdCashFramework.AdCashErrorModel\""
-    },
-    {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
       "kind": "IntegerLiteral",
       "offset": 520,
@@ -7259,258 +6880,6 @@
       "value": "12"
     },
     {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 520,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 531,
-      "length": 14,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 555,
-      "length": 17,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 582,
-      "length": 13,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 605,
-      "length": 9,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 624,
-      "length": 12,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 646,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 663,
-      "length": 15,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 688,
-      "length": 21,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 719,
-      "length": 16,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 745,
-      "length": 24,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 779,
-      "length": 10,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
-      "kind": "IntegerLiteral",
-      "offset": 799,
-      "length": 18,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 179,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 190,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 210,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 179,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 190,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 210,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 272,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 283,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 272,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 283,
-      "length": 6,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 357,
-      "length": 18,
-      "value": "\"KeywordTargeting\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 413,
-      "length": 28,
-      "value": "\"BannerAdditionalParameters\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 531,
-      "length": 7,
-      "value": "\"AppID\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 569,
-      "length": 9,
-      "value": "\"appName\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 610,
-      "length": 10,
-      "value": "\"StoreURL\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 645,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 675,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 710,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 749,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 787,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1547,
-      "length": 3,
-      "value": "320"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/MezzoAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1560,
-      "length": 2,
-      "value": "50"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 165,
-      "length": 5,
-      "value": "1"
-    },
-    {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 165,
@@ -7537,34 +6906,6 @@
       "offset": 291,
       "length": 7,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 253,
-      "length": 9,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 272,
-      "length": 9,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 291,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/AdPopAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 11,
-      "value": "\"AdCashFramework.AdPopAdView\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
@@ -7603,43 +6944,22 @@
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 909,
-      "length": 18,
-      "value": "\"mezzoAdView init\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1393,
+      "offset": 1236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 4697,
+      "offset": 4652,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5258,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 504,
-      "length": 14,
-      "value": "\"AdCashFramework.BannerAdLoader\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdCashInit.swift",
       "kind": "BooleanLiteral",
-      "offset": 344,
+      "offset": 327,
       "length": 5,
       "value": "false"
     },
@@ -7663,20 +6983,6 @@
       "offset": 1189,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 572,
-      "length": 20,
-      "value": "\"AdCashFramework.InterstitialAdLoader\""
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 146,
-      "length": 14,
-      "value": "\"AdCashFramework.AdCashNativeAd\""
     },
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
@@ -7730,14 +7036,7 @@
     {
       "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3581,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/imjaehyeog\/IOS\/AvatyeFrameworks\/sdk-ad-library-ios-src\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7726,
+      "offset": 3642,
       "length": 1,
       "value": "0"
     },
