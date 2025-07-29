@@ -224,19 +224,19 @@
 		</data>
 		<key>Headers/AdCashFramework-Swift.h</key>
 		<data>
-		8lNIkshegR4fVkiE+sMemBDuU9M=
+		o+wVI5tZkA0OlnbUANkofWqnMHA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oKq34rXbVRTkj6FjGcNy3hqtgMQ=
+		adJ2JwjMmN+PL87F5iIwLpMxlsE=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		9ioRrvsHKZTSqgg6nISiR4zIGTM=
+		MCcsEWpuUT7uVmymS/4ZHUC4RNg=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AK5/e31UKpgDB5jPuLQr+iBBYcQ=
+		pHzjvetMSFUU675BcqgefM+smwU=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -244,19 +244,19 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AK5/e31UKpgDB5jPuLQr+iBBYcQ=
+		pHzjvetMSFUU675BcqgefM+smwU=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dL2TW3hYqrGZ/fmwSo3scK00o0g=
+		2ujyZj/ecAV6ZoriVfAMgTLubTY=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		9ioRrvsHKZTSqgg6nISiR4zIGTM=
+		MCcsEWpuUT7uVmymS/4ZHUC4RNg=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		lr1lpRZ3sFyD9PPznC+sR9y9yzE=
+		VtdRyXAoNm9gWLU/lmdVv48UJkk=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -264,11 +264,11 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		lr1lpRZ3sFyD9PPznC+sR9y9yzE=
+		VtdRyXAoNm9gWLU/lmdVv48UJkk=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2+cKiHokk8Q0LArnrhDkdZR/r/Q=
+		7TYFd6M3IDODTTgZ+9tM0CojeZs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -653,21 +653,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gg8iuWpsuLDCY7vots6SKXVioy5xWRzd8OgQdZMbTlc=
+			jlEj9lbAkNUPqGBnrtrIIedH5FNeAFeUCHawtm3lj3c=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oWhdqFMskGJDZTLDa47TDqhkjtmvsxcb/PotXevEq6w=
+			IPHv27R0NfJ3JWgLAaAmHBhaQP/J9+jJs3szF/WNzlY=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CpxN3Vo8uqAZpCBmnWaAr0j2f7A5vb6Ln9Hh8iYUjow=
+			8tv/0DnVIkBhbOuFuWv6hx5MxQeo6ortP3B7l/+CtHk=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -681,28 +681,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CpxN3Vo8uqAZpCBmnWaAr0j2f7A5vb6Ln9Hh8iYUjow=
+			8tv/0DnVIkBhbOuFuWv6hx5MxQeo6ortP3B7l/+CtHk=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n4+mB8PJLaYTzzSoz/NZIPCW9y5LPlkSmciucUk6Whs=
+			0ZqyG+a9esfcOXaInu8cqbXBXa8QfPBot3vYAxtD4Cc=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oWhdqFMskGJDZTLDa47TDqhkjtmvsxcb/PotXevEq6w=
+			IPHv27R0NfJ3JWgLAaAmHBhaQP/J9+jJs3szF/WNzlY=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/H3YhTYyn/6VCbiyNhDuJFgTu4+SqP3XYNMFLAJRoo=
+			6kO5WU5B8arrfcjMQ3W5O523AvAaifIYn/f3AvEVE4Q=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -716,14 +716,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G/H3YhTYyn/6VCbiyNhDuJFgTu4+SqP3XYNMFLAJRoo=
+			6kO5WU5B8arrfcjMQ3W5O523AvAaifIYn/f3AvEVE4Q=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1C69tpYwIkxHqkscI3G4X+rdF3wxU7Ga0JeQnQxpVB0=
+			GLkpOrQG2COrEPEKb9oOvoHeca0Yq31me54nQgfPLRQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

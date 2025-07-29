@@ -172,6 +172,7 @@ extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
   @objc public init(placementId: Swift.String, rootViewController: UIKit.UIViewController)
   @discardableResult
   @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
+  @objc public func showAd()
   @objc public func requestAd()
   @objc deinit
 }

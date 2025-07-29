@@ -438,6 +438,7 @@ SWIFT_CLASS_NAMED("InterstitialAdLoader")
 @property (nonatomic, strong) id <InterstitialAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithPlacementId:(NSString * _Nonnull)placementId rootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;
+- (void)showAd;
 - (void)requestAd;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
