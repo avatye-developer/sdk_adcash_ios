@@ -228,7 +228,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qyNVfk8xVNDmErBI5OabTTyp/Rc=
+		C8zcWdmzYO40Ugmtf+lWmpyzS0A=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -248,7 +248,7 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TpHYzs7Zc83QCCO4SNRgQagllzs=
+		fkAcSQ0h2yR6u07actSrRjH8mqU=
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -268,7 +268,7 @@
 		</data>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		fDsVyjgMuwKaGoZ0DlSJvQBJDhE=
+		i1O5u599QecddTdzmI0qI44gcOw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -688,7 +688,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aYM+xKaZCM4pQABdzBNBjU5FF7M3OU2CWjzw3w3JYE0=
+			UDRNYv/pUbb/3B/3Uw7O4SEBgXR3KX6sTmxOs52NU8U=
 			</data>
 		</dict>
 		<key>Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -723,7 +723,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SiQNRmf+V8GgogAJqaofMC6Tz4Q6tvcO9VaIPIfqPT8=
+			i3TQ0Zm4M2zDYhLpbtqozwlcNWWchALlZY+2gNQ/Lkw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
