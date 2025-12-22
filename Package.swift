@@ -17,7 +17,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/IGAWorksDev/ap-ssp-sdk-ios-spm-objc",
-            .upToNextMinor(from: "2.10.5")
+            .upToNextMinor(from: "2.11.1")
         )
     ],
     targets: [

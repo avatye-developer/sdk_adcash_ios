@@ -1,13 +1,13 @@
 {
-  "originHash" : "de6155c766433f5f2208b665de13fac19772cbc81a09284fd10682f7b12ab79a",
+  "originHash" : "adc8179d2d7586fe5dc230d7e4e36e16183f333ae5d0490e18a45fe5c1e7eff1",
   "pins" : [
     {
       "identity" : "ap-ssp-sdk-ios-spm-objc",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/IGAWorksDev/ap-ssp-sdk-ios-spm-objc",
       "state" : {
-        "revision" : "eb6705e5edaaaca771e8fc7707b60bde007d3697",
-        "version" : "2.10.6"
+        "revision" : "cecdfd3abe291c2c23519ab79bea4856ead503fe",
+        "version" : "2.11.2"
       }
     }
   ],
