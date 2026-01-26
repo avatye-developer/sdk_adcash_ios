@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "AvatyeAdCash"
-  spec.version = "3.4.0"
+  spec.version = "3.4.1"
   spec.summary = "Avatye AdCash support framework"
   spec.description = <<-DESC
                         Support to present Banner and Interstitial type Advertise.
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
 
   spec.frameworks = "AdSupport"
   spec.weak_frameworks = "AppTrackingTransparency"
-  
+  spec.preserve_paths = 'AdCashFramework.xcframework/**/*'
   spec.dependency 'AdPopcornSSP' , '~> 2.11.1'
   spec.vendored_frameworks = "AdCashFramework.xcframework"
   
