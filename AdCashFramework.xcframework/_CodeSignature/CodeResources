@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		T+N4EXcGwKrwlUsiLxRX9MRzZGA=
+		iiRGqZgynZo2DzRkp3iXRkywcsY=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -220,7 +220,7 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
 		<data>
-		iCRLGv1XDvxulqJppknuQnNMy80=
+		HwiFGlD4ySl/VHiSsuvXkmlZSbw=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
 		<data>
@@ -228,27 +228,27 @@
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Headers/AdCashFramework-Swift.h</key>
 		<data>
-		QgsoHxhY27r1IV9mlX98UWmf++Y=
+		IHws8x2yOfATMiaRlcXmRI0Y8FQ=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Info.plist</key>
 		<data>
-		ktT+aXNm5+BGeVRefbxEs6C+DDY=
+		5thcLHvwYigGztNnYwhD8gdNpXg=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Z81DcgDpAJIFMu3iDidBvq5x8K0=
+		CkYs+9FNHcDYEMgi7n9ixJxWp04=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		DKwJfszwpmiX96aeVyEDytdNnQw=
+		lxepHprtfHLhE3vvAPtn2B+Xmus=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		l9m1I8tZNygeB+9mH2YXrOIUJbQ=
+		xgE0T+bVQXy+BBojgtiDAjvtxVw=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		DKwJfszwpmiX96aeVyEDytdNnQw=
+		lxepHprtfHLhE3vvAPtn2B+Xmus=
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/Modules/module.modulemap</key>
 		<data>
@@ -260,11 +260,11 @@
 		</data>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		87fa4XxA7/Hs4HqCBgq7ZIrDK3M=
+		K3E0doThAnWNAeyj2g75AE+dPLM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdCashFramework</key>
 		<data>
-		6prolCAt3HCv91ixNo3h6pRJxIk=
+		dWpaZ8NP7jHlMz11tWSkyfgarIs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
@@ -478,7 +478,7 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Assets.car</key>
 		<data>
-		iCRLGv1XDvxulqJppknuQnNMy80=
+		HwiFGlD4ySl/VHiSsuvXkmlZSbw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
 		<data>
@@ -486,43 +486,43 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Headers/AdCashFramework-Swift.h</key>
 		<data>
-		o+wVI5tZkA0OlnbUANkofWqnMHA=
+		4jGO3Hx5thFxfyd3FW/tM/zWYVQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Info.plist</key>
 		<data>
-		C8zcWdmzYO40Ugmtf+lWmpyzS0A=
+		Ifd+fs828d36TjjeAgkTh/3QFzM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MCcsEWpuUT7uVmymS/4ZHUC4RNg=
+		MNkEf+WiehwYdnwl3Gj+kDUXJ0w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		FlISd+IMtu3me6mgXXcRr5WkXVs=
+		mGGtsB8iznhTv9CCgM7JIEF5C5U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		S583+eDNPAgwlkcyERd/+/zYVKg=
+		i6PLGJXipZ2uPX2prmy/L3nay0s=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FlISd+IMtu3me6mgXXcRr5WkXVs=
+		mGGtsB8iznhTv9CCgM7JIEF5C5U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MCcsEWpuUT7uVmymS/4ZHUC4RNg=
+		MNkEf+WiehwYdnwl3Gj+kDUXJ0w=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		LrmXGtQXGgaOkDbOHD+b4k9apPM=
+		Dr60eT/6BXQJbrxBjLtzDDfplzo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		x5TAwqPiVRONgQNxkV9xROnPbjg=
+		8DN7u4S/2DLHEgEXyS7WYotO0nI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		LrmXGtQXGgaOkDbOHD+b4k9apPM=
+		Dr60eT/6BXQJbrxBjLtzDDfplzo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/module.modulemap</key>
 		<data>
@@ -534,28 +534,20 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VPdXulizSd6mCklV5h5eXiUvr8c=
+		jkhxHyqc6/mvD6urG0ajNrm7PPw=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>ios-arm64/AdCashFramework.framework/AdCashFramework</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			T+N4EXcGwKrwlUsiLxRX9MRzZGA=
-			</data>
 			<key>hash2</key>
 			<data>
-			/LYfqqrUUYjujGd7JlMrljlkG1MbDb+XiUyZrbzo+8g=
+			s72P9msiiKx0nS/m3H8hYML202JuuooXIc75Vq1+NEU=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Odh5Oi1CLSxyuKZUKVMm1rdjoR4=
-			</data>
 			<key>hash2</key>
 			<data>
 			ztaAi0sUxGCrT6tiwkQpGRgXg1EmfLrIjCi7XbIIT6k=
@@ -565,10 +557,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QiCSFG1Of7dBVpLhmqDVvAhutdo=
-			</data>
 			<key>hash2</key>
 			<data>
 			+3UZdIH9dvX8rEDxqRrzqU7paKZqyuMuWFL0lkjKJlc=
@@ -576,10 +564,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_close@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qez7wBxV73oW1hdljziDvUxB8q8=
-			</data>
 			<key>hash2</key>
 			<data>
 			FZRcHLFf9452+xSL0ONrhuGgMC3lpW1Ns7K3O0TRL48=
@@ -587,10 +571,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_off.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			s0M0H7n/79EeoDBX67+tjjcG/6c=
-			</data>
 			<key>hash2</key>
 			<data>
 			C/+qkp3O3GKuxKiJpyBRYHSYjXgvvpX9GiSuQgJ8dXg=
@@ -598,10 +578,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_off@x2.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5HE1zSPU68yn4DCvjZ12DPXMb2Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			w10sCDRID64QxtHD6pLieEJu+Jb6OGE1HSYzqvxYyeg=
@@ -609,10 +585,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_off@x3.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+7Lm2798yg/amQUkrmqBVYj3Owg=
-			</data>
 			<key>hash2</key>
 			<data>
 			K/bJPr2nBB9F3FjA9g3H1JQMloJGitqXmt+gr1xU1yo=
@@ -620,10 +592,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_on.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			z9jxQGgmGyFilfQEX/PJAb71AnM=
-			</data>
 			<key>hash2</key>
 			<data>
 			UoQTxeR5j+1gFe2V7eumwHTOJ+veEzIdrJpR3auo7vE=
@@ -631,10 +599,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_on@x2.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4aVS8XmGxThdYo42IWBmiGgCOSU=
-			</data>
 			<key>hash2</key>
 			<data>
 			GQPtEMcAaXrGkZerYL2piG/DFEdpQ62+Fr8nMz3+HJw=
@@ -642,10 +606,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_on@x3.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TAd49hfyEOPTIzxAQB3sk/dwkFc=
-			</data>
 			<key>hash2</key>
 			<data>
 			T79WjtMW2Q+aFoZJSJwMje7F6BNmRTghCTZlzWGLDr0=
@@ -653,10 +613,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qZsaPGjuDoke5KcXH2Il1pF/Rx8=
-			</data>
 			<key>hash2</key>
 			<data>
 			8JW627OEXWUL4zjCCBOHozhASEXGNvoaBulTZqE5Z1g=
@@ -664,10 +620,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_x@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cHWyT6Zbh+rxCB2IWzrFDrxEhpU=
-			</data>
 			<key>hash2</key>
 			<data>
 			5M7dfk1uc+OdBOz0opWhmc4ykZsgxx93WVigWCTmrqs=
@@ -675,10 +627,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_x@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			f4LEetGQ/tbvoFJxhgKw6fmh1MI=
-			</data>
 			<key>hash2</key>
 			<data>
 			hKZN50Fb7fXB0J/U0SoQYsT9XxPzKMb90xsTlLL6Pi0=
@@ -686,10 +634,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/defalt_img.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			axTwWOIWFjQr6g+rNFDHfmPn82c=
-			</data>
 			<key>hash2</key>
 			<data>
 			bLt13nQ2/GG6jUrOHZeA6medRrhqFkWFIY3S3Xt0iw4=
@@ -697,10 +641,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/defalt_img@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2/2I6CBGTzE2OuAgpUjkLOJsLoo=
-			</data>
 			<key>hash2</key>
 			<data>
 			IaC52fGfzoyFRoLg+uDQgw1ISRIcEJ3G3aD3Fd6Lxrw=
@@ -708,10 +648,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/defalt_img@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S2mHOBTXmfLj4EZS6WOrBZTo4Yg=
-			</data>
 			<key>hash2</key>
 			<data>
 			Un81I+2pvHq0s4UoIef02Q6HMQKuE4wwe35pU2Y1Sxs=
@@ -719,10 +655,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_down.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GYwyVTMh0Kj//64UTxb2cWWVx+Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			S78mWN1kgLftZU0H/BLhxCRVU7jiQMlnwr7mzJOaQQs=
@@ -730,10 +662,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_down@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			m0OPQV3QJbLzBaSNF32/BdAvSPM=
-			</data>
 			<key>hash2</key>
 			<data>
 			+4UmebQjSIUjR+1yKPDU2mFwLlkGqOk9gkQiAxKDp9I=
@@ -741,10 +669,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_download.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wPs88TMKyCLRepYkI3BBNsNG/Ws=
-			</data>
 			<key>hash2</key>
 			<data>
 			UwJ0FIV+xUrQEIknBvGQxQXwQmfvn9NvrNeEEFh4AW4=
@@ -752,10 +676,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_download@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uZ0WT4VTXCWIwwpBuHGlyfb5HRs=
-			</data>
 			<key>hash2</key>
 			<data>
 			HBqC7XKTLfOvaOtm/B1/7ngflaFyhSdrDohnq81NgrM=
@@ -763,10 +683,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_download@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IXImjlEZAKCfE978Yf3C7YqCab4=
-			</data>
 			<key>hash2</key>
 			<data>
 			enwu7kZhAfyVYXnBpEauOaPrOuF6+WJ/hmqjScAAqkE=
@@ -774,10 +690,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_more.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BfqZXIHhKLVaUrRWrf19sIw+qks=
-			</data>
 			<key>hash2</key>
 			<data>
 			RVbQl+i0fws1wq/FlbYLXhR/AALsEqYqxWhesRoYkyo=
@@ -785,10 +697,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_more@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QZySddO9zihBLz7S5HZ50O0A6PI=
-			</data>
 			<key>hash2</key>
 			<data>
 			u7vzpcqU7eP24ifsXiYpOU5uIaQ2SkNM67bcCuUMdmw=
@@ -796,10 +704,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_more@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			n3fxhryduQaVvJDh9HyKTXs96dk=
-			</data>
 			<key>hash2</key>
 			<data>
 			F8c6aM/tVa52QyBsqgWF3ekl6jBCixS4s4v4rblTniY=
@@ -807,10 +711,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_replay.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o/G9b37/LVU9ErJHJyNvdK+8uTU=
-			</data>
 			<key>hash2</key>
 			<data>
 			gQl5YuVWIGuvby4G+gzNQfcxivAaAAIpVNfWtclOOuM=
@@ -818,10 +718,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_replay@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dhHiTQMt25xUkDWeRWiTSJ92zcs=
-			</data>
 			<key>hash2</key>
 			<data>
 			33WvX70/CvMCiBTxII9OgtT/xSX05/ilRfrXBxSFcVI=
@@ -829,10 +725,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_replay@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AyAZp+IcRE6poXjfVTJEwwo3Eb0=
-			</data>
 			<key>hash2</key>
 			<data>
 			crXPr8zLEJM4GWgRJKrScAU+nlBZ3PB2v1768heYd8c=
@@ -840,10 +732,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_second.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9kIfUbcUOsr4TMqWn0Pih2EXr9o=
-			</data>
 			<key>hash2</key>
 			<data>
 			AJnp5yAFaVH0JPtxBYIDDnRwpkq7uF8Wa4+0Ob/U3XM=
@@ -851,10 +739,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_second@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PyTvEWrVdN84e2Z4SF9EUTXhSV8=
-			</data>
 			<key>hash2</key>
 			<data>
 			PgI4QiAeMKorjOJi4zxy5deQc524589iTHzylBP0CYU=
@@ -862,10 +746,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_second@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hOYEnodH/ovcap3COjLcArAivwc=
-			</data>
 			<key>hash2</key>
 			<data>
 			KWRIZ64K2uWlcqiK2bD8R54wQb8+OhUkvx40JIxzq80=
@@ -873,10 +753,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_back.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ijYv9oUoMt12D34zH/TvDIT9ckA=
-			</data>
 			<key>hash2</key>
 			<data>
 			UgfMgPdBqpyOy/zC+ROXRUbCprjOSOMxw7SUCny/Us8=
@@ -884,10 +760,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_back@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hgOuA77k2omy3vh9xTCqGCeE2SM=
-			</data>
 			<key>hash2</key>
 			<data>
 			VM6f1pmZjjWAWRtZqNz43f5/Q7Kku6lUGJTYtKpv2Kk=
@@ -895,10 +767,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_back@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XrjJSiFquLtdk8S6y3TTgxl7ufQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			9avxeciSTus9D2RNqlT5gJODQJ3hTL4RSxVAF2yyKlQ=
@@ -906,10 +774,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cZCztUwNkLWuZso7dQqVWyU0grk=
-			</data>
 			<key>hash2</key>
 			<data>
 			p7jMqvN6f/upeRKd2MGZGNjRqUX96TLlO2Lh4DUqxLQ=
@@ -917,10 +781,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_close@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3xA3dfDGfnxw8BQ/etjcKUASOvc=
-			</data>
 			<key>hash2</key>
 			<data>
 			iVBKRieFrrRuOITGdfePBYV84vDfqkNSpmweHKMvXmQ=
@@ -928,10 +788,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_close@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u49ogLcuq7MKiDRVxCVIoV1td3o=
-			</data>
 			<key>hash2</key>
 			<data>
 			euRa9duecHt0B8gYLJO72O3anIUvCDedz3BdCCcBiSk=
@@ -939,10 +795,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/icn_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9CJZXJLzjTkmJMXrBFHT1+QZ90g=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZjHSr6IDFElsh4Xctyaoxps7utzmN+U3uBETGAFTZ9s=
@@ -950,10 +802,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/icn_close@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zfYfDbKij2bRR5d3Wg8HlLQHXkI=
-			</data>
 			<key>hash2</key>
 			<data>
 			eDCMW3NUlQtwTmL5PKXz01VuBK29/9NQ9yofbeAn+DQ=
@@ -961,10 +809,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/icn_close@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/wJkGVmzRzSc/hOx0b5vGAqP0Fw=
-			</data>
 			<key>hash2</key>
 			<data>
 			8iFqUUun3Byg9Y/hfAJj+jbSzo5Xx+PoVS2xEDJizNE=
@@ -972,10 +816,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_logo.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uz7bgYqh69FFUVwoSAF2B24Spks=
-			</data>
 			<key>hash2</key>
 			<data>
 			0rw/O+R8Ri327HKMWv4o0V8waTik8F42gpg2WgiQtS4=
@@ -983,10 +823,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_logo@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+OwmGXPkM5bhIZuB0dUqwcq3rS0=
-			</data>
 			<key>hash2</key>
 			<data>
 			XBbTEWrJZEUV+KJjuQrK10lGmntIjZIeSPc70jDISMU=
@@ -994,10 +830,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_logo@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zM6yNdmv3KzGYUNNQhEM11mJPeY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Q3WOU/zz146xnB4Hd9y3demDHFKdx57AkjlEBrtKmq4=
@@ -1005,10 +837,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_full.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VYbW9Is+EJxqRZ0ZNAVMg/Ye154=
-			</data>
 			<key>hash2</key>
 			<data>
 			x70nY+7cmK++n/bPliRfECJfISaXxEnH61j/WQUsRVE=
@@ -1016,10 +844,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_full@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cA7BWtFRSqgPLiGC4ttEA4L9UOE=
-			</data>
 			<key>hash2</key>
 			<data>
 			Yq4J/MMsMuTq70z6lfX59K6cg4uYw0svW3098GjAm7w=
@@ -1027,10 +851,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_full@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lgAEeCY7o+ea6NVUB8NjZhEzz28=
-			</data>
 			<key>hash2</key>
 			<data>
 			/GMKmGOF+2URweKJSbsi9nru2C0xf+0oB5SBnNaW15I=
@@ -1038,10 +858,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_transparent.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			npSOZBmj4+Jc7PPMMhTbQ5jfS8k=
-			</data>
 			<key>hash2</key>
 			<data>
 			781NMg68NigeGgbTxu5Cdp2V+rrlxnOI5pa/4SOB60E=
@@ -1049,10 +865,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_transparent@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rbTKN0gibeuGlBZEzmlj8+mh2hw=
-			</data>
 			<key>hash2</key>
 			<data>
 			ut/se9TN3BG5pqYp4oxOQWjTYLwtaV/tOrvCAMh57q8=
@@ -1060,10 +872,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_transparent@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fE8PwmUeqVgSFO7o+0+rN4dlsmM=
-			</data>
 			<key>hash2</key>
 			<data>
 			+xtNHizTBuOd24lRRiiipiFRZa6VoqkrA2r/TOrId7w=
@@ -1071,10 +879,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/interstitial_arrow.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YiDil81ZVcGFB15E9SybqzpQwJo=
-			</data>
 			<key>hash2</key>
 			<data>
 			+ygm6qucLniil6JbkHJ1lisLfWZoGuKQ/6BQqvV9Pvc=
@@ -1082,10 +886,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/interstitial_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DhEl9Ia2gXqi4lf8YP6GzUKYfR0=
-			</data>
 			<key>hash2</key>
 			<data>
 			yAyDH1mmWQVYeulVcKs/WnaYgwyCbYAGCyG3osEYA1g=
@@ -1093,10 +893,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/ko.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Odh5Oi1CLSxyuKZUKVMm1rdjoR4=
-			</data>
 			<key>hash2</key>
 			<data>
 			ztaAi0sUxGCrT6tiwkQpGRgXg1EmfLrIjCi7XbIIT6k=
@@ -1106,21 +902,13 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iCRLGv1XDvxulqJppknuQnNMy80=
-			</data>
 			<key>hash2</key>
 			<data>
-			X/DIymH6y0XqcEWLwiWzexxDZ5+zHW8Rj1ZXAyhvomA=
+			dUdM1Z3CwooJHADBZFlmrBNfDNEqVFuRqVLcLhbdu7A=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			calWTgjBH2zCmAs7pMPdt2tdvRM=
-			</data>
 			<key>hash2</key>
 			<data>
 			4tJZzeQG78Ic7Y248RMAuR9urHBh+omJfKHM84HzFKM=
@@ -1128,76 +916,48 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Headers/AdCashFramework-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QgsoHxhY27r1IV9mlX98UWmf++Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			5U/k9mg14q2YzueGKfomGc2xvGpnzamzZXV4Irm0DUE=
+			Whn/4BdXaRplnhVYaTYnsg30VGq5Qj783S1Baw0AcFI=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ktT+aXNm5+BGeVRefbxEs6C+DDY=
-			</data>
 			<key>hash2</key>
 			<data>
-			8gmtBnAgv4L38Eatcst++qXQAw1cArr3UTo8ZbDUVUk=
+			NSXANNsDbBL5mvyXUVLxa0WlIrLUk5QYdIrngl6Sfwg=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Z81DcgDpAJIFMu3iDidBvq5x8K0=
-			</data>
 			<key>hash2</key>
 			<data>
-			3yvqWndgccdljyOiaApzo1UtmXEtAPLnKM13SvROTt0=
+			w5h1OF5eZFNx/LXwigxQCnbhwrKXUU8XazStb6ABalI=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DKwJfszwpmiX96aeVyEDytdNnQw=
-			</data>
 			<key>hash2</key>
 			<data>
-			tQTqF0kj1ToU/MElz1/8QLprWHLOONBN8eEppWiYfsk=
+			dYevjvEPY4IU5digS1UAEJ9OgiW2ct2BfP34+rtGNk8=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			l9m1I8tZNygeB+9mH2YXrOIUJbQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			OC/+MpsbaqdsKk2mnxtUkmV1I12NbUBbTtWlxL5klAI=
+			jl6csboA5H6niWsx21MY5Axmlczjs9TBLod+u+8PFfQ=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DKwJfszwpmiX96aeVyEDytdNnQw=
-			</data>
 			<key>hash2</key>
 			<data>
-			tQTqF0kj1ToU/MElz1/8QLprWHLOONBN8eEppWiYfsk=
+			dYevjvEPY4IU5digS1UAEJ9OgiW2ct2BfP34+rtGNk8=
 			</data>
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IaI7OVG3J1M6GNUHytRNmGHqGhc=
-			</data>
 			<key>hash2</key>
 			<data>
 			HBagU/PwwaB6x/nEw+mZP8av9KaZJZAT7D/gcWBZBEo=
@@ -1205,10 +965,6 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rrdZ2wj6YssrkaxFcyMWXLTn96M=
-			</data>
 			<key>hash2</key>
 			<data>
 			6wGv4yDbnXjCaZXHaNs7CS9MBTR9YA05sQNoqzLwlnE=
@@ -1216,32 +972,20 @@
 		</dict>
 		<key>ios-arm64/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			87fa4XxA7/Hs4HqCBgq7ZIrDK3M=
-			</data>
 			<key>hash2</key>
 			<data>
-			zdnSVEQSY8brkkO7ECOFCWqn2RdXL/AZ06dJbYO61uo=
+			WeJaUsi9YJlX2vTo147nSaa/XM2y4t0stXQfyp3mJa0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdCashFramework</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6prolCAt3HCv91ixNo3h6pRJxIk=
-			</data>
 			<key>hash2</key>
 			<data>
-			p6U0zb5tcd15sAIvtPJ9PcNAxeF+U8F84WaWFF9SAXc=
+			Fw81pi3VNkFgy7ph4gf616YVxsKgy/iNR/w4Ep3MnUo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/en.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Odh5Oi1CLSxyuKZUKVMm1rdjoR4=
-			</data>
 			<key>hash2</key>
 			<data>
 			ztaAi0sUxGCrT6tiwkQpGRgXg1EmfLrIjCi7XbIIT6k=
@@ -1251,10 +995,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QiCSFG1Of7dBVpLhmqDVvAhutdo=
-			</data>
 			<key>hash2</key>
 			<data>
 			+3UZdIH9dvX8rEDxqRrzqU7paKZqyuMuWFL0lkjKJlc=
@@ -1262,10 +1002,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_close@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qez7wBxV73oW1hdljziDvUxB8q8=
-			</data>
 			<key>hash2</key>
 			<data>
 			FZRcHLFf9452+xSL0ONrhuGgMC3lpW1Ns7K3O0TRL48=
@@ -1273,10 +1009,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_off.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			s0M0H7n/79EeoDBX67+tjjcG/6c=
-			</data>
 			<key>hash2</key>
 			<data>
 			C/+qkp3O3GKuxKiJpyBRYHSYjXgvvpX9GiSuQgJ8dXg=
@@ -1284,10 +1016,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_off@x2.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			5HE1zSPU68yn4DCvjZ12DPXMb2Y=
-			</data>
 			<key>hash2</key>
 			<data>
 			w10sCDRID64QxtHD6pLieEJu+Jb6OGE1HSYzqvxYyeg=
@@ -1295,10 +1023,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_off@x3.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+7Lm2798yg/amQUkrmqBVYj3Owg=
-			</data>
 			<key>hash2</key>
 			<data>
 			K/bJPr2nBB9F3FjA9g3H1JQMloJGitqXmt+gr1xU1yo=
@@ -1306,10 +1030,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_on.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			z9jxQGgmGyFilfQEX/PJAb71AnM=
-			</data>
 			<key>hash2</key>
 			<data>
 			UoQTxeR5j+1gFe2V7eumwHTOJ+veEzIdrJpR3auo7vE=
@@ -1317,10 +1037,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_on@x2.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4aVS8XmGxThdYo42IWBmiGgCOSU=
-			</data>
 			<key>hash2</key>
 			<data>
 			GQPtEMcAaXrGkZerYL2piG/DFEdpQ62+Fr8nMz3+HJw=
@@ -1328,10 +1044,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_logo_on@x3.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TAd49hfyEOPTIzxAQB3sk/dwkFc=
-			</data>
 			<key>hash2</key>
 			<data>
 			T79WjtMW2Q+aFoZJSJwMje7F6BNmRTghCTZlzWGLDr0=
@@ -1339,10 +1051,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qZsaPGjuDoke5KcXH2Il1pF/Rx8=
-			</data>
 			<key>hash2</key>
 			<data>
 			8JW627OEXWUL4zjCCBOHozhASEXGNvoaBulTZqE5Z1g=
@@ -1350,10 +1058,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_x@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cHWyT6Zbh+rxCB2IWzrFDrxEhpU=
-			</data>
 			<key>hash2</key>
 			<data>
 			5M7dfk1uc+OdBOz0opWhmc4ykZsgxx93WVigWCTmrqs=
@@ -1361,10 +1065,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/btn_x@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			f4LEetGQ/tbvoFJxhgKw6fmh1MI=
-			</data>
 			<key>hash2</key>
 			<data>
 			hKZN50Fb7fXB0J/U0SoQYsT9XxPzKMb90xsTlLL6Pi0=
@@ -1372,10 +1072,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/defalt_img.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			axTwWOIWFjQr6g+rNFDHfmPn82c=
-			</data>
 			<key>hash2</key>
 			<data>
 			bLt13nQ2/GG6jUrOHZeA6medRrhqFkWFIY3S3Xt0iw4=
@@ -1383,10 +1079,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/defalt_img@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2/2I6CBGTzE2OuAgpUjkLOJsLoo=
-			</data>
 			<key>hash2</key>
 			<data>
 			IaC52fGfzoyFRoLg+uDQgw1ISRIcEJ3G3aD3Fd6Lxrw=
@@ -1394,10 +1086,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/defalt_img@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S2mHOBTXmfLj4EZS6WOrBZTo4Yg=
-			</data>
 			<key>hash2</key>
 			<data>
 			Un81I+2pvHq0s4UoIef02Q6HMQKuE4wwe35pU2Y1Sxs=
@@ -1405,10 +1093,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_down.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GYwyVTMh0Kj//64UTxb2cWWVx+Q=
-			</data>
 			<key>hash2</key>
 			<data>
 			S78mWN1kgLftZU0H/BLhxCRVU7jiQMlnwr7mzJOaQQs=
@@ -1416,10 +1100,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_down@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			m0OPQV3QJbLzBaSNF32/BdAvSPM=
-			</data>
 			<key>hash2</key>
 			<data>
 			+4UmebQjSIUjR+1yKPDU2mFwLlkGqOk9gkQiAxKDp9I=
@@ -1427,10 +1107,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_download.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wPs88TMKyCLRepYkI3BBNsNG/Ws=
-			</data>
 			<key>hash2</key>
 			<data>
 			UwJ0FIV+xUrQEIknBvGQxQXwQmfvn9NvrNeEEFh4AW4=
@@ -1438,10 +1114,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_download@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uZ0WT4VTXCWIwwpBuHGlyfb5HRs=
-			</data>
 			<key>hash2</key>
 			<data>
 			HBqC7XKTLfOvaOtm/B1/7ngflaFyhSdrDohnq81NgrM=
@@ -1449,10 +1121,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_download@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IXImjlEZAKCfE978Yf3C7YqCab4=
-			</data>
 			<key>hash2</key>
 			<data>
 			enwu7kZhAfyVYXnBpEauOaPrOuF6+WJ/hmqjScAAqkE=
@@ -1460,10 +1128,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_more.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BfqZXIHhKLVaUrRWrf19sIw+qks=
-			</data>
 			<key>hash2</key>
 			<data>
 			RVbQl+i0fws1wq/FlbYLXhR/AALsEqYqxWhesRoYkyo=
@@ -1471,10 +1135,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_more@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QZySddO9zihBLz7S5HZ50O0A6PI=
-			</data>
 			<key>hash2</key>
 			<data>
 			u7vzpcqU7eP24ifsXiYpOU5uIaQ2SkNM67bcCuUMdmw=
@@ -1482,10 +1142,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_more@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			n3fxhryduQaVvJDh9HyKTXs96dk=
-			</data>
 			<key>hash2</key>
 			<data>
 			F8c6aM/tVa52QyBsqgWF3ekl6jBCixS4s4v4rblTniY=
@@ -1493,10 +1149,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_replay.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o/G9b37/LVU9ErJHJyNvdK+8uTU=
-			</data>
 			<key>hash2</key>
 			<data>
 			gQl5YuVWIGuvby4G+gzNQfcxivAaAAIpVNfWtclOOuM=
@@ -1504,10 +1156,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_replay@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dhHiTQMt25xUkDWeRWiTSJ92zcs=
-			</data>
 			<key>hash2</key>
 			<data>
 			33WvX70/CvMCiBTxII9OgtT/xSX05/ilRfrXBxSFcVI=
@@ -1515,10 +1163,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_replay@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AyAZp+IcRE6poXjfVTJEwwo3Eb0=
-			</data>
 			<key>hash2</key>
 			<data>
 			crXPr8zLEJM4GWgRJKrScAU+nlBZ3PB2v1768heYd8c=
@@ -1526,10 +1170,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_second.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9kIfUbcUOsr4TMqWn0Pih2EXr9o=
-			</data>
 			<key>hash2</key>
 			<data>
 			AJnp5yAFaVH0JPtxBYIDDnRwpkq7uF8Wa4+0Ob/U3XM=
@@ -1537,10 +1177,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_second@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			PyTvEWrVdN84e2Z4SF9EUTXhSV8=
-			</data>
 			<key>hash2</key>
 			<data>
 			PgI4QiAeMKorjOJi4zxy5deQc524589iTHzylBP0CYU=
@@ -1548,10 +1184,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_second@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hOYEnodH/ovcap3COjLcArAivwc=
-			</data>
 			<key>hash2</key>
 			<data>
 			KWRIZ64K2uWlcqiK2bD8R54wQb8+OhUkvx40JIxzq80=
@@ -1559,10 +1191,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_back.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ijYv9oUoMt12D34zH/TvDIT9ckA=
-			</data>
 			<key>hash2</key>
 			<data>
 			UgfMgPdBqpyOy/zC+ROXRUbCprjOSOMxw7SUCny/Us8=
@@ -1570,10 +1198,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_back@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			hgOuA77k2omy3vh9xTCqGCeE2SM=
-			</data>
 			<key>hash2</key>
 			<data>
 			VM6f1pmZjjWAWRtZqNz43f5/Q7Kku6lUGJTYtKpv2Kk=
@@ -1581,10 +1205,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_back@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XrjJSiFquLtdk8S6y3TTgxl7ufQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			9avxeciSTus9D2RNqlT5gJODQJ3hTL4RSxVAF2yyKlQ=
@@ -1592,10 +1212,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cZCztUwNkLWuZso7dQqVWyU0grk=
-			</data>
 			<key>hash2</key>
 			<data>
 			p7jMqvN6f/upeRKd2MGZGNjRqUX96TLlO2Lh4DUqxLQ=
@@ -1603,10 +1219,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_close@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			3xA3dfDGfnxw8BQ/etjcKUASOvc=
-			</data>
 			<key>hash2</key>
 			<data>
 			iVBKRieFrrRuOITGdfePBYV84vDfqkNSpmweHKMvXmQ=
@@ -1614,10 +1226,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/ic_video_close@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			u49ogLcuq7MKiDRVxCVIoV1td3o=
-			</data>
 			<key>hash2</key>
 			<data>
 			euRa9duecHt0B8gYLJO72O3anIUvCDedz3BdCCcBiSk=
@@ -1625,10 +1233,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/icn_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			9CJZXJLzjTkmJMXrBFHT1+QZ90g=
-			</data>
 			<key>hash2</key>
 			<data>
 			ZjHSr6IDFElsh4Xctyaoxps7utzmN+U3uBETGAFTZ9s=
@@ -1636,10 +1240,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/icn_close@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zfYfDbKij2bRR5d3Wg8HlLQHXkI=
-			</data>
 			<key>hash2</key>
 			<data>
 			eDCMW3NUlQtwTmL5PKXz01VuBK29/9NQ9yofbeAn+DQ=
@@ -1647,10 +1247,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/icn_close@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/wJkGVmzRzSc/hOx0b5vGAqP0Fw=
-			</data>
 			<key>hash2</key>
 			<data>
 			8iFqUUun3Byg9Y/hfAJj+jbSzo5Xx+PoVS2xEDJizNE=
@@ -1658,10 +1254,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_logo.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uz7bgYqh69FFUVwoSAF2B24Spks=
-			</data>
 			<key>hash2</key>
 			<data>
 			0rw/O+R8Ri327HKMWv4o0V8waTik8F42gpg2WgiQtS4=
@@ -1669,10 +1261,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_logo@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+OwmGXPkM5bhIZuB0dUqwcq3rS0=
-			</data>
 			<key>hash2</key>
 			<data>
 			XBbTEWrJZEUV+KJjuQrK10lGmntIjZIeSPc70jDISMU=
@@ -1680,10 +1268,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_logo@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			zM6yNdmv3KzGYUNNQhEM11mJPeY=
-			</data>
 			<key>hash2</key>
 			<data>
 			Q3WOU/zz146xnB4Hd9y3demDHFKdx57AkjlEBrtKmq4=
@@ -1691,10 +1275,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_full.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VYbW9Is+EJxqRZ0ZNAVMg/Ye154=
-			</data>
 			<key>hash2</key>
 			<data>
 			x70nY+7cmK++n/bPliRfECJfISaXxEnH61j/WQUsRVE=
@@ -1702,10 +1282,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_full@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cA7BWtFRSqgPLiGC4ttEA4L9UOE=
-			</data>
 			<key>hash2</key>
 			<data>
 			Yq4J/MMsMuTq70z6lfX59K6cg4uYw0svW3098GjAm7w=
@@ -1713,10 +1289,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_full@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			lgAEeCY7o+ea6NVUB8NjZhEzz28=
-			</data>
 			<key>hash2</key>
 			<data>
 			/GMKmGOF+2URweKJSbsi9nru2C0xf+0oB5SBnNaW15I=
@@ -1724,10 +1296,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_transparent.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			npSOZBmj4+Jc7PPMMhTbQ5jfS8k=
-			</data>
 			<key>hash2</key>
 			<data>
 			781NMg68NigeGgbTxu5Cdp2V+rrlxnOI5pa/4SOB60E=
@@ -1735,10 +1303,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_transparent@2x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rbTKN0gibeuGlBZEzmlj8+mh2hw=
-			</data>
 			<key>hash2</key>
 			<data>
 			ut/se9TN3BG5pqYp4oxOQWjTYLwtaV/tOrvCAMh57q8=
@@ -1746,10 +1310,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/img_star_transparent@3x.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fE8PwmUeqVgSFO7o+0+rN4dlsmM=
-			</data>
 			<key>hash2</key>
 			<data>
 			+xtNHizTBuOd24lRRiiipiFRZa6VoqkrA2r/TOrId7w=
@@ -1757,10 +1317,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/interstitial_arrow.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			YiDil81ZVcGFB15E9SybqzpQwJo=
-			</data>
 			<key>hash2</key>
 			<data>
 			+ygm6qucLniil6JbkHJ1lisLfWZoGuKQ/6BQqvV9Pvc=
@@ -1768,10 +1324,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/images/interstitial_close.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			DhEl9Ia2gXqi4lf8YP6GzUKYfR0=
-			</data>
 			<key>hash2</key>
 			<data>
 			yAyDH1mmWQVYeulVcKs/WnaYgwyCbYAGCyG3osEYA1g=
@@ -1779,10 +1331,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/AdPopcornSSP.bundle/Contents/Resources/ko.lproj/Localizable.strings</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Odh5Oi1CLSxyuKZUKVMm1rdjoR4=
-			</data>
 			<key>hash2</key>
 			<data>
 			ztaAi0sUxGCrT6tiwkQpGRgXg1EmfLrIjCi7XbIIT6k=
@@ -1792,21 +1340,13 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Assets.car</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iCRLGv1XDvxulqJppknuQnNMy80=
-			</data>
 			<key>hash2</key>
 			<data>
-			X/DIymH6y0XqcEWLwiWzexxDZ5+zHW8Rj1ZXAyhvomA=
+			dUdM1Z3CwooJHADBZFlmrBNfDNEqVFuRqVLcLhbdu7A=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/GFPNativeSimpleAdView.nib</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			calWTgjBH2zCmAs7pMPdt2tdvRM=
-			</data>
 			<key>hash2</key>
 			<data>
 			4tJZzeQG78Ic7Y248RMAuR9urHBh+omJfKHM84HzFKM=
@@ -1814,120 +1354,76 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Headers/AdCashFramework-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o+wVI5tZkA0OlnbUANkofWqnMHA=
-			</data>
 			<key>hash2</key>
 			<data>
-			jlEj9lbAkNUPqGBnrtrIIedH5FNeAFeUCHawtm3lj3c=
+			UL5mSBiUU2YC07AdmsWm60B8RBBmJ+FU2S5gZiaargw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Info.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			C8zcWdmzYO40Ugmtf+lWmpyzS0A=
-			</data>
 			<key>hash2</key>
 			<data>
-			Unygn9PvLcM2Xbng4UP4PNwBTXKCiFlrt9raifLmDjk=
+			FOlGjYJk7BsIHKzLD/h/UDjOJhFU/ouse9vRIzWSie0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MCcsEWpuUT7uVmymS/4ZHUC4RNg=
-			</data>
 			<key>hash2</key>
 			<data>
-			IPHv27R0NfJ3JWgLAaAmHBhaQP/J9+jJs3szF/WNzlY=
+			XqxNqKHomHrNmc+GN7aWdNVydheCtNAdLOcCnpFatXo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FlISd+IMtu3me6mgXXcRr5WkXVs=
-			</data>
 			<key>hash2</key>
 			<data>
-			sGCYzQhX0qOAcsdo37MgPEsB6uqHfb3yDLY12KY+5uQ=
+			wIyZh1hEas6wRvRbhfDJ/ZMc+IVFm3V2o8eNZsV9zjY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			S583+eDNPAgwlkcyERd/+/zYVKg=
-			</data>
 			<key>hash2</key>
 			<data>
-			LWDnWoO2AdJNIxSjkuMMjYHmB5M5H0azmtpIUergJ/U=
+			bVtMx7SzF0GulODHqE4dt/fqbMjFEhfVRXvbFC6QfLM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FlISd+IMtu3me6mgXXcRr5WkXVs=
-			</data>
 			<key>hash2</key>
 			<data>
-			sGCYzQhX0qOAcsdo37MgPEsB6uqHfb3yDLY12KY+5uQ=
+			wIyZh1hEas6wRvRbhfDJ/ZMc+IVFm3V2o8eNZsV9zjY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			MCcsEWpuUT7uVmymS/4ZHUC4RNg=
-			</data>
 			<key>hash2</key>
 			<data>
-			IPHv27R0NfJ3JWgLAaAmHBhaQP/J9+jJs3szF/WNzlY=
+			XqxNqKHomHrNmc+GN7aWdNVydheCtNAdLOcCnpFatXo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LrmXGtQXGgaOkDbOHD+b4k9apPM=
-			</data>
 			<key>hash2</key>
 			<data>
-			3WzjGbXajAAwvWQj+Npl5aFxhIUMdmCBGzkeNPUl2Ms=
+			YFVaJ8cBxne45gJH20d/irbA2dUQ/5tBlxHJ0iZdrz8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			x5TAwqPiVRONgQNxkV9xROnPbjg=
-			</data>
 			<key>hash2</key>
 			<data>
-			358ouYz8Th1S254nsHwNPhb9pJSYHVlUKAqQ7X9Ete8=
+			85ZumTsAhPj2DF/75Zl9cAOD+z2z9JuJrIu3BQgnhyQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/AdCashFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LrmXGtQXGgaOkDbOHD+b4k9apPM=
-			</data>
 			<key>hash2</key>
 			<data>
-			3WzjGbXajAAwvWQj+Npl5aFxhIUMdmCBGzkeNPUl2Ms=
+			YFVaJ8cBxne45gJH20d/irbA2dUQ/5tBlxHJ0iZdrz8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			IaI7OVG3J1M6GNUHytRNmGHqGhc=
-			</data>
 			<key>hash2</key>
 			<data>
 			HBagU/PwwaB6x/nEw+mZP8av9KaZJZAT7D/gcWBZBEo=
@@ -1935,10 +1431,6 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rrdZ2wj6YssrkaxFcyMWXLTn96M=
-			</data>
 			<key>hash2</key>
 			<data>
 			6wGv4yDbnXjCaZXHaNs7CS9MBTR9YA05sQNoqzLwlnE=
@@ -1946,13 +1438,9 @@
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AdCashFramework.framework/_CodeSignature/CodeResources</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VPdXulizSd6mCklV5h5eXiUvr8c=
-			</data>
 			<key>hash2</key>
 			<data>
-			4pI6/7qhzyV7Nd/WPX+prPcv3FY8W7jpQ+h4ZR4J1pM=
+			Ger8tRPpEsjh9QLcHh37897QW3eqouKWxOieEUN6aso=
 			</data>
 		</dict>
 	</dict>
