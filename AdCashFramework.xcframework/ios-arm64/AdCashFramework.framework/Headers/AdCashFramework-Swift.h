@@ -346,7 +346,7 @@ extern "C" {
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import AdPopcornSSP;
+@import APSSPSDK;
 @import CoreFoundation;
 @import ObjectiveC;
 @import UIKit;
@@ -373,14 +373,6 @@ extern "C" {
 #if defined(__OBJC__)
 
 @class NSString;
-@class UIViewController;
-@class NSCoder;
-SWIFT_CLASS("_TtC15AdCashFramework13AdCashDefault")
-@interface AdCashDefault : AdPopcornSSPNativeAd
-- (null_unspecified instancetype)initWithFrame:(CGRect)frame Key:(NSString * _Null_unspecified)appKey placementId:(NSString * _Null_unspecified)placementId viewController:(UIViewController * _Null_unspecified)viewController OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 SWIFT_CLASS("_TtC15AdCashFramework16AdCashErrorModel")
 @interface AdCashErrorModel : NSObject
 @property (nonatomic, readonly) NSInteger code;
@@ -415,19 +407,13 @@ SWIFT_CLASS("_TtC15AdCashFramework15AdCashMediation")
 @class UIView;
 SWIFT_CLASS("_TtC15AdCashFramework14AdCashNativeAd")
 @interface AdCashNativeAd : NSObject
-- (nonnull instancetype)initWithNativeAd:(AdPopcornSSPNativeAd * _Nonnull)nativeAd OBJC_DESIGNATED_INITIALIZER;
 - (void)setNAMRenderer:(id _Null_unspecified)namNativeAdRenderer superView:(UIView * _Nonnull)superView;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC15AdCashFramework12AdPopAdapter")
-@interface AdPopAdapter : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @protocol BannerAdLoaderDelegate;
+@class UIViewController;
 SWIFT_ENUM_FWD_DECL(NSInteger, BannerAdSize)
 @class UINib;
 SWIFT_ENUM_FWD_DECL(NSInteger, NAMType)
@@ -460,6 +446,7 @@ typedef SWIFT_ENUM(NSInteger, BannerAdSize, open) {
 };
 
 @protocol BannerAdWidgetDelegate;
+@class NSCoder;
 SWIFT_CLASS_NAMED("BannerAdView")
 @interface AVABannerAdView : UIView
 @property (nonatomic, weak) id <BannerAdWidgetDelegate> _Nullable delegate;
@@ -491,18 +478,18 @@ SWIFT_PROTOCOL("_TtP15AdCashFramework22BannerAdWidgetDelegate_")
 
 SWIFT_PROTOCOL("_TtP15AdCashFramework22InterstitialAdDelegate_")
 @protocol InterstitialAdDelegate <NSObject>
-- (void)onInterstitalLoaded:(NSString * _Nonnull)apid;
-- (void)onInterstitalOpened:(NSString * _Nonnull)apid;
-- (void)onInterstitalClosed:(NSString * _Nonnull)apid isCompleted:(BOOL)isCompleted;
-- (void)onInterstitalFailed:(NSString * _Nonnull)apid error:(AdCashErrorModel * _Nonnull)error;
-- (void)onInterstitalClicked:(NSString * _Nonnull)apid;
+- (void)onInterstitialLoaded:(NSString * _Nonnull)apid;
+- (void)onInterstitialOpened:(NSString * _Nonnull)apid;
+- (void)onInterstitialClosed:(NSString * _Nonnull)apid isCompleted:(BOOL)isCompleted;
+- (void)onInterstitialFailed:(NSString * _Nonnull)apid error:(AdCashErrorModel * _Nonnull)error;
+- (void)onInterstitialClicked:(NSString * _Nonnull)apid;
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, InterstitialAdType)
 SWIFT_CLASS_NAMED("InterstitialAdLoader")
 @interface AVAInterstitialAdLoader : NSObject
-@property (nonatomic, readonly) enum InterstitialAdType loadedAdType;
 @property (nonatomic, strong) id <InterstitialAdDelegate> _Nullable delegate;
+@property (nonatomic, readonly) enum InterstitialAdType loadedAdType;
 - (nonnull instancetype)initWithPlacementId:(NSString * _Nonnull)placementId rootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;
 - (void)showAd;
@@ -511,34 +498,36 @@ SWIFT_CLASS_NAMED("InterstitialAdLoader")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class AdPopcornSSPInterstitialVideoAd;
-@class AdPopcornSSPError;
-@interface AVAInterstitialAdLoader (SWIFT_EXTENSION(AdCashFramework)) <APSSPInterstitialVideoAdDelegate>
-- (void)APSSPInterstitialVideoAdClosed:(AdPopcornSSPInterstitialVideoAd * _Null_unspecified)interstitialVideoAd;
-- (void)APSSPInterstitialVideoAdShowFail:(AdPopcornSSPInterstitialVideoAd * _Null_unspecified)interstitialVideoAd;
-- (void)APSSPInterstitialVideoAdLoadSuccess:(AdPopcornSSPInterstitialVideoAd * _Null_unspecified)interstitialVideoAd;
-- (void)APSSPInterstitialVideoAdShowSuccess:(AdPopcornSSPInterstitialVideoAd * _Null_unspecified)interstitialVideoAd;
-- (void)APSSPInterstitialVideoAdLoadFail:(AdPopcornSSPInterstitialVideoAd * _Null_unspecified)interstitialVideoAd error:(AdPopcornSSPError * _Null_unspecified)error;
-@end
-
-@class AdPopcornSSPInterstitialAd;
+@class APSSPInterstitialAd;
+SWIFT_ENUM_FWD_DECL(NSInteger, APSSPNetworkError)
 @interface AVAInterstitialAdLoader (SWIFT_EXTENSION(AdCashFramework)) <APSSPInterstitialAdDelegate>
-- (void)APSSPInterstitialAdClosed:(AdPopcornSSPInterstitialAd * _Null_unspecified)interstitialAd;
-- (void)APSSPInterstitialAdClicked:(AdPopcornSSPInterstitialAd * _Null_unspecified)interstitialAd;
-- (void)APSSPInterstitialAdLoadSuccess:(AdPopcornSSPInterstitialAd * _Null_unspecified)interstitialAd;
-- (void)APSSPInterstitialAdShowSuccess:(AdPopcornSSPInterstitialAd * _Null_unspecified)interstitialAd;
-- (void)APSSPInterstitialAdLoadFail:(AdPopcornSSPInterstitialAd * _Null_unspecified)interstitialAd error:(AdPopcornSSPError * _Null_unspecified)error;
-- (void)APSSPInterstitialAdShowFail:(AdPopcornSSPInterstitialAd * _Null_unspecified)interstitialAd error:(AdPopcornSSPError * _Null_unspecified)error;
+- (void)apsspInterstitialAdClosedWithInterstitialAd:(APSSPInterstitialAd * _Nonnull)interstitialAd;
+- (void)apsspInterstitialAdClickedWithInterstitialAd:(APSSPInterstitialAd * _Nonnull)interstitialAd;
+- (void)apsspInterstitialAdLoadSuccessWithInterstitialAd:(APSSPInterstitialAd * _Nonnull)interstitialAd;
+- (void)apsspInterstitialAdShowSuccessWithInterstitialAd:(APSSPInterstitialAd * _Nonnull)interstitialAd;
+- (void)apsspInterstitialAdLoadFailWithInterstitialAd:(APSSPInterstitialAd * _Nonnull)interstitialAd error:(enum APSSPNetworkError)error;
+- (void)apsspInterstitialAdShowFailWithInterstitialAd:(APSSPInterstitialAd * _Nonnull)interstitialAd error:(enum APSSPNetworkError)error;
 @end
 
-@class AdPopcornSSPRewardVideoAd;
+@class APSSPInterstitialVideoAd;
+@interface AVAInterstitialAdLoader (SWIFT_EXTENSION(AdCashFramework)) <APSSPInterstitialVideoAdDelegate>
+- (void)apsspInterstitialVideoAdClosedWithInterstitialVideoAd:(APSSPInterstitialVideoAd * _Nonnull)interstitialVideoAd;
+- (void)apsspInterstitialVideoAdShowFailWithInterstitialVideoAd:(APSSPInterstitialVideoAd * _Nonnull)interstitialVideoAd error:(enum APSSPNetworkError)error;
+- (void)apsspInterstitialVideoAdLoadSuccessWithInterstitialVideoAd:(APSSPInterstitialVideoAd * _Nonnull)interstitialVideoAd;
+- (void)apsspInterstitialVideoAdShowSuccessWithInterstitialVideoAd:(APSSPInterstitialVideoAd * _Nonnull)interstitialVideoAd;
+- (void)apsspInterstitialVideoAdClickedWithInterstitialVideoAd:(APSSPInterstitialVideoAd * _Nonnull)interstitialVideoAd;
+- (void)apsspInterstitialVideoAdLoadFailWithInterstitialVideoAd:(APSSPInterstitialVideoAd * _Nonnull)interstitialVideoAd error:(enum APSSPNetworkError)error;
+@end
+
+@class APSSPRewardVideoAd;
 @interface AVAInterstitialAdLoader (SWIFT_EXTENSION(AdCashFramework)) <APSSPRewardVideoAdDelegate>
-- (void)APSSPRewardVideoAdClosed:(AdPopcornSSPRewardVideoAd * _Null_unspecified)rewardVideoAd;
-- (void)APSSPRewardVideoAdShowFail:(AdPopcornSSPRewardVideoAd * _Null_unspecified)rewardVideoAd;
-- (void)APSSPRewardVideoAdLoadSuccess:(AdPopcornSSPRewardVideoAd * _Null_unspecified)rewardVideoAd;
-- (void)APSSPRewardVideoAdShowSuccess:(AdPopcornSSPRewardVideoAd * _Null_unspecified)rewardVideoAd;
-- (void)APSSPRewardVideoAdLoadFail:(AdPopcornSSPRewardVideoAd * _Null_unspecified)rewardVideoAd error:(AdPopcornSSPError * _Null_unspecified)error;
-- (void)APSSPRewardVideoAdPlayCompleted:(AdPopcornSSPRewardVideoAd * _Null_unspecified)rewardVideoAd adNetworkNo:(NSInteger)adNetworkNo completed:(BOOL)completed;
+- (void)apsspRewardVideoAdClosedWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd;
+- (void)apsspRewardVideoAdShowFailWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd error:(enum APSSPNetworkError)error;
+- (void)apsspRewardVideoAdLoadSuccessWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd;
+- (void)apsspRewardVideoAdShowSuccessWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd;
+- (void)apsspRewardVideoAdClickedWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd;
+- (void)apsspRewardVideoAdLoadFailWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd error:(enum APSSPNetworkError)error;
+- (void)apsspRewardVideoAdPlayCompletedWithRewardVideoAd:(APSSPRewardVideoAd * _Nonnull)rewardVideoAd adNetworkNo:(NSInteger)adNetworkNo completed:(BOOL)completed;
 @end
 
 typedef SWIFT_ENUM(NSInteger, InterstitialAdType, open) {
@@ -554,37 +543,13 @@ typedef SWIFT_ENUM(NSInteger, LogLevel, open) {
   LogLevelDebug = 1,
   LogLevelInfo = 2,
   LogLevelError = 3,
+  LogLevelNone = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, NAMType, open) {
   NAMTypeImage = 0,
   NAMTypeSmart = 1,
 };
-
-@protocol NativeAdLoaderDelegate;
-SWIFT_CLASS("_TtC15AdCashFramework14NativeAdLoader")
-@interface NativeAdLoader : NSObject
-@property (nonatomic, strong) id <NativeAdLoaderDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId nativeAd:(AdCashDefault * _Nonnull)nativeAd OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;
-- (void)requestAd;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@interface NativeAdLoader (SWIFT_EXTENSION(AdCashFramework)) <APSSPNativeAdDelegate>
-- (void)APSSPNativeAdClicked:(AdPopcornSSPNativeAd * _Null_unspecified)nativeAd;
-- (void)APSSPNativeAdImpression:(AdPopcornSSPNativeAd * _Null_unspecified)nativeAd;
-- (void)APSSPNativeAdLoadSuccess:(AdPopcornSSPNativeAd * _Null_unspecified)nativeAd;
-- (void)APSSPNativeAdLoadFail:(AdPopcornSSPNativeAd * _Null_unspecified)nativeAd error:(AdPopcornSSPError * _Null_unspecified)error;
-@end
-
-SWIFT_PROTOCOL("_TtP15AdCashFramework22NativeAdLoaderDelegate_")
-@protocol NativeAdLoaderDelegate
-- (void)onNativeLoaded:(NSString * _Nonnull)apid adView:(UIView * _Nonnull)adView;
-- (void)onNativeFailed:(NSString * _Nonnull)apid error:(AdCashErrorModel * _Nonnull)error;
-- (void)onNativeClicked:(NSString * _Nonnull)apid;
-@end
 
 SWIFT_CLASS("_TtC15AdCashFramework15UnifiedAdLoader")
 @interface UnifiedAdLoader : NSObject

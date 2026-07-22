@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "AvatyeAdCash"
-  spec.version = "3.5.1"
+  spec.version = "4.0.0"
   spec.summary = "Avatye AdCash support framework"
   spec.description = <<-DESC
                         Support to present Banner and Interstitial type Advertise.
@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.license = {:type => "MIT", :text => "Copyright (c) 2024 Avatye Corp."}
   spec.author = {"LimJaeHyuk" => "lim0202jh@avatye.com"}
 
-  spec.ios.deployment_target = "12.0"
+  spec.ios.deployment_target = "13.0"
   spec.source = {:git => "https://github.com/avatye-developer/sdk_adcash_ios.git", :tag => spec.version.to_s}
 
   spec.swift_versions = ["5.0"]
@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.frameworks = "AdSupport"
   spec.weak_frameworks = "AppTrackingTransparency"
   spec.preserve_paths = 'AdCashFramework.xcframework/**/*'
-  spec.dependency 'AdPopcornSSP' , '~> 2.11.9'
+  spec.dependency 'APSSPSDK', '3.2.2'
   spec.vendored_frameworks = "AdCashFramework.xcframework"
   
 

@@ -168,6 +168,13 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "AdCashFramework"
+      },
+      {
         "kind": "TypeDecl",
         "name": "LogLevel",
         "printedName": "LogLevel",
@@ -297,6 +304,47 @@
           },
           {
             "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.LogLevel.Type) -> AdCashFramework.LogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LogLevel",
+                    "printedName": "AdCashFramework.LogLevel",
+                    "usr": "c:@M@AdCashFramework@E@LogLevel"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.LogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LogLevel",
+                        "printedName": "AdCashFramework.LogLevel",
+                        "usr": "c:@M@AdCashFramework@E@LogLevel"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdCashFramework@E@LogLevel@LogLevelNone",
+            "mangledName": "$s15AdCashFramework8LogLevelO4noneyA2CmF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -312,7 +360,8 @@
             "mangledName": "$s15AdCashFramework8LogLevelO11descriptionSSvp",
             "moduleName": "AdCashFramework",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -656,895 +705,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NativeAdLoaderDelegate",
-        "printedName": "NativeAdLoaderDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onNativeLoaded",
-            "printedName": "onNativeLoaded(_:adView:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIView",
-                "printedName": "UIKit.UIView",
-                "usr": "c:objc(cs)UIView"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate(im)onNativeLoaded:adView:",
-            "mangledName": "$s15AdCashFramework06NativeA14LoaderDelegateP02onD6Loaded_6adViewySS_So6UIViewCtF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.NativeAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.NativeAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onNativeFailed",
-            "printedName": "onNativeFailed(_:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdCashErrorModel",
-                "printedName": "AdCashFramework.AdCashErrorModel",
-                "usr": "c:@M@AdCashFramework@objc(cs)AdCashErrorModel"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate(im)onNativeFailed:error:",
-            "mangledName": "$s15AdCashFramework06NativeA14LoaderDelegateP02onD6Failed_5errorySS_AA0aB10ErrorModelCtF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.NativeAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.NativeAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onNativeClicked",
-            "printedName": "onNativeClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate(im)onNativeClicked:",
-            "mangledName": "$s15AdCashFramework06NativeA14LoaderDelegateP02onD7ClickedyySSF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.NativeAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.NativeAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate",
-        "mangledName": "$s15AdCashFramework06NativeA14LoaderDelegateP",
-        "moduleName": "AdCashFramework",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AdCashDefault",
-        "printedName": "AdCashDefault",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(frame:key:placementId:viewController:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdCashFramework.AdCashDefault?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdCashDefault",
-                    "printedName": "AdCashFramework.AdCashDefault",
-                    "usr": "c:@M@AdCashFramework@objc(cs)AdCashDefault"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "UIKit.UIViewController?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIViewController",
-                    "printedName": "UIKit.UIViewController",
-                    "usr": "c:objc(cs)UIViewController"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AdCashDefault(im)initWithFrame:Key:placementId:viewController:",
-            "mangledName": "$s15AdCashFramework0aB7DefaultC5frame3key11placementId14viewControllerACSgSo6CGRectV_SSSgAKSo06UIViewJ0CSgtcfc",
-            "moduleName": "AdCashFramework",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithFrame:Key:placementId:viewController:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdCashFramework.AdCashDefault?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdCashDefault",
-                    "printedName": "AdCashFramework.AdCashDefault",
-                    "usr": "c:@M@AdCashFramework@objc(cs)AdCashDefault"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AdCashDefault(im)initWithCoder:",
-            "mangledName": "$s15AdCashFramework0aB7DefaultC5coderACSgSo7NSCoderC_tcfc",
-            "moduleName": "AdCashFramework",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "initWithCoder:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@AdCashFramework@objc(cs)AdCashDefault",
-        "mangledName": "$s15AdCashFramework0aB7DefaultC",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)AdPopcornSSPNativeAd",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "AdPopcornSSP.AdPopcornSSPNativeAd",
-          "UIKit.UIView",
-          "UIKit.UIResponder",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "NativeAdLoader",
-        "printedName": "NativeAdLoader",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AdCashFramework.NativeAdLoaderDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NativeAdLoaderDelegate",
-                    "printedName": "any AdCashFramework.NativeAdLoaderDelegate",
-                    "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(py)delegate",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC8delegateAA0daE8Delegate_pSgvp",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any AdCashFramework.NativeAdLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NativeAdLoaderDelegate",
-                        "printedName": "any AdCashFramework.NativeAdLoaderDelegate",
-                        "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(im)delegate",
-                "mangledName": "$s15AdCashFramework06NativeA6LoaderC8delegateAA0daE8Delegate_pSgvg",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any AdCashFramework.NativeAdLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NativeAdLoaderDelegate",
-                        "printedName": "any AdCashFramework.NativeAdLoaderDelegate",
-                        "usr": "c:@M@AdCashFramework@objc(pl)NativeAdLoaderDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(im)setDelegate:",
-                "mangledName": "$s15AdCashFramework06NativeA6LoaderC8delegateAA0daE8Delegate_pSgvs",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15AdCashFramework06NativeA6LoaderC8delegateAA0daE8Delegate_pSgvM",
-                "mangledName": "$s15AdCashFramework06NativeA6LoaderC8delegateAA0daE8Delegate_pSgvM",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rootVC:placementId:nativeAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NativeAdLoader",
-                "printedName": "AdCashFramework.NativeAdLoader",
-                "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdCashDefault",
-                "printedName": "AdCashFramework.AdCashDefault",
-                "usr": "c:@M@AdCashFramework@objc(cs)AdCashDefault"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(im)initWithRootVC:placementId:nativeAd:",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC6rootVC11placementId06nativeA0ACSo16UIViewControllerC_SSAA0aB7DefaultCtcfc",
-            "moduleName": "AdCashFramework",
-            "objc_name": "initWithRootVC:placementId:nativeAd:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "setConfig",
-            "printedName": "setConfig(appId:appSecretKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(im)setConfigWithAppId:appSecretKey:",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC9setConfig5appId0H9SecretKeyACXDSS_SStF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "setConfigWithAppId:appSecretKey:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "DiscardableResult",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "requestAd",
-            "printedName": "requestAd()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(im)requestAd",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC07requestA0yyF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NativeAdLoader",
-                "printedName": "AdCashFramework.NativeAdLoader",
-                "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader(im)init",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderCACycfc",
-            "moduleName": "AdCashFramework",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "apsspNativeAdClicked",
-            "printedName": "apsspNativeAdClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPNativeAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd",
-                    "usr": "c:objc(cs)AdPopcornSSPNativeAd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)NativeAdLoader(im)APSSPNativeAdClicked:",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC05apsspdA7ClickedyySo0a16PopcornSSPNativeA0CSgF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "APSSPNativeAdClicked:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "apsspNativeAdImpression",
-            "printedName": "apsspNativeAdImpression(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPNativeAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd",
-                    "usr": "c:objc(cs)AdPopcornSSPNativeAd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)NativeAdLoader(im)APSSPNativeAdImpression:",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC05apsspdA10ImpressionyySo0a16PopcornSSPNativeA0CSgF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "APSSPNativeAdImpression:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "apsspNativeAdLoadSuccess",
-            "printedName": "apsspNativeAdLoadSuccess(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPNativeAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd",
-                    "usr": "c:objc(cs)AdPopcornSSPNativeAd"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)NativeAdLoader(im)APSSPNativeAdLoadSuccess:",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC05apsspdA11LoadSuccessyySo0a16PopcornSSPNativeA0CSgF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "APSSPNativeAdLoadSuccess:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "apsspNativeAdLoadFail",
-            "printedName": "apsspNativeAdLoadFail(_:error:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPNativeAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd",
-                    "usr": "c:objc(cs)AdPopcornSSPNativeAd"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPError?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPError",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPError",
-                    "usr": "c:objc(cs)AdPopcornSSPError"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)NativeAdLoader(im)APSSPNativeAdLoadFail:error:",
-            "mangledName": "$s15AdCashFramework06NativeA6LoaderC05apsspdA8LoadFail_5errorySo0a16PopcornSSPNativeA0CSg_So0aJ8SSPErrorCSgtF",
-            "moduleName": "AdCashFramework",
-            "objc_name": "APSSPNativeAdLoadFail:error:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@AdCashFramework@objc(cs)NativeAdLoader",
-        "mangledName": "$s15AdCashFramework06NativeA6LoaderC",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "AccessControl",
-          "ObjCMembers",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           }
         ]
       },
@@ -1912,846 +1072,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnifiedInterstitialExecutor",
-        "printedName": "UnifiedInterstitialExecutor",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "show",
-            "printedName": "show()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework27UnifiedInterstitialExecutorC4showyyF",
-            "mangledName": "$s15AdCashFramework27UnifiedInterstitialExecutorC4showyyF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:15AdCashFramework27UnifiedInterstitialExecutorC",
-        "mangledName": "$s15AdCashFramework27UnifiedInterstitialExecutorC",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "AdResult",
-        "printedName": "AdResult",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "banner",
-            "printedName": "banner",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.AdResult.Type) -> (UIKit.UIView, CoreFoundation.CGSize) -> AdCashFramework.AdResult",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(UIKit.UIView, CoreFoundation.CGSize) -> AdCashFramework.AdResult",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdResult",
-                        "printedName": "AdCashFramework.AdResult",
-                        "usr": "s:15AdCashFramework0A6ResultO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(adView: UIKit.UIView, size: CoreFoundation.CGSize)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIView",
-                            "printedName": "UIKit.UIView",
-                            "usr": "c:objc(cs)UIView"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CGSize",
-                            "printedName": "CoreFoundation.CGSize",
-                            "usr": "c:@S@CGSize"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.AdResult.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdResult",
-                        "printedName": "AdCashFramework.AdResult",
-                        "usr": "s:15AdCashFramework0A6ResultO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15AdCashFramework0A6ResultO6banneryACSo6UIViewC_So6CGSizeVtcACmF",
-            "mangledName": "$s15AdCashFramework0A6ResultO6banneryACSo6UIViewC_So6CGSizeVtcACmF",
-            "moduleName": "AdCashFramework"
-          },
-          {
-            "kind": "Var",
-            "name": "interstitial",
-            "printedName": "interstitial",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(AdCashFramework.AdResult.Type) -> (AdCashFramework.UnifiedInterstitialExecutor, AdCashFramework.InterstitialAdType) -> AdCashFramework.AdResult",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(AdCashFramework.UnifiedInterstitialExecutor, AdCashFramework.InterstitialAdType) -> AdCashFramework.AdResult",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdResult",
-                        "printedName": "AdCashFramework.AdResult",
-                        "usr": "s:15AdCashFramework0A6ResultO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(executor: AdCashFramework.UnifiedInterstitialExecutor, adType: AdCashFramework.InterstitialAdType)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UnifiedInterstitialExecutor",
-                            "printedName": "AdCashFramework.UnifiedInterstitialExecutor",
-                            "usr": "s:15AdCashFramework27UnifiedInterstitialExecutorC"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "InterstitialAdType",
-                            "printedName": "AdCashFramework.InterstitialAdType",
-                            "usr": "c:@M@AdCashFramework@E@InterstitialAdType"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "AdCashFramework.AdResult.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdResult",
-                        "printedName": "AdCashFramework.AdResult",
-                        "usr": "s:15AdCashFramework0A6ResultO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:15AdCashFramework0A6ResultO12interstitialyAcA27UnifiedInterstitialExecutorC_AA0gA4TypeOtcACmF",
-            "mangledName": "$s15AdCashFramework0A6ResultO12interstitialyAcA27UnifiedInterstitialExecutorC_AA0gA4TypeOtcACmF",
-            "moduleName": "AdCashFramework"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:15AdCashFramework0A6ResultO",
-        "mangledName": "$s15AdCashFramework0A6ResultO",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnifiedAdLoaderDelegate",
-        "printedName": "UnifiedAdLoaderDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onUnifiedLoaded",
-            "printedName": "onUnifiedLoaded(_:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdResult",
-                "printedName": "AdCashFramework.AdResult",
-                "usr": "s:15AdCashFramework0A6ResultO"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD6Loaded_6resultySS_AA0A6ResultOtF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD6Loaded_6resultySS_AA0A6ResultOtF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedFailed",
-            "printedName": "onUnifiedFailed(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdCashErrorModel",
-                "printedName": "AdCashFramework.AdCashErrorModel",
-                "usr": "c:@M@AdCashFramework@objc(cs)AdCashErrorModel"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD6FailedyyAA0aB10ErrorModelCF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD6FailedyyAA0aB10ErrorModelCF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedClicked",
-            "printedName": "onUnifiedClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD7ClickedyySSF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD7ClickedyySSF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedInterstitialOpened",
-            "printedName": "onUnifiedInterstitialOpened(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialOpenedyySSF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialOpenedyySSF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedInterstitialClosed",
-            "printedName": "onUnifiedInterstitialClosed(_:isCompleted:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialClosed_11isCompletedySS_SbtF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialClosed_11isCompletedySS_SbtF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedClicked",
-            "printedName": "onUnifiedClicked(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD7ClickedyySSF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD7ClickedyySSF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedInterstitialOpened",
-            "printedName": "onUnifiedInterstitialOpened(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialOpenedyySSF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialOpenedyySSF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onUnifiedInterstitialClosed",
-            "printedName": "onUnifiedInterstitialClosed(_:isCompleted:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialClosed_11isCompletedySS_SbtF",
-            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialClosed_11isCompletedySS_SbtF",
-            "moduleName": "AdCashFramework",
-            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP",
-        "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP",
-        "moduleName": "AdCashFramework",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "UnifiedAdLoader",
-        "printedName": "UnifiedAdLoader",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvp",
-            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvp",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl"
-            ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UnifiedAdLoaderDelegate",
-                        "printedName": "any AdCashFramework.UnifiedAdLoaderDelegate",
-                        "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvg",
-                "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvg",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UnifiedAdLoaderDelegate",
-                        "printedName": "any AdCashFramework.UnifiedAdLoaderDelegate",
-                        "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvs",
-                "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvs",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvM",
-                "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvM",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rootViewController:groupId:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UnifiedAdLoader",
-                "printedName": "AdCashFramework.UnifiedAdLoader",
-                "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UnifiedAdLoaderDelegate",
-                    "printedName": "any AdCashFramework.UnifiedAdLoaderDelegate",
-                    "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:15AdCashFramework07UnifiedA6LoaderC18rootViewController7groupId8delegateACSo06UIViewH0C_SSAA0daE8Delegate_pSgtcfc",
-            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC18rootViewController7groupId8delegateACSo06UIViewH0C_SSAA0daE8Delegate_pSgtcfc",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "setConfig",
-            "printedName": "setConfig(appId:appSecretKey:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA6LoaderC9setConfig5appId0H9SecretKeyACXDSS_SStF",
-            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC9setConfig5appId0H9SecretKeyACXDSS_SStF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl",
-              "DiscardableResult",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "requestAds",
-            "printedName": "requestAds()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA6LoaderC10requestAdsyyF",
-            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC10requestAdsyyF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "onDestroy",
-            "printedName": "onDestroy()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:15AdCashFramework07UnifiedA6LoaderC9onDestroyyyF",
-            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC9onDestroyyyF",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UnifiedAdLoader",
-                "printedName": "AdCashFramework.UnifiedAdLoader",
-                "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader(im)init",
-            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderCACycfc",
-            "moduleName": "AdCashFramework",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader",
-        "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC",
-        "moduleName": "AdCashFramework",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -2762,8 +1082,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework"
       },
@@ -3810,8 +2130,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework"
       },
@@ -3837,8 +2157,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework"
       },
@@ -4707,8 +3027,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework",
         "declAttributes": [
@@ -5457,8 +3777,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework",
         "declAttributes": [
@@ -6042,8 +4362,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework"
       },
@@ -6054,8 +4374,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "onInterstitalLoaded",
-            "printedName": "onInterstitalLoaded(_:)",
+            "name": "onInterstitialLoaded",
+            "printedName": "onInterstitialLoaded(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6070,8 +4390,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitalLoaded:",
-            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP19onInterstitalLoadedyySSF",
+            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitialLoaded:",
+            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP02onD6LoadedyySSF",
             "moduleName": "AdCashFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.InterstitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : AdCashFramework.InterstitialAdDelegate>",
@@ -6084,8 +4404,8 @@
           },
           {
             "kind": "Function",
-            "name": "onInterstitalOpened",
-            "printedName": "onInterstitalOpened(_:)",
+            "name": "onInterstitialOpened",
+            "printedName": "onInterstitialOpened(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6100,8 +4420,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitalOpened:",
-            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP19onInterstitalOpenedyySSF",
+            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitialOpened:",
+            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP02onD6OpenedyySSF",
             "moduleName": "AdCashFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.InterstitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : AdCashFramework.InterstitialAdDelegate>",
@@ -6114,8 +4434,8 @@
           },
           {
             "kind": "Function",
-            "name": "onInterstitalClosed",
-            "printedName": "onInterstitalClosed(_:isCompleted:)",
+            "name": "onInterstitialClosed",
+            "printedName": "onInterstitialClosed(_:isCompleted:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6136,8 +4456,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitalClosed:isCompleted:",
-            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP19onInterstitalClosed_11isCompletedySS_SbtF",
+            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitialClosed:isCompleted:",
+            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP02onD6Closed_11isCompletedySS_SbtF",
             "moduleName": "AdCashFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.InterstitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : AdCashFramework.InterstitialAdDelegate>",
@@ -6150,8 +4470,8 @@
           },
           {
             "kind": "Function",
-            "name": "onInterstitalFailed",
-            "printedName": "onInterstitalFailed(_:error:)",
+            "name": "onInterstitialFailed",
+            "printedName": "onInterstitialFailed(_:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6172,8 +4492,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitalFailed:error:",
-            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP19onInterstitalFailed_5errorySS_AA0aB10ErrorModelCtF",
+            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitialFailed:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP02onD6Failed_5errorySS_AA0aB10ErrorModelCtF",
             "moduleName": "AdCashFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.InterstitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : AdCashFramework.InterstitialAdDelegate>",
@@ -6186,8 +4506,8 @@
           },
           {
             "kind": "Function",
-            "name": "onInterstitalClicked",
-            "printedName": "onInterstitalClicked(_:)",
+            "name": "onInterstitialClicked",
+            "printedName": "onInterstitialClicked(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6202,8 +4522,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitalClicked:",
-            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP20onInterstitalClickedyySSF",
+            "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate(im)onInterstitialClicked:",
+            "mangledName": "$s15AdCashFramework012InterstitialA8DelegateP02onD7ClickedyySSF",
             "moduleName": "AdCashFramework",
             "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.InterstitialAdDelegate>",
             "sugared_genericSig": "<Self where Self : AdCashFramework.InterstitialAdDelegate>",
@@ -6248,56 +4568,6 @@
         "name": "InterstitialAdLoader",
         "printedName": "InterstitialAdLoader",
         "children": [
-          {
-            "kind": "Var",
-            "name": "loadedAdType",
-            "printedName": "loadedAdType",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "InterstitialAdType",
-                "printedName": "AdCashFramework.InterstitialAdType",
-                "usr": "c:@M@AdCashFramework@E@InterstitialAdType"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@AdCashFramework@objc(cs)AVAInterstitialAdLoader(py)loadedAdType",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC06loadedA4TypeAA0daG0Ovp",
-            "moduleName": "AdCashFramework",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InterstitialAdType",
-                    "printedName": "AdCashFramework.InterstitialAdType",
-                    "usr": "c:@M@AdCashFramework@E@InterstitialAdType"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)loadedAdType",
-                "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC06loadedA4TypeAA0daG0Ovg",
-                "moduleName": "AdCashFramework",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
           {
             "kind": "Var",
             "name": "delegate",
@@ -6412,6 +4682,56 @@
                 "moduleName": "AdCashFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "loadedAdType",
+            "printedName": "loadedAdType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "InterstitialAdType",
+                "printedName": "AdCashFramework.InterstitialAdType",
+                "usr": "c:@M@AdCashFramework@E@InterstitialAdType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AdCashFramework@objc(cs)AVAInterstitialAdLoader(py)loadedAdType",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC06loadedA4TypeAA0daG0Ovp",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InterstitialAdType",
+                    "printedName": "AdCashFramework.InterstitialAdType",
+                    "usr": "c:@M@AdCashFramework@E@InterstitialAdType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)loadedAdType",
+                "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC06loadedA4TypeAA0daG0Ovg",
+                "moduleName": "AdCashFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -6560,7 +4880,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialAdClosed",
-            "printedName": "apsspInterstitialAdClosed(_:)",
+            "printedName": "apsspInterstitialAdClosed(interstitialAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6569,24 +4889,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialAd",
+                "printedName": "APSSPSDK.APSSPInterstitialAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialAdClosed:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA6ClosedyySo0a22PopcornSSPInterstitialA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialAdClosedWithInterstitialAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA6Closed012interstitialA0y8APSSPSDK017APSSPInterstitialA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialAdClosed:",
+            "objc_name": "apsspInterstitialAdClosedWithInterstitialAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6598,7 +4910,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialAdClicked",
-            "printedName": "apsspInterstitialAdClicked(_:)",
+            "printedName": "apsspInterstitialAdClicked(interstitialAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6607,24 +4919,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialAd",
+                "printedName": "APSSPSDK.APSSPInterstitialAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialAdClicked:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA7ClickedyySo0a22PopcornSSPInterstitialA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialAdClickedWithInterstitialAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA7Clicked012interstitialA0y8APSSPSDK017APSSPInterstitialA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialAdClicked:",
+            "objc_name": "apsspInterstitialAdClickedWithInterstitialAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6636,7 +4940,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialAdLoadSuccess",
-            "printedName": "apsspInterstitialAdLoadSuccess(_:)",
+            "printedName": "apsspInterstitialAdLoadSuccess(interstitialAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6645,24 +4949,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialAd",
+                "printedName": "APSSPSDK.APSSPInterstitialAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialAdLoadSuccess:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA11LoadSuccessyySo0a22PopcornSSPInterstitialA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialAdLoadSuccessWithInterstitialAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA11LoadSuccess012interstitialA0y8APSSPSDK017APSSPInterstitialA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialAdLoadSuccess:",
+            "objc_name": "apsspInterstitialAdLoadSuccessWithInterstitialAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6674,7 +4970,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialAdShowSuccess",
-            "printedName": "apsspInterstitialAdShowSuccess(_:)",
+            "printedName": "apsspInterstitialAdShowSuccess(interstitialAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6683,24 +4979,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialAd",
+                "printedName": "APSSPSDK.APSSPInterstitialAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialAdShowSuccess:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA11ShowSuccessyySo0a22PopcornSSPInterstitialA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialAdShowSuccessWithInterstitialAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA11ShowSuccess012interstitialA0y8APSSPSDK017APSSPInterstitialA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialAdShowSuccess:",
+            "objc_name": "apsspInterstitialAdShowSuccessWithInterstitialAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6712,7 +5000,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialAdLoadFail",
-            "printedName": "apsspInterstitialAdLoadFail(_:error:)",
+            "printedName": "apsspInterstitialAdLoadFail(interstitialAd:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6721,38 +5009,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialAd",
+                "printedName": "APSSPSDK.APSSPInterstitialAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialAd"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPError?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPError",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPError",
-                    "usr": "c:objc(cs)AdPopcornSSPError"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPNetworkError",
+                "printedName": "APSSPSDK.APSSPNetworkError",
+                "usr": "c:@M@APSSPSDK@E@APSSPNetworkError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialAdLoadFail:error:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA8LoadFail_5errorySo0a22PopcornSSPInterstitialA0CSg_So0aJ8SSPErrorCSgtF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialAdLoadFailWithInterstitialAd:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA8LoadFail012interstitialA05errory8APSSPSDK017APSSPInterstitialA0C_AG17APSSPNetworkErrorOtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialAdLoadFail:error:",
+            "objc_name": "apsspInterstitialAdLoadFailWithInterstitialAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6764,7 +5036,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialAdShowFail",
-            "printedName": "apsspInterstitialAdShowFail(_:error:)",
+            "printedName": "apsspInterstitialAdShowFail(interstitialAd:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6773,38 +5045,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialAd",
+                "printedName": "APSSPSDK.APSSPInterstitialAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialAd"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPError?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPError",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPError",
-                    "usr": "c:objc(cs)AdPopcornSSPError"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPNetworkError",
+                "printedName": "APSSPSDK.APSSPNetworkError",
+                "usr": "c:@M@APSSPSDK@E@APSSPNetworkError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialAdShowFail:error:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA8ShowFail_5errorySo0a22PopcornSSPInterstitialA0CSg_So0aJ8SSPErrorCSgtF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialAdShowFailWithInterstitialAd:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspdA8ShowFail012interstitialA05errory8APSSPSDK017APSSPInterstitialA0C_AG17APSSPNetworkErrorOtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialAdShowFail:error:",
+            "objc_name": "apsspInterstitialAdShowFailWithInterstitialAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6816,7 +5072,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialVideoAdClosed",
-            "printedName": "apsspInterstitialVideoAdClosed(_:)",
+            "printedName": "apsspInterstitialVideoAdClosed(interstitialVideoAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6825,24 +5081,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialVideoAd",
+                "printedName": "APSSPSDK.APSSPInterstitialVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialVideoAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialVideoAdClosed:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA6ClosedyySo0a22PopcornSSPInterstitialgA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialVideoAdClosedWithInterstitialVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA6Closed012interstitialgA0y8APSSPSDK017APSSPInterstitialgA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialVideoAdClosed:",
+            "objc_name": "apsspInterstitialVideoAdClosedWithInterstitialVideoAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6854,7 +5102,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialVideoAdShowFail",
-            "printedName": "apsspInterstitialVideoAdShowFail(_:)",
+            "printedName": "apsspInterstitialVideoAdShowFail(interstitialVideoAd:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6863,24 +5111,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialVideoAd",
+                "printedName": "APSSPSDK.APSSPInterstitialVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialVideoAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APSSPNetworkError",
+                "printedName": "APSSPSDK.APSSPNetworkError",
+                "usr": "c:@M@APSSPSDK@E@APSSPNetworkError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialVideoAdShowFail:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA8ShowFailyySo0a22PopcornSSPInterstitialgA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialVideoAdShowFailWithInterstitialVideoAd:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA8ShowFail012interstitialgA05errory8APSSPSDK017APSSPInterstitialgA0C_AG17APSSPNetworkErrorOtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialVideoAdShowFail:",
+            "objc_name": "apsspInterstitialVideoAdShowFailWithInterstitialVideoAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6892,7 +5138,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialVideoAdLoadSuccess",
-            "printedName": "apsspInterstitialVideoAdLoadSuccess(_:)",
+            "printedName": "apsspInterstitialVideoAdLoadSuccess(interstitialVideoAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6901,24 +5147,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialVideoAd",
+                "printedName": "APSSPSDK.APSSPInterstitialVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialVideoAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialVideoAdLoadSuccess:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA11LoadSuccessyySo0a22PopcornSSPInterstitialgA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialVideoAdLoadSuccessWithInterstitialVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA11LoadSuccess012interstitialgA0y8APSSPSDK017APSSPInterstitialgA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialVideoAdLoadSuccess:",
+            "objc_name": "apsspInterstitialVideoAdLoadSuccessWithInterstitialVideoAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6930,7 +5168,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialVideoAdShowSuccess",
-            "printedName": "apsspInterstitialVideoAdShowSuccess(_:)",
+            "printedName": "apsspInterstitialVideoAdShowSuccess(interstitialVideoAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6939,24 +5177,46 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialVideoAd",
+                "printedName": "APSSPSDK.APSSPInterstitialVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialVideoAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialVideoAdShowSuccess:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA11ShowSuccessyySo0a22PopcornSSPInterstitialgA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialVideoAdShowSuccessWithInterstitialVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA11ShowSuccess012interstitialgA0y8APSSPSDK017APSSPInterstitialgA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialVideoAdShowSuccess:",
+            "objc_name": "apsspInterstitialVideoAdShowSuccessWithInterstitialVideoAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apsspInterstitialVideoAdClicked",
+            "printedName": "apsspInterstitialVideoAdClicked(interstitialVideoAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APSSPInterstitialVideoAd",
+                "printedName": "APSSPSDK.APSSPInterstitialVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialVideoAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialVideoAdClickedWithInterstitialVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA7Clicked012interstitialgA0y8APSSPSDK017APSSPInterstitialgA0C_tF",
+            "moduleName": "AdCashFramework",
+            "objc_name": "apsspInterstitialVideoAdClickedWithInterstitialVideoAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -6968,7 +5228,7 @@
           {
             "kind": "Function",
             "name": "apsspInterstitialVideoAdLoadFail",
-            "printedName": "apsspInterstitialVideoAdLoadFail(_:error:)",
+            "printedName": "apsspInterstitialVideoAdLoadFail(interstitialVideoAd:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6977,38 +5237,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPInterstitialVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPInterstitialVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPInterstitialVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPInterstitialVideoAd",
+                "printedName": "APSSPSDK.APSSPInterstitialVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPInterstitialVideoAd"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPError?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPError",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPError",
-                    "usr": "c:objc(cs)AdPopcornSSPError"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPNetworkError",
+                "printedName": "APSSPSDK.APSSPNetworkError",
+                "usr": "c:@M@APSSPSDK@E@APSSPNetworkError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPInterstitialVideoAdLoadFail:error:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA8LoadFail_5errorySo0a22PopcornSSPInterstitialgA0CSg_So0aK8SSPErrorCSgtF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspInterstitialVideoAdLoadFailWithInterstitialVideoAd:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC05apsspd5VideoA8LoadFail012interstitialgA05errory8APSSPSDK017APSSPInterstitialgA0C_AG17APSSPNetworkErrorOtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPInterstitialVideoAdLoadFail:error:",
+            "objc_name": "apsspInterstitialVideoAdLoadFailWithInterstitialVideoAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7020,7 +5264,7 @@
           {
             "kind": "Function",
             "name": "apsspRewardVideoAdClosed",
-            "printedName": "apsspRewardVideoAdClosed(_:)",
+            "printedName": "apsspRewardVideoAdClosed(rewardVideoAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7029,24 +5273,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPRewardVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPRewardVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPRewardVideoAdClosed:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA6ClosedyySo0a16PopcornSSPRewardhA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdClosedWithRewardVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA6Closed06rewardhA0y8APSSPSDK011APSSPRewardhA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPRewardVideoAdClosed:",
+            "objc_name": "apsspRewardVideoAdClosedWithRewardVideoAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7058,7 +5294,7 @@
           {
             "kind": "Function",
             "name": "apsspRewardVideoAdShowFail",
-            "printedName": "apsspRewardVideoAdShowFail(_:)",
+            "printedName": "apsspRewardVideoAdShowFail(rewardVideoAd:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7067,24 +5303,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPRewardVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPRewardVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APSSPNetworkError",
+                "printedName": "APSSPSDK.APSSPNetworkError",
+                "usr": "c:@M@APSSPSDK@E@APSSPNetworkError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPRewardVideoAdShowFail:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA8ShowFailyySo0a16PopcornSSPRewardhA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdShowFailWithRewardVideoAd:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA8ShowFail06rewardhA05errory8APSSPSDK011APSSPRewardhA0C_AG17APSSPNetworkErrorOtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPRewardVideoAdShowFail:",
+            "objc_name": "apsspRewardVideoAdShowFailWithRewardVideoAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7096,7 +5330,7 @@
           {
             "kind": "Function",
             "name": "apsspRewardVideoAdLoadSuccess",
-            "printedName": "apsspRewardVideoAdLoadSuccess(_:)",
+            "printedName": "apsspRewardVideoAdLoadSuccess(rewardVideoAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7105,24 +5339,16 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPRewardVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPRewardVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPRewardVideoAdLoadSuccess:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA11LoadSuccessyySo0a16PopcornSSPRewardhA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdLoadSuccessWithRewardVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA11LoadSuccess06rewardhA0y8APSSPSDK011APSSPRewardhA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPRewardVideoAdLoadSuccess:",
+            "objc_name": "apsspRewardVideoAdLoadSuccessWithRewardVideoAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7134,7 +5360,7 @@
           {
             "kind": "Function",
             "name": "apsspRewardVideoAdShowSuccess",
-            "printedName": "apsspRewardVideoAdShowSuccess(_:)",
+            "printedName": "apsspRewardVideoAdShowSuccess(rewardVideoAd:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7143,24 +5369,46 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPRewardVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPRewardVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPRewardVideoAdShowSuccess:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA11ShowSuccessyySo0a16PopcornSSPRewardhA0CSgF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdShowSuccessWithRewardVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA11ShowSuccess06rewardhA0y8APSSPSDK011APSSPRewardhA0C_tF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPRewardVideoAdShowSuccess:",
+            "objc_name": "apsspRewardVideoAdShowSuccessWithRewardVideoAd:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "apsspRewardVideoAdClicked",
+            "printedName": "apsspRewardVideoAdClicked(rewardVideoAd:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdClickedWithRewardVideoAd:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA7Clicked06rewardhA0y8APSSPSDK011APSSPRewardhA0C_tF",
+            "moduleName": "AdCashFramework",
+            "objc_name": "apsspRewardVideoAdClickedWithRewardVideoAd:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7172,7 +5420,7 @@
           {
             "kind": "Function",
             "name": "apsspRewardVideoAdLoadFail",
-            "printedName": "apsspRewardVideoAdLoadFail(_:error:)",
+            "printedName": "apsspRewardVideoAdLoadFail(rewardVideoAd:error:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7181,38 +5429,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPRewardVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPRewardVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPError?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPError",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPError",
-                    "usr": "c:objc(cs)AdPopcornSSPError"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPNetworkError",
+                "printedName": "APSSPSDK.APSSPNetworkError",
+                "usr": "c:@M@APSSPSDK@E@APSSPNetworkError"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPRewardVideoAdLoadFail:error:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA8LoadFail_5errorySo0a16PopcornSSPRewardhA0CSg_So0aL8SSPErrorCSgtF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdLoadFailWithRewardVideoAd:error:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA8LoadFail06rewardhA05errory8APSSPSDK011APSSPRewardhA0C_AG17APSSPNetworkErrorOtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPRewardVideoAdLoadFail:error:",
+            "objc_name": "apsspRewardVideoAdLoadFailWithRewardVideoAd:error:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7224,7 +5456,7 @@
           {
             "kind": "Function",
             "name": "apsspRewardVideoAdPlayCompleted",
-            "printedName": "apsspRewardVideoAdPlayCompleted(_:adNetworkNo:completed:)",
+            "printedName": "apsspRewardVideoAdPlayCompleted(rewardVideoAd:adNetworkNo:completed:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7233,17 +5465,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopcornSSPRewardVideoAd",
-                    "printedName": "AdPopcornSSP.AdPopcornSSPRewardVideoAd",
-                    "usr": "c:objc(cs)AdPopcornSSPRewardVideoAd"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "APSSPRewardVideoAd",
+                "printedName": "APSSPSDK.APSSPRewardVideoAd",
+                "usr": "c:@M@APSSPSDK@objc(cs)APSSPRewardVideoAd"
               },
               {
                 "kind": "TypeNominal",
@@ -7259,10 +5483,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)APSSPRewardVideoAdPlayCompleted:adNetworkNo:completed:",
-            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA13PlayCompleted_11adNetworkNo9completedySo0a16PopcornSSPRewardhA0CSg_SiSbtF",
+            "usr": "c:@CM@AdCashFramework@objc(cs)AVAInterstitialAdLoader(im)apsspRewardVideoAdPlayCompletedWithRewardVideoAd:adNetworkNo:completed:",
+            "mangledName": "$s15AdCashFramework012InterstitialA6LoaderC016apsspRewardVideoA13PlayCompleted06rewardhA011adNetworkNo9completedy8APSSPSDK011APSSPRewardhA0C_SiSbtF",
             "moduleName": "AdCashFramework",
-            "objc_name": "APSSPRewardVideoAdPlayCompleted:adNetworkNo:completed:",
+            "objc_name": "apsspRewardVideoAdPlayCompletedWithRewardVideoAd:adNetworkNo:completed:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -7407,6 +5631,27 @@
           },
           {
             "kind": "Conformance",
+            "name": "APSSPRewardVideoAdDelegate",
+            "printedName": "APSSPRewardVideoAdDelegate",
+            "usr": "c:@M@APSSPSDK@objc(pl)APSSPRewardVideoAdDelegate",
+            "mangledName": "$s8APSSPSDK26APSSPRewardVideoAdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "APSSPInterstitialVideoAdDelegate",
+            "printedName": "APSSPInterstitialVideoAdDelegate",
+            "usr": "c:@M@APSSPSDK@objc(pl)APSSPInterstitialVideoAdDelegate",
+            "mangledName": "$s8APSSPSDK32APSSPInterstitialVideoAdDelegateP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "APSSPInterstitialAdDelegate",
+            "printedName": "APSSPInterstitialAdDelegate",
+            "usr": "c:@M@APSSPSDK@objc(pl)APSSPInterstitialAdDelegate",
+            "mangledName": "$s8APSSPSDK27APSSPInterstitialAdDelegateP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
             "printedName": "_KeyValueCodingAndObserving",
             "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
@@ -7482,217 +5727,756 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "AdPopAdapter",
-        "printedName": "AdPopAdapter",
+        "name": "UnifiedInterstitialExecutor",
+        "printedName": "UnifiedInterstitialExecutor",
         "children": [
           {
             "kind": "Function",
-            "name": "setIcon",
-            "printedName": "setIcon(_:)",
+            "name": "show",
+            "printedName": "show()",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIImageView",
-                "printedName": "UIKit.UIImageView",
-                "usr": "c:objc(cs)UIImageView"
+                "name": "Void",
+                "printedName": "()"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15AdCashFramework0A10PopAdapterC7setIconyACXDSo11UIImageViewCF",
-            "mangledName": "$s15AdCashFramework0A10PopAdapterC7setIconyACXDSo11UIImageViewCF",
+            "usr": "s:15AdCashFramework27UnifiedInterstitialExecutorC4showyyF",
+            "mangledName": "$s15AdCashFramework27UnifiedInterstitialExecutorC4showyyF",
             "moduleName": "AdCashFramework",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "DiscardableResult"
+              "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:15AdCashFramework27UnifiedInterstitialExecutorC",
+        "mangledName": "$s15AdCashFramework27UnifiedInterstitialExecutorC",
+        "moduleName": "AdCashFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AdResult",
+        "printedName": "AdResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "banner",
+            "printedName": "banner",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdResult.Type) -> (UIKit.UIView, CoreFoundation.CGSize) -> AdCashFramework.AdResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIView, CoreFoundation.CGSize) -> AdCashFramework.AdResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdResult",
+                        "printedName": "AdCashFramework.AdResult",
+                        "usr": "s:15AdCashFramework0A6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(adView: UIKit.UIView, size: CoreFoundation.CGSize)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CGSize",
+                            "printedName": "CoreFoundation.CGSize",
+                            "usr": "c:@S@CGSize"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.AdResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdResult",
+                        "printedName": "AdCashFramework.AdResult",
+                        "usr": "s:15AdCashFramework0A6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15AdCashFramework0A6ResultO6banneryACSo6UIViewC_So6CGSizeVtcACmF",
+            "mangledName": "$s15AdCashFramework0A6ResultO6banneryACSo6UIViewC_So6CGSizeVtcACmF",
+            "moduleName": "AdCashFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "interstitial",
+            "printedName": "interstitial",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdResult.Type) -> (AdCashFramework.UnifiedInterstitialExecutor, AdCashFramework.InterstitialAdType) -> AdCashFramework.AdResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(AdCashFramework.UnifiedInterstitialExecutor, AdCashFramework.InterstitialAdType) -> AdCashFramework.AdResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdResult",
+                        "printedName": "AdCashFramework.AdResult",
+                        "usr": "s:15AdCashFramework0A6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(executor: AdCashFramework.UnifiedInterstitialExecutor, adType: AdCashFramework.InterstitialAdType)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UnifiedInterstitialExecutor",
+                            "printedName": "AdCashFramework.UnifiedInterstitialExecutor",
+                            "usr": "s:15AdCashFramework27UnifiedInterstitialExecutorC"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "InterstitialAdType",
+                            "printedName": "AdCashFramework.InterstitialAdType",
+                            "usr": "c:@M@AdCashFramework@E@InterstitialAdType"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.AdResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdResult",
+                        "printedName": "AdCashFramework.AdResult",
+                        "usr": "s:15AdCashFramework0A6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15AdCashFramework0A6ResultO12interstitialyAcA27UnifiedInterstitialExecutorC_AA0gA4TypeOtcACmF",
+            "mangledName": "$s15AdCashFramework0A6ResultO12interstitialyAcA27UnifiedInterstitialExecutorC_AA0gA4TypeOtcACmF",
+            "moduleName": "AdCashFramework"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:15AdCashFramework0A6ResultO",
+        "mangledName": "$s15AdCashFramework0A6ResultO",
+        "moduleName": "AdCashFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnifiedAdLoaderDelegate",
+        "printedName": "UnifiedAdLoaderDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "onUnifiedLoaded",
+            "printedName": "onUnifiedLoaded(_:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AdResult",
+                "printedName": "AdCashFramework.AdResult",
+                "usr": "s:15AdCashFramework0A6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD6Loaded_6resultySS_AA0A6ResultOtF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD6Loaded_6resultySS_AA0A6ResultOtF",
+            "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "setTitle",
-            "printedName": "setTitle(_:)",
+            "name": "onUnifiedFailed",
+            "printedName": "onUnifiedFailed(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UILabel",
-                "printedName": "UIKit.UILabel",
-                "usr": "c:objc(cs)UILabel"
+                "name": "AdCashErrorModel",
+                "printedName": "AdCashFramework.AdCashErrorModel",
+                "usr": "c:@M@AdCashFramework@objc(cs)AdCashErrorModel"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15AdCashFramework0A10PopAdapterC8setTitleyACXDSo7UILabelCF",
-            "mangledName": "$s15AdCashFramework0A10PopAdapterC8setTitleyACXDSo7UILabelCF",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD6FailedyyAA0aB10ErrorModelCF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD6FailedyyAA0aB10ErrorModelCF",
             "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "protocolReq": true,
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "DiscardableResult"
+              "RawDocComment"
             ],
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "setDesc",
-            "printedName": "setDesc(_:)",
+            "name": "onUnifiedClicked",
+            "printedName": "onUnifiedClicked(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UILabel",
-                "printedName": "UIKit.UILabel",
-                "usr": "c:objc(cs)UILabel"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15AdCashFramework0A10PopAdapterC7setDescyACXDSo7UILabelCF",
-            "mangledName": "$s15AdCashFramework0A10PopAdapterC7setDescyACXDSo7UILabelCF",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD7ClickedyySSF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD7ClickedyySSF",
             "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "protocolReq": true,
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "DiscardableResult"
+              "RawDocComment"
             ],
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
-            "name": "setMainImage",
-            "printedName": "setMainImage(_:)",
+            "name": "onUnifiedInterstitialOpened",
+            "printedName": "onUnifiedInterstitialOpened(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "DynamicSelf",
-                "printedName": "Self"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "UIImageView",
-                "printedName": "UIKit.UIImageView",
-                "usr": "c:objc(cs)UIImageView"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15AdCashFramework0A10PopAdapterC12setMainImageyACXDSo11UIImageViewCF",
-            "mangledName": "$s15AdCashFramework0A10PopAdapterC12setMainImageyACXDSo11UIImageViewCF",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialOpenedyySSF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialOpenedyySSF",
+            "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUnifiedInterstitialClosed",
+            "printedName": "onUnifiedInterstitialClosed(_:isCompleted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialClosed_11isCompletedySS_SbtF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP02onD18InterstitialClosed_11isCompletedySS_SbtF",
+            "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUnifiedClicked",
+            "printedName": "onUnifiedClicked(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD7ClickedyySSF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD7ClickedyySSF",
+            "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUnifiedInterstitialOpened",
+            "printedName": "onUnifiedInterstitialOpened(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialOpenedyySSF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialOpenedyySSF",
+            "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onUnifiedInterstitialClosed",
+            "printedName": "onUnifiedInterstitialClosed(_:isCompleted:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialClosed_11isCompletedySS_SbtF",
+            "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegatePAAE02onD18InterstitialClosed_11isCompletedySS_SbtF",
+            "moduleName": "AdCashFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : AdCashFramework.UnifiedAdLoaderDelegate>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP",
+        "mangledName": "$s15AdCashFramework07UnifiedA14LoaderDelegateP",
+        "moduleName": "AdCashFramework",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "UnifiedAdLoader",
+        "printedName": "UnifiedAdLoader",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvp",
+            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvp",
             "moduleName": "AdCashFramework",
             "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "DiscardableResult"
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
             ],
-            "funcSelfKind": "NonMutating"
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnifiedAdLoaderDelegate",
+                        "printedName": "any AdCashFramework.UnifiedAdLoaderDelegate",
+                        "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvg",
+                "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvg",
+                "moduleName": "AdCashFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UnifiedAdLoaderDelegate",
+                        "printedName": "any AdCashFramework.UnifiedAdLoaderDelegate",
+                        "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvs",
+                "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvs",
+                "moduleName": "AdCashFramework",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvM",
+                "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC8delegateAA0daE8Delegate_pSgvM",
+                "moduleName": "AdCashFramework",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(frame:)",
+            "printedName": "init(rootViewController:groupId:delegate:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "AdPopAdapter",
-                "printedName": "AdCashFramework.AdPopAdapter",
-                "usr": "c:@M@AdCashFramework@objc(cs)AdPopAdapter"
+                "name": "UnifiedAdLoader",
+                "printedName": "AdCashFramework.UnifiedAdLoader",
+                "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader"
               },
               {
                 "kind": "TypeNominal",
-                "name": "CGRect",
-                "printedName": "CoreFoundation.CGRect",
-                "usr": "c:@S@CGRect"
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any AdCashFramework.UnifiedAdLoaderDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnifiedAdLoaderDelegate",
+                    "printedName": "any AdCashFramework.UnifiedAdLoaderDelegate",
+                    "usr": "s:15AdCashFramework07UnifiedA14LoaderDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AdPopAdapter(im)initWithFrame:",
-            "mangledName": "$s15AdCashFramework0A10PopAdapterC5frameACSo6CGRectV_tcfc",
+            "usr": "s:15AdCashFramework07UnifiedA6LoaderC18rootViewController7groupId8delegateACSo06UIViewH0C_SSAA0daE8Delegate_pSgtcfc",
+            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC18rootViewController7groupId8delegateACSo06UIViewH0C_SSAA0daE8Delegate_pSgtcfc",
             "moduleName": "AdCashFramework",
-            "overriding": true,
-            "objc_name": "initWithFrame:",
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Override",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(coder:)",
+            "kind": "Function",
+            "name": "setConfig",
+            "printedName": "setConfig(appId:appSecretKey:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "AdCashFramework.AdPopAdapter?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AdPopAdapter",
-                    "printedName": "AdCashFramework.AdPopAdapter",
-                    "usr": "c:@M@AdCashFramework@objc(cs)AdPopAdapter"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "DynamicSelf",
+                "printedName": "Self"
               },
               {
                 "kind": "TypeNominal",
-                "name": "NSCoder",
-                "printedName": "Foundation.NSCoder",
-                "usr": "c:objc(cs)NSCoder"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA6LoaderC9setConfig5appId0H9SecretKeyACXDSS_SStF",
+            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC9setConfig5appId0H9SecretKeyACXDSS_SStF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestAds",
+            "printedName": "requestAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA6LoaderC10requestAdsyyF",
+            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC10requestAdsyyF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onDestroy",
+            "printedName": "onDestroy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:15AdCashFramework07UnifiedA6LoaderC9onDestroyyyF",
+            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC9onDestroyyyF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnifiedAdLoader",
+                "printedName": "AdCashFramework.UnifiedAdLoader",
+                "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AdPopAdapter(im)initWithCoder:",
-            "mangledName": "$s15AdCashFramework0A10PopAdapterC5coderACSgSo7NSCoderC_tcfc",
+            "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader(im)init",
+            "mangledName": "$s15AdCashFramework07UnifiedA6LoaderCACycfc",
             "moduleName": "AdCashFramework",
             "overriding": true,
-            "objc_name": "initWithCoder:",
+            "implicit": true,
+            "objc_name": "init",
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "Preconcurrency",
-              "Custom",
-              "Required",
-              "AccessControl"
+              "Override"
             ],
             "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@AdCashFramework@objc(cs)AdPopAdapter",
-        "mangledName": "$s15AdCashFramework0A10PopAdapterC",
+        "usr": "c:@M@AdCashFramework@objc(cs)UnifiedAdLoader",
+        "mangledName": "$s15AdCashFramework07UnifiedA6LoaderC",
         "moduleName": "AdCashFramework",
         "declAttributes": [
-          "Preconcurrency",
-          "Custom",
           "AccessControl",
+          "RawDocComment",
           "ObjC"
         ],
-        "superclassUsr": "c:objc(cs)UIView",
-        "inheritsConvenienceInitializers": true,
+        "superclassUsr": "c:objc(cs)NSObject",
         "superclassNames": [
-          "UIKit.UIView",
-          "UIKit.UIResponder",
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -7758,35 +6542,17 @@
             "printedName": "Hashable",
             "usr": "s:SH",
             "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "__DefaultCustomPlaygroundQuickLookable",
-            "printedName": "__DefaultCustomPlaygroundQuickLookable",
-            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
-            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "UITraitChangeObservable",
-            "printedName": "UITraitChangeObservable",
-            "usr": "s:5UIKit23UITraitChangeObservableP",
-            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AdCashFramework",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -7801,8 +6567,8 @@
       },
       {
         "kind": "Import",
-        "name": "AdPopcornSSP",
-        "printedName": "AdPopcornSSP",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
         "declKind": "Import",
         "moduleName": "AdCashFramework"
       },
@@ -7811,35 +6577,6 @@
         "name": "AdCashNativeAd",
         "printedName": "AdCashNativeAd",
         "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(nativeAd:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AdCashNativeAd",
-                "printedName": "AdCashFramework.AdCashNativeAd",
-                "usr": "c:@M@AdCashFramework@objc(cs)AdCashNativeAd"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "AdPopcornSSPNativeAd",
-                "printedName": "AdPopcornSSP.AdPopcornSSPNativeAd",
-                "usr": "c:objc(cs)AdPopcornSSPNativeAd"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@AdCashFramework@objc(cs)AdCashNativeAd(im)initWithNativeAd:",
-            "mangledName": "$s15AdCashFramework0ab6NativeA0C06nativeA0ACSo0a16PopcornSSPNativeA0C_tcfc",
-            "moduleName": "AdCashFramework",
-            "objc_name": "initWithNativeAd:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
           {
             "kind": "Function",
             "name": "setNAMRenderer",
@@ -7916,6 +6653,7 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -8083,30 +6821,44 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 185,
+      "offset": 199,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 203,
+      "offset": 217,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 222,
+      "offset": 236,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 760,
-      "length": 5,
-      "value": "false"
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
+      "kind": "IntegerLiteral",
+      "offset": 254,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 738,
+      "length": 19,
+      "value": "\"com.avatye.adcash\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdCashLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 777,
+      "length": 8,
+      "value": "\"AdCash\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AdCashErrorModel.swift",
@@ -8200,55 +6952,6 @@
       "value": "12"
     },
     {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AppAdUnitGroupModel.swift",
-      "kind": "StringLiteral",
-      "offset": 906,
-      "length": 8,
-      "value": "\"Banner\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AppAdUnitGroupModel.swift",
-      "kind": "StringLiteral",
-      "offset": 939,
-      "length": 14,
-      "value": "\"Interstitial\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 2107,
-      "length": 17,
-      "value": "\"UnifiedAdLoader\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
-      "kind": "Array",
-      "offset": 2407,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2912,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2940,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3047,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/AdTypeSize.swift",
       "kind": "IntegerLiteral",
       "offset": 165,
@@ -8314,14 +7017,14 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 753,
+      "offset": 749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2294,
+      "offset": 2290,
       "length": 1,
       "value": "0"
     },
@@ -8349,28 +7052,28 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 749,
+      "offset": 745,
       "length": 19,
       "value": "\"nativeAdView init\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1422,
+      "offset": 1418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 4626,
+      "offset": 4622,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdCashInit.swift",
       "kind": "BooleanLiteral",
-      "offset": 327,
+      "offset": 323,
       "length": 5,
       "value": "false"
     },
@@ -8384,77 +7087,91 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1148,
+      "offset": 1247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1412,
+      "offset": 1308,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1774,
+      "offset": 1670,
       "length": 5,
       "value": "false"
     },
     {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 2472,
+      "length": 17,
+      "value": "\"UnifiedAdLoader\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
+      "kind": "Array",
+      "offset": 2772,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3277,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3305,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3412,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AppAdUnitGroupModel.swift",
+      "kind": "StringLiteral",
+      "offset": 906,
+      "length": 8,
+      "value": "\"Banner\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AppAdUnitGroupModel.swift",
+      "kind": "StringLiteral",
+      "offset": 939,
+      "length": 14,
+      "value": "\"Interstitial\""
+    },
+    {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 642,
+      "offset": 1501,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 1534,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 812,
-      "length": 28,
-      "value": "\"apSSPNativeAdRenderer init\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 994,
-      "length": 27,
-      "value": "\"adPopcornSSPNativeAd init\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1157,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "StringLiteral",
-      "offset": 1276,
-      "length": 24,
-      "value": "\"apSSPNativeAdView init\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1391,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3642,
+      "offset": 5287,
       "length": 1,
       "value": "0"
     },
