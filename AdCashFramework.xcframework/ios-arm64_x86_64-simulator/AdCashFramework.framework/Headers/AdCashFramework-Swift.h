@@ -488,7 +488,7 @@ SWIFT_PROTOCOL("_TtP15AdCashFramework22InterstitialAdDelegate_")
 SWIFT_ENUM_FWD_DECL(NSInteger, InterstitialAdType)
 SWIFT_CLASS_NAMED("InterstitialAdLoader")
 @interface AVAInterstitialAdLoader : NSObject
-@property (nonatomic, strong) id <InterstitialAdDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <InterstitialAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly) enum InterstitialAdType loadedAdType;
 - (nonnull instancetype)initWithPlacementId:(NSString * _Nonnull)placementId rootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;
@@ -1055,7 +1055,7 @@ SWIFT_PROTOCOL("_TtP15AdCashFramework22InterstitialAdDelegate_")
 SWIFT_ENUM_FWD_DECL(NSInteger, InterstitialAdType)
 SWIFT_CLASS_NAMED("InterstitialAdLoader")
 @interface AVAInterstitialAdLoader : NSObject
-@property (nonatomic, strong) id <InterstitialAdDelegate> _Nullable delegate;
+@property (nonatomic, weak) id <InterstitialAdDelegate> _Nullable delegate;
 @property (nonatomic, readonly) enum InterstitialAdType loadedAdType;
 - (nonnull instancetype)initWithPlacementId:(NSString * _Nonnull)placementId rootViewController:(UIViewController * _Nonnull)rootViewController OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;

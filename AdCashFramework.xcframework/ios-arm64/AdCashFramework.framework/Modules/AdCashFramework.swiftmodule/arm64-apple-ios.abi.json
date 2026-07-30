@@ -4575,17 +4575,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any AdCashFramework.InterstitialAdDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InterstitialAdDelegate",
-                    "printedName": "any AdCashFramework.InterstitialAdDelegate",
-                    "usr": "c:@M@AdCashFramework@objc(pl)InterstitialAdDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "(any AdCashFramework.InterstitialAdDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -4595,9 +4586,12 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -5907,6 +5901,63 @@
             "usr": "s:15AdCashFramework0A6ResultO12interstitialyAcA27UnifiedInterstitialExecutorC_AA0gA4TypeOtcACmF",
             "mangledName": "$s15AdCashFramework0A6ResultO12interstitialyAcA27UnifiedInterstitialExecutorC_AA0gA4TypeOtcACmF",
             "moduleName": "AdCashFramework"
+          },
+          {
+            "kind": "Var",
+            "name": "native",
+            "printedName": "native",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdResult.Type) -> (UIKit.UIView) -> AdCashFramework.AdResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIView) -> AdCashFramework.AdResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdResult",
+                        "printedName": "AdCashFramework.AdResult",
+                        "usr": "s:15AdCashFramework0A6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(adView: UIKit.UIView)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIView",
+                            "printedName": "UIKit.UIView",
+                            "usr": "c:objc(cs)UIView"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.AdResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdResult",
+                        "printedName": "AdCashFramework.AdResult",
+                        "usr": "s:15AdCashFramework0A6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:15AdCashFramework0A6ResultO6nativeyACSo6UIViewC_tcACmF",
+            "mangledName": "$s15AdCashFramework0A6ResultO6nativeyACSo6UIViewC_tcACmF",
+            "moduleName": "AdCashFramework"
           }
         ],
         "declKind": "Enum",
@@ -6547,6 +6598,23 @@
       },
       {
         "kind": "Import",
+        "name": "APSSPSDK",
+        "printedName": "APSSPSDK",
+        "declKind": "Import",
+        "moduleName": "AdCashFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AdCashFramework"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -7051,22 +7119,15 @@
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
-      "kind": "StringLiteral",
-      "offset": 745,
-      "length": 19,
-      "value": "\"nativeAdView init\""
-    },
-    {
-      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1418,
+      "offset": 1936,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 4622,
+      "offset": 6489,
       "length": 1,
       "value": "0"
     },
@@ -7106,39 +7167,123 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2629,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
       "kind": "StringLiteral",
-      "offset": 2472,
+      "offset": 2517,
       "length": 17,
       "value": "\"UnifiedAdLoader\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
       "kind": "Array",
-      "offset": 2772,
+      "offset": 2817,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 3277,
+      "offset": 3418,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 3305,
+      "offset": 3446,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/UnifiedAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 3412,
+      "offset": 3553,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 653,
+      "length": 16,
+      "value": "\"NativeAdLoader\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 839,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "Array",
+      "offset": 966,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "StringLiteral",
+      "offset": 1003,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1049,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1417,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1452,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1483,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12966,
+      "length": 5,
+      "value": "1200"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13018,
+      "length": 3,
+      "value": "628"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/NativeAdLoader.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13715,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AppAdUnitGroupModel.swift",
@@ -7153,6 +7298,13 @@
       "offset": 939,
       "length": 14,
       "value": "\"Interstitial\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Network\/Model\/AppAdUnitGroupModel.swift",
+      "kind": "StringLiteral",
+      "offset": 972,
+      "length": 8,
+      "value": "\"Native\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
@@ -7171,7 +7323,7 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5287,
+      "offset": 7302,
       "length": 1,
       "value": "0"
     },

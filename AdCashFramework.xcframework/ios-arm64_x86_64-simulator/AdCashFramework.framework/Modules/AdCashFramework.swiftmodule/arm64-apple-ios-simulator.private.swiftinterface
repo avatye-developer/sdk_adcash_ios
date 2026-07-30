@@ -160,7 +160,10 @@ extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
   @objc func onInterstitialClicked(_ apid: Swift.String)
 }
 @objc(AVAInterstitialAdLoader) public class InterstitialAdLoader : ObjectiveC.NSObject {
-  @objc public var delegate: (any AdCashFramework.InterstitialAdDelegate)?
+  @objc weak public var delegate: (any AdCashFramework.InterstitialAdDelegate)? {
+    @objc get
+    @objc set
+  }
   @objc public var loadedAdType: AdCashFramework.InterstitialAdType {
     get
   }
@@ -210,6 +213,7 @@ extension AdCashFramework.InterstitialAdLoader : AdCashFramework.InterAdModuleDe
 public enum AdResult {
   case banner(adView: UIKit.UIView, size: CoreFoundation.CGSize)
   case interstitial(executor: AdCashFramework.UnifiedInterstitialExecutor, adType: AdCashFramework.InterstitialAdType)
+  case native(adView: UIKit.UIView)
 }
 public protocol UnifiedAdLoaderDelegate : AnyObject {
   func onUnifiedLoaded(_ placementId: Swift.String, result: AdCashFramework.AdResult)
