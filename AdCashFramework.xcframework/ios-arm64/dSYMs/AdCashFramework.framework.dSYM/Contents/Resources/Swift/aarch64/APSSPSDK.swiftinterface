@@ -121,296 +121,6 @@ extension APSSPSDK.APSSPMediationCompany {
     get
   }
 }
-@objc public protocol APSSPNativeRenderer {
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc var contentView: UIKit.UIView? { get set }
-  #endif
-}
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class APSSPNativeAdView : APSSPSDK.APSSPBaseNativeAdView {
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var mainImageView: UIKit.UIImageView!
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var appiconImageView: UIKit.UIImageView!
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var titleLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var descLabel: UIKit.UILabel!
-  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var ctaButton: UIKit.UIButton!
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
-  @objc deinit
-}
-@objc public protocol APSSPVideoMixAdDelegate {
-  @objc optional func apsspVideoMixAdLoadSuccess(videoMixAd: APSSPSDK.APSSPVideoMixAd, videoMixAdType: APSSPSDK.APSSPVideoMixAdType)
-  @objc optional func apsspVideoMixAdLoadFail(videoMixAd: APSSPSDK.APSSPVideoMixAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspVideoMixAdShowSuccess(videoMixAd: APSSPSDK.APSSPVideoMixAd)
-  @objc optional func apsspVideoMixAdShowFail(videoMixAd: APSSPSDK.APSSPVideoMixAd)
-  @objc optional func apsspVideoMixAdClosed(videoMixAd: APSSPSDK.APSSPVideoMixAd, videoMixAdType: APSSPSDK.APSSPVideoMixAdType)
-  @objc optional func apsspVideoMixAdPlayCompleted(videoMixAd: APSSPSDK.APSSPVideoMixAd, adNetworkNo: Swift.Int, completed: Swift.Bool)
-  @objc optional func apsspVideoMixAdClicked(videoMixAd: APSSPSDK.APSSPVideoMixAd)
-}
-@objc final public class APSSPVideoMixAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPVideoMixAdDelegate)?
-  @objc final public var appKey: Swift.String?
-  @objc final public var placementId: Swift.String
-  @objc final public var adRequestNo: Swift.String?
-  @objc final public var isReady: Swift.Bool {
-    get
-  }
-  @objc final public var currentNetwork: Swift.Int {
-    get
-  }
-  @objc final public var videoMixAdIsVisible: Swift.Bool {
-    get
-  }
-  @objc final public var adStatus: APSSPSDK.APSSPFullscreenAdStatusInfo {
-    @objc get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
-  #endif
-  @objc deinit
-  @discardableResult
-  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
-  @objc final public func load()
-  @objc final public func stopAd()
-}
-@objc public protocol APSSPNativeAdDelegate : ObjectiveC.NSObjectProtocol {
-  @objc optional func apsspNativeAdLoadSuccess(nativeAdView: APSSPSDK.APSSPNativeAd)
-  @objc optional func apsspNativeAdLoadFail(nativeAdView: APSSPSDK.APSSPNativeAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspNativeAdClicked(nativeAd: APSSPSDK.APSSPNativeAd)
-  @objc optional func apsspNativeAdImpression(nativeAd: APSSPSDK.APSSPNativeAd)
-  @objc optional func apsspNativeAdHidden(nativeAd: APSSPSDK.APSSPNativeAd)
-}
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPNativeAd : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPNativeAdDelegate)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var appKey: Swift.String?
-  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String
-  @objc @_Concurrency.MainActor @preconcurrency final public var isExpired: Swift.Bool {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency final public var adStatus: APSSPSDK.APSSPNativeAdStatusInfo {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency final public var adMobRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var namRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var adfitRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var adopRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var vungleRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var applovinMaxRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var FBANNativeRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var FBANnativeBannerRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var mintegralRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var gamRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var adforusRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var fyberRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var inMobiRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var csjRenderer: Swift.AnyObject?
-  @objc @_Concurrency.MainActor @preconcurrency final public var molocoRenderer: Swift.AnyObject?
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @_Concurrency.MainActor @preconcurrency public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
-  #endif
-  @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency final public func load()
-  @objc @_Concurrency.MainActor @preconcurrency final public func stop()
-  @objc @_Concurrency.MainActor @preconcurrency final public func manualClickEvent()
-  @objc @_Concurrency.MainActor @preconcurrency final public func noAdViewHidden(_ hidden: Swift.Bool)
-}
-extension APSSPSDK.APSSPNativeAd {
-  @objc @_Concurrency.MainActor @preconcurrency final public func bindAdPopcornRenderer(adPopcornRender: APSSPSDK.APSSPNativeAdRenderer)
-}
-@objc public protocol APSSPRewardVideoAdDelegate {
-  @objc optional func apsspRewardVideoAdLoadSuccess(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
-  @objc optional func apsspRewardVideoAdLoadFail(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspRewardVideoAdShowSuccess(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
-  @objc optional func apsspRewardVideoAdShowFail(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspRewardVideoAdClicked(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
-  @objc optional func apsspRewardVideoAdClosed(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
-  @objc optional func apsspRewardVideoAdPlayCompleted(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd, adNetworkNo: Swift.Int, completed: Swift.Bool)
-}
-@objc final public class APSSPRewardVideoAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPRewardVideoAdDelegate)?
-  @objc final public var appKey: Swift.String?
-  @objc final public var placementId: Swift.String
-  @objc final public var adRequestNo: Swift.String?
-  @objc final public var isReady: Swift.Bool {
-    get
-  }
-  @objc final public var currentNetwork: Swift.Int {
-    get
-  }
-  @objc final public var rewardVideoAdIsVisible: Swift.Bool {
-    get
-  }
-  @objc final public var adStatus: APSSPSDK.APSSPFullscreenAdStatusInfo {
-    @objc get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
-  #endif
-  @objc deinit
-  @discardableResult
-  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
-  @objc final public func load()
-  @objc final public func stopAd()
-}
-@objc public protocol APSSPInterstitialVideoAdDelegate {
-  @objc optional func apsspInterstitialVideoAdLoadSuccess(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
-  @objc optional func apsspInterstitialVideoAdLoadFail(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspInterstitialVideoAdShowSuccess(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
-  @objc optional func apsspInterstitialVideoAdShowFail(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspInterstitialVideoAdClicked(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
-  @objc optional func apsspInterstitialVideoAdClosed(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
-}
-@objc final public class APSSPInterstitialVideoAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPInterstitialVideoAdDelegate)?
-  @objc final public var appKey: Swift.String?
-  @objc final public var placementId: Swift.String
-  @objc final public var adRequestNo: Swift.String?
-  @objc final public var isReady: Swift.Bool {
-    get
-  }
-  @objc final public var currentNetwork: Swift.Int {
-    get
-  }
-  @objc final public var adStatus: APSSPSDK.APSSPFullscreenAdStatusInfo {
-    @objc get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
-  #endif
-  @objc deinit
-  @discardableResult
-  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
-  @objc final public func load()
-  @objc final public func stopAd()
-}
-@objc public protocol APSSPBannerViewDelegate : ObjectiveC.NSObjectProtocol {
-  @objc optional func apsspBannerViewLoadSuccess(bannerView: APSSPSDK.APSSPBannerView)
-  @objc optional func apsspBannerViewLoadFail(bannerView: APSSPSDK.APSSPBannerView, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspBannerViewClicked(bannerView: APSSPSDK.APSSPBannerView)
-  @objc optional func apsspBannerViewImpression(bannerView: APSSPSDK.APSSPBannerView)
-}
-@objc public enum APSSPBannerAdStatus : Swift.Int {
-  case initBanner = 0
-  case runBanner = 1
-  case stopBanner = 2
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPBannerView : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPBannerViewDelegate)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var appKey: Swift.String?
-  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String
-  @objc @_Concurrency.MainActor @preconcurrency final public var bannerStatus: APSSPSDK.APSSPBannerAdStatus {
-    get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency weak final public var rootViewController: UIKit.UIViewController?
-  @objc @_Concurrency.MainActor @preconcurrency final public var adRefreshTime: Swift.Int
-  @objc @_Concurrency.MainActor @preconcurrency final public var animationType: APSSPSDK.APSSPBannerView.AnimationType
-  @objc @_Concurrency.MainActor @preconcurrency final public var isExpired: Swift.Bool {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency final public var adStatus: APSSPSDK.APSSPBannerAdStatusInfo {
-    @objc get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @_Concurrency.MainActor @preconcurrency public init(appKey: Swift.String? = nil, placementId: Swift.String, bannerSize: APSSPSDK.APSSPBannerSize)
-  #endif
-  @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency final public func loadAd()
-  @objc @_Concurrency.MainActor @preconcurrency final public func stopAd()
-  @_Concurrency.MainActor @preconcurrency final public func stop(hidden: Swift.Bool = true)
-}
-extension APSSPSDK.APSSPBannerView {
-  @objc @_Concurrency.MainActor @preconcurrency final public func setAutoBgColor(_ istrue: Swift.Bool)
-}
-extension APSSPSDK.APSSPBannerView {
-  @objc public enum AnimationType : Swift.Int, Swift.CaseIterable {
-    case none = 0
-    case curlDown
-    case curlUp
-    case flipFromLeft
-    case flipFromRight
-    case fadeIn
-    #if compiler(>=5.3) && $NonescapableTypes
-    public init?(rawValue: Swift.Int)
-    #endif
-    public typealias AllCases = [APSSPSDK.APSSPBannerView.AnimationType]
-    public typealias RawValue = Swift.Int
-    nonisolated public static var allCases: [APSSPSDK.APSSPBannerView.AnimationType] {
-      get
-    }
-    public var rawValue: Swift.Int {
-      get
-    }
-  }
-}
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class APSSPBaseNativeAdView : UIKit.UIView {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
-  @objc deinit
-}
-@objc public enum APSSPInterstitialAdStatus : Swift.Int {
-  case initInterstitial = 0
-  case runInterstitial = 1
-  case stopInterstitial = 2
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public protocol APSSPInterstitialAdDelegate {
-  @objc optional func apsspInterstitialAdLoadSuccess(interstitialAd: APSSPSDK.APSSPInterstitialAd)
-  @objc optional func apsspInterstitialAdLoadFail(interstitialAd: APSSPSDK.APSSPInterstitialAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspInterstitialAdShowSuccess(interstitialAd: APSSPSDK.APSSPInterstitialAd)
-  @objc optional func apsspInterstitialAdShowFail(interstitialAd: APSSPSDK.APSSPInterstitialAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspInterstitialAdClicked(interstitialAd: APSSPSDK.APSSPInterstitialAd)
-  @objc optional func apsspInterstitialAdClosed(interstitialAd: APSSPSDK.APSSPInterstitialAd)
-}
-@objc final public class APSSPInterstitialAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPInterstitialAdDelegate)?
-  @objc final public var placementId: Swift.String
-  @objc final public var appKey: Swift.String?
-  @objc final public var backgroundColor: UIKit.UIColor
-  @objc final public var adRequestNo: Swift.String?
-  @objc final public var interstitialStatus: APSSPSDK.APSSPInterstitialAdStatus {
-    get
-  }
-  @objc final public var adStatus: APSSPSDK.APSSPInterstitialAdStatusInfo {
-    @objc get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
-  #endif
-  @objc deinit
-  @objc final public func load()
-  @discardableResult
-  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
-}
-@_inheritsConvenienceInitializers @objc final public class APSSPNativeAdRenderer : ObjectiveC.NSObject, APSSPSDK.APSSPNativeRenderer {
-  @objc final public var contentView: UIKit.UIView?
-  @objc final public var nativeView: APSSPSDK.APSSPNativeAdView?
-  @objc final public var adTitleLabel: UIKit.UILabel?
-  @objc final public var adDescLabel: UIKit.UILabel?
-  @objc final public var adMainImageView: UIKit.UIImageView?
-  @objc final public var adAppIconView: UIKit.UIImageView?
-  @objc final public var adCTAButton: UIKit.UIButton?
-  @objc final public var privacyIconPosition: APSSPSDK.APSSPPrivacyIconPosition
-  @objc final public var privacyIconVisibility: Swift.Bool
-  @objc final public var useTemplate: Swift.Bool
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc public enum APSSPVideoMixAdType : Swift.Int {
   case Interstitial = 2
   case RewardVideo = 4
@@ -598,6 +308,181 @@ public enum APSSPBiddingKey : Swift.String {
   #endif
   @objc deinit
 }
+@objc public enum APSSPCustomAdType : Swift.Int {
+  case banner320x50 = 0
+  case banner300x250 = 1
+  case banner320x100 = 2
+  case interstitial = 3
+  case nativeAd = 4
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum APSSPCustomAdStatus : Swift.Int {
+  case `init` = 0
+  case run = 1
+  case stop = 2
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum APSSPMediationProvider : Swift.Int {
+  case adPopcornSSP = 0
+  case appLovinMAX = 1
+  case adMob = 2
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol APSSPRewardVideoAdDelegate {
+  @objc optional func apsspRewardVideoAdLoadSuccess(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
+  @objc optional func apsspRewardVideoAdLoadFail(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspRewardVideoAdShowSuccess(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
+  @objc optional func apsspRewardVideoAdShowFail(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspRewardVideoAdClicked(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
+  @objc optional func apsspRewardVideoAdClosed(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd)
+  @objc optional func apsspRewardVideoAdPlayCompleted(rewardVideoAd: APSSPSDK.APSSPRewardVideoAd, adNetworkNo: Swift.Int, completed: Swift.Bool)
+}
+@objc final public class APSSPRewardVideoAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPRewardVideoAdDelegate)?
+  @objc final public var appKey: Swift.String?
+  @objc final public var placementId: Swift.String
+  @objc final public var adRequestNo: Swift.String?
+  @objc final public var isReady: Swift.Bool {
+    get
+  }
+  @objc final public var currentNetwork: Swift.Int {
+    get
+  }
+  @objc final public var rewardVideoAdIsVisible: Swift.Bool {
+    get
+  }
+  @objc final public var adStatus: APSSPSDK.APSSPFullscreenAdStatusInfo {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
+  #endif
+  @objc deinit
+  @discardableResult
+  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
+  @objc final public func load()
+  @objc final public func stopAd()
+}
+@objc public protocol APSSPNativeRenderer {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc var contentView: UIKit.UIView? { get set }
+  #endif
+}
+@objc public protocol APSSPCustomAdDelegate {
+  @objc optional func apsspCustomAdLoadSuccess(_ customAd: APSSPSDK.APSSPCustomAd, adData: Swift.String)
+  @objc optional func apsspCustomAdLoadFail(_ customAd: APSSPSDK.APSSPCustomAd, error: APSSPSDK.APSSPNetworkError)
+}
+@objc final public class APSSPCustomAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPCustomAdDelegate)?
+  @objc final public var placementId: Swift.String {
+    get
+  }
+  @objc final public var status: APSSPSDK.APSSPCustomAdStatus {
+    get
+  }
+  @objc public init(appKey: Swift.String, placementId: Swift.String, adType: APSSPSDK.APSSPCustomAdType)
+  @objc deinit
+  @objc final public func loadAd()
+  @objc final public func stopAd()
+  @objc final public func reportImpression()
+  @objc final public func reportClick()
+  @objc final public func getImpTrackersList() -> [Swift.String]
+  @objc final public func getClickTrackersList() -> [Swift.String]
+}
+public protocol APSSPVideoMixAdAdapterDelegate : AnyObject {
+  func videoMixAdLoadSuccess(type: APSSPSDK.APSSPVideoMixAdType)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func videoMixAdLoadFail(error: APSSPSDK.APSSPNetworkError, type: APSSPSDK.APSSPVideoMixAdType, errorMessage: Swift.String?)
+  #endif
+  func videoMixAdShowSuccess(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
+  func videoMixAdShowFail(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
+  func videoMixAdClicked(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
+  func videoMixAdClosed(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
+  func videoMixAdCompleteTrackingEvent(adNetworkNo: Swift.Int, isCompleted: Swift.Bool, type: APSSPSDK.APSSPVideoMixAdType)
+}
+public protocol APSSPVideoMixAdAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var videoMixDelegate: (any APSSPSDK.APSSPVideoMixAdAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
+  #endif
+  func connectVideoMixDelegate(delegate: any APSSPSDK.APSSPVideoMixAdAdapterDelegate)
+  func disconnectVideoMixDelegate()
+  func present(from: UIKit.UIViewController, completion: @escaping () -> Swift.Void)
+}
+public protocol APSSPVideoMixAdAdapterInappBiddingProtocol : APSSPSDK.APSSPVideoMixAdAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
+  #endif
+  func getBiddingToken() -> Swift.String
+}
+@objc public protocol APSSPNativeAdDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func apsspNativeAdLoadSuccess(nativeAdView: APSSPSDK.APSSPNativeAd)
+  @objc optional func apsspNativeAdLoadFail(nativeAdView: APSSPSDK.APSSPNativeAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspNativeAdClicked(nativeAd: APSSPSDK.APSSPNativeAd)
+  @objc optional func apsspNativeAdImpression(nativeAd: APSSPSDK.APSSPNativeAd)
+  @objc optional func apsspNativeAdHidden(nativeAd: APSSPSDK.APSSPNativeAd)
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPNativeAd : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPNativeAdDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency final public var appKey: Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency final public var isExpired: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency final public var adStatus: APSSPSDK.APSSPNativeAdStatusInfo {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency final public var adMobRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var namRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var adfitRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var adopRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var vungleRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var applovinMaxRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var FBANNativeRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var FBANnativeBannerRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var mintegralRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var gamRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var adforusRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var fyberRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var inMobiRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var csjRenderer: Swift.AnyObject?
+  @objc @_Concurrency.MainActor @preconcurrency final public var molocoRenderer: Swift.AnyObject?
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
+  #endif
+  @objc deinit
+  @objc @_Concurrency.MainActor @preconcurrency final public func load()
+  @objc @_Concurrency.MainActor @preconcurrency final public func stop()
+  @objc @_Concurrency.MainActor @preconcurrency final public func manualClickEvent()
+  @objc @_Concurrency.MainActor @preconcurrency final public func noAdViewHidden(_ hidden: Swift.Bool)
+}
+extension APSSPSDK.APSSPNativeAd {
+  @objc @_Concurrency.MainActor @preconcurrency final public func bindAdPopcornRenderer(adPopcornRender: APSSPSDK.APSSPNativeAdRenderer)
+}
 @objc public protocol APSSPWKScriptNativeEventDelegate {
   @objc optional func apsspOnNativeEvent(_ data: Swift.String)
 }
@@ -654,43 +539,76 @@ extension APSSPSDK.APSSPWKScriptMessageHandler : APSSPSDK.APSSPVideoMixAdDelegat
   @objc final public func apsspVideoMixAdPlayCompleted(videoMixAd: APSSPSDK.APSSPVideoMixAd, adNetworkNo: Swift.Int, completed: Swift.Bool)
   @objc final public func apsspVideoMixAdClosed(videoMixAd: APSSPSDK.APSSPVideoMixAd, videoMixAdType: APSSPSDK.APSSPVideoMixAdType)
 }
-@objc public enum APSSPCustomAdType : Swift.Int {
-  case banner320x50 = 0
-  case banner300x250 = 1
-  case banner320x100 = 2
-  case interstitial = 3
-  case nativeAd = 4
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class APSSPNativeAdView : APSSPSDK.APSSPBaseNativeAdView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var mainImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var appiconImageView: UIKit.UIImageView!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var titleLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var descLabel: UIKit.UILabel!
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency weak public var ctaButton: UIKit.UIButton!
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+  @objc deinit
 }
-@objc public enum APSSPCustomAdStatus : Swift.Int {
-  case `init` = 0
-  case run = 1
-  case stop = 2
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+@objc public protocol APSSPUnifiedNativeAdDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func unifiedNativeAdLoadSuccess(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
+  @objc optional func unifiedNativeAdLoadFail(nativeAd: APSSPSDK.APSSPUnifiedNativeAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func unifiedNativeAdClicked(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
+  @objc optional func unifiedNativeAdImpression(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
+  @objc optional func unifiedNativeAdHidden(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
 }
-@objc public enum APSSPMediationProvider : Swift.Int {
-  case adPopcornSSP = 0
-  case appLovinMAX = 1
-  case adMob = 2
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPUnifiedNativeAd : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPUnifiedNativeAdDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency final public var appKey: Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String {
     get
   }
+  @objc @_Concurrency.MainActor @preconcurrency final public var isExpired: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency final public var adStatus: APSSPSDK.APSSPNativeAdStatusInfo {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
+  #endif
+  @objc deinit
+  @objc @_Concurrency.MainActor @preconcurrency final public func setViewBinder(_ binder: APSSPSDK.APSSPMediationViewBinder)
+  @objc @_Concurrency.MainActor @preconcurrency final public func setConfig(_ config: APSSPSDK.APSSPNativeAdConfig)
+  @objc @_Concurrency.MainActor @preconcurrency final public func load()
+  @objc @_Concurrency.MainActor @preconcurrency final public func stop()
+  @objc @_Concurrency.MainActor @preconcurrency final public func manualClickEvent()
+  @objc @_Concurrency.MainActor @preconcurrency final public func noAdViewHidden(_ hidden: Swift.Bool)
+}
+public protocol APSSPBannerAdapterDelegate : AnyObject {
+  func bannerViewSuccess(bannerView: UIKit.UIView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  func bannerViewFailed(bannerView: UIKit.UIView, error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func bannerViewClicked(message: Swift.String)
+  func bannerViewImpression(message: Swift.String)
+}
+public protocol APSSPBannerAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPBannerAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPBannerAdapterDelegate)
+  func disconnectDelegate()
+  func stop()
+}
+public protocol APSSPBannerAdapterInappBiddingProtocol : APSSPSDK.APSSPBannerAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappbiddingPlacementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?)
+  #endif
+  func getBiddingToken() -> Swift.String
 }
 @objc public enum APSSPSplashAdStatus : Swift.Int {
   case `init` = 0
@@ -725,6 +643,344 @@ extension APSSPSDK.APSSPWKScriptMessageHandler : APSSPSDK.APSSPVideoMixAdDelegat
   @objc @_Concurrency.MainActor @preconcurrency final public func stopAd()
   @objc @_Concurrency.MainActor @preconcurrency final public func setFullScreenSplash(_ fullscreen: Swift.Bool)
 }
+@_hasMissingDesignatedInitializers final public class APSSPAdapterRegistry : @unchecked Swift.Sendable {
+  public static let shared: APSSPSDK.APSSPAdapterRegistry
+  final public func discover()
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func factory(for networkID: Swift.Int) -> (any APSSPSDK.APSSPAdapterFactory.Type)?
+  #endif
+  final public func isInstalled(networkID: Swift.Int) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func sdkVersion(for networkID: Swift.Int) -> Swift.String?
+  #endif
+  final public var registeredNetworkIDs: [Swift.Int] {
+    get
+  }
+  final public func networkVersions() -> [Swift.String : [Swift.String : Swift.String]]
+  @objc deinit
+}
+@objc public protocol APSSPContentsAdDelegate {
+  @objc optional func apsspContentsAdOpenSuccess(_ contentsAd: APSSPSDK.APSSPContentsAd)
+  @objc optional func apsspContentsAdOpenFail(_ contentsAd: APSSPSDK.APSSPContentsAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspContentsAdClosed(_ contentsAd: APSSPSDK.APSSPContentsAd)
+  @objc optional func apsspContentsAdComplete(_ contentsAd: APSSPSDK.APSSPContentsAd, reward: Swift.Int, rewardKey: Swift.String)
+}
+@objc final public class APSSPContentsAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPContentsAdDelegate)?
+  @objc weak final public var viewController: UIKit.UIViewController?
+  @objc public init(appKey: Swift.String, contentsPlacementId: Swift.String, viewController: UIKit.UIViewController)
+  @objc deinit
+  @objc final public func openContents()
+}
+@objc public enum APSSPInterstitialAdStatus : Swift.Int {
+  case initInterstitial = 0
+  case runInterstitial = 1
+  case stopInterstitial = 2
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol APSSPInterstitialAdDelegate {
+  @objc optional func apsspInterstitialAdLoadSuccess(interstitialAd: APSSPSDK.APSSPInterstitialAd)
+  @objc optional func apsspInterstitialAdLoadFail(interstitialAd: APSSPSDK.APSSPInterstitialAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspInterstitialAdShowSuccess(interstitialAd: APSSPSDK.APSSPInterstitialAd)
+  @objc optional func apsspInterstitialAdShowFail(interstitialAd: APSSPSDK.APSSPInterstitialAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspInterstitialAdClicked(interstitialAd: APSSPSDK.APSSPInterstitialAd)
+  @objc optional func apsspInterstitialAdClosed(interstitialAd: APSSPSDK.APSSPInterstitialAd)
+}
+@objc final public class APSSPInterstitialAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPInterstitialAdDelegate)?
+  @objc final public var placementId: Swift.String
+  @objc final public var appKey: Swift.String?
+  @objc final public var backgroundColor: UIKit.UIColor
+  @objc final public var adRequestNo: Swift.String?
+  @objc final public var interstitialStatus: APSSPSDK.APSSPInterstitialAdStatus {
+    get
+  }
+  @objc final public var adStatus: APSSPSDK.APSSPInterstitialAdStatusInfo {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
+  #endif
+  @objc deinit
+  @objc final public func load()
+  @discardableResult
+  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
+}
+@objc public protocol APSSPBannerViewDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func apsspBannerViewLoadSuccess(bannerView: APSSPSDK.APSSPBannerView)
+  @objc optional func apsspBannerViewLoadFail(bannerView: APSSPSDK.APSSPBannerView, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspBannerViewClicked(bannerView: APSSPSDK.APSSPBannerView)
+  @objc optional func apsspBannerViewImpression(bannerView: APSSPSDK.APSSPBannerView)
+}
+@objc public enum APSSPBannerAdStatus : Swift.Int {
+  case initBanner = 0
+  case runBanner = 1
+  case stopBanner = 2
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPBannerView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPBannerViewDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency final public var appKey: Swift.String?
+  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency final public var bannerStatus: APSSPSDK.APSSPBannerAdStatus {
+    get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var rootViewController: UIKit.UIViewController?
+  @objc @_Concurrency.MainActor @preconcurrency final public var adRefreshTime: Swift.Int
+  @objc @_Concurrency.MainActor @preconcurrency final public var animationType: APSSPSDK.APSSPBannerView.AnimationType
+  @objc @_Concurrency.MainActor @preconcurrency final public var isExpired: Swift.Bool {
+    @objc get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency final public var adStatus: APSSPSDK.APSSPBannerAdStatusInfo {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public init(appKey: Swift.String? = nil, placementId: Swift.String, bannerSize: APSSPSDK.APSSPBannerSize)
+  #endif
+  @objc deinit
+  @objc @_Concurrency.MainActor @preconcurrency final public func loadAd()
+  @objc @_Concurrency.MainActor @preconcurrency final public func stopAd()
+  @_Concurrency.MainActor @preconcurrency final public func stop(hidden: Swift.Bool = true)
+}
+extension APSSPSDK.APSSPBannerView {
+  @objc @_Concurrency.MainActor @preconcurrency final public func setAutoBgColor(_ istrue: Swift.Bool)
+}
+extension APSSPSDK.APSSPBannerView {
+  @objc public enum AnimationType : Swift.Int, Swift.CaseIterable {
+    case none = 0
+    case curlDown
+    case curlUp
+    case flipFromLeft
+    case flipFromRight
+    case fadeIn
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.Int)
+    #endif
+    public typealias AllCases = [APSSPSDK.APSSPBannerView.AnimationType]
+    public typealias RawValue = Swift.Int
+    nonisolated public static var allCases: [APSSPSDK.APSSPBannerView.AnimationType] {
+      get
+    }
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+}
+@objc public protocol APSSPInterstitialVideoAdDelegate {
+  @objc optional func apsspInterstitialVideoAdLoadSuccess(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
+  @objc optional func apsspInterstitialVideoAdLoadFail(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspInterstitialVideoAdShowSuccess(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
+  @objc optional func apsspInterstitialVideoAdShowFail(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspInterstitialVideoAdClicked(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
+  @objc optional func apsspInterstitialVideoAdClosed(interstitialVideoAd: APSSPSDK.APSSPInterstitialVideoAd)
+}
+@objc final public class APSSPInterstitialVideoAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPInterstitialVideoAdDelegate)?
+  @objc final public var appKey: Swift.String?
+  @objc final public var placementId: Swift.String
+  @objc final public var adRequestNo: Swift.String?
+  @objc final public var isReady: Swift.Bool {
+    get
+  }
+  @objc final public var currentNetwork: Swift.Int {
+    get
+  }
+  @objc final public var adStatus: APSSPSDK.APSSPFullscreenAdStatusInfo {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
+  #endif
+  @objc deinit
+  @discardableResult
+  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
+  @objc final public func load()
+  @objc final public func stopAd()
+}
+@_inheritsConvenienceInitializers @objc final public class APSSPNativeAdRenderer : ObjectiveC.NSObject, APSSPSDK.APSSPNativeRenderer {
+  @objc final public var contentView: UIKit.UIView?
+  @objc final public var nativeView: APSSPSDK.APSSPNativeAdView?
+  @objc final public var adTitleLabel: UIKit.UILabel?
+  @objc final public var adDescLabel: UIKit.UILabel?
+  @objc final public var adMainImageView: UIKit.UIImageView?
+  @objc final public var adAppIconView: UIKit.UIImageView?
+  @objc final public var adCTAButton: UIKit.UIButton?
+  @objc final public var privacyIconPosition: APSSPSDK.APSSPPrivacyIconPosition
+  @objc final public var privacyIconVisibility: Swift.Bool
+  @objc final public var useTemplate: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol APSSPModalAdapterDelegate : AnyObject {
+  func modalLoadSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func modalLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func modalShowSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func modalShowFail(errorMessage: Swift.String?)
+  #endif
+  func modalClicked()
+  func modalClosed()
+  func modalImpClickTracking(_ url: Swift.String)
+}
+public protocol APSSPModalAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPModalAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPModalAdapterDelegate)
+  func disconnectDelegate()
+  func loadAd()
+  func showAd()
+  func stop()
+}
+@objc public protocol APSSPPopContentsAdDelegate {
+  @objc optional func apsspPopContentsAdOpenSuccess(_ contentsAd: APSSPSDK.APSSPPopContentsAd)
+  @objc optional func apsspPopContentsAdOpenFail(_ contentsAd: APSSPSDK.APSSPPopContentsAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspPopContentsAdClosed(_ contentsAd: APSSPSDK.APSSPPopContentsAd)
+}
+@objc final public class APSSPPopContentsAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPPopContentsAdDelegate)?
+  @objc weak final public var viewController: UIKit.UIViewController?
+  @objc public init(appKey: Swift.String, popContentsPlacementId: Swift.String, viewController: UIKit.UIViewController)
+  @objc deinit
+  @objc final public func openPopContents()
+}
+public protocol APSSPAdapterFactory : AnyObject {
+  static var networkID: Swift.Int { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  static var sdkVersion: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static var adapterVersion: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeInitializationAdapter() -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeBiddingVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  static func makeModalAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+}
+extension APSSPSDK.APSSPAdapterFactory {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static var sdkVersion: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static var adapterVersion: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeInitializationAdapter() -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeBiddingVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeModalAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
+  #endif
+}
 @objc public protocol APSSPRewardAdPlusDelegate {
   @objc optional func rewardAdPlusUserMediaStatus(result: Swift.Bool, totalBoxCount: Swift.Int, placementStatusList: [[Swift.String : Any]])
   @objc optional func rewardAdPlusUserPlacementStatus(result: Swift.Bool, placementId: Swift.String, dailyUserLimit: Swift.Int, dailyUserCount: Swift.Int)
@@ -739,37 +995,73 @@ extension APSSPSDK.APSSPWKScriptMessageHandler : APSSPSDK.APSSPVideoMixAdDelegat
   @objc public static func getUserPlacementStatus(appKey: Swift.String, placementId: Swift.String)
   @objc deinit
 }
-@objc public enum APSSPReactNativeAdStatus : Swift.Int {
-  case initialized
-  case running
-  case stopped
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-@objc public protocol APSSPReactNativeAdDelegate : ObjectiveC.NSObjectProtocol {
-  @objc optional func reactNativeAdLoadSuccess(reactNativeAd: APSSPSDK.APSSPReactNativeAd, adSize: CoreFoundation.CGSize, networkNo: Swift.Int)
-  @objc optional func reactNativeAdLoadFail(reactNativeAd: APSSPSDK.APSSPReactNativeAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func reactNativeAdImpression(reactNativeAd: APSSPSDK.APSSPReactNativeAd)
-  @objc optional func reactNativeAdClicked(reactNativeAd: APSSPSDK.APSSPReactNativeAd)
-  @objc optional func reactNativeAdSizeChanged(reactNativeAd: APSSPSDK.APSSPReactNativeAd, adSize: CoreFoundation.CGSize)
-}
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPReactNativeAd : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPReactNativeAdDelegate)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String {
-    get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency final public var status: APSSPSDK.APSSPReactNativeAdStatus {
-    get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, appKey: Swift.String, placementId: Swift.String, viewController: UIKit.UIViewController)
+@_inheritsConvenienceInitializers @objc final public class APSSPNativeAdConfig : ObjectiveC.NSObject {
+  @objc final public var privacyIconVisibility: Swift.Bool
+  @objc final public var privacyIconPosition: APSSPSDK.APSSPPrivacyIconPosition
+  @objc final public var privacyIconWidth: CoreFoundation.CGFloat
+  @objc final public var privacyIconHeight: CoreFoundation.CGFloat
+  @objc final public var privacyIconMargin: UIKit.UIEdgeInsets
+  @objc final public var privacyIconCornerRadius: CoreFoundation.CGFloat
+  @objc final public var templateBackgroundColor: UIKit.UIColor
+  @objc final public var templatePrivacyIconPosition: APSSPSDK.APSSPPrivacyIconPosition
+  @objc final public var templatePrivacyIconCornerRadius: CoreFoundation.CGFloat
+  @objc final public var templateMainImageCornerRadius: CoreFoundation.CGFloat
+  @objc final public var templateIconImageCornerRadius: CoreFoundation.CGFloat
+  @objc final public var templatePrivacyIconLRMargin: CoreFoundation.CGFloat
+  @objc final public var templatePrivacyIconTBMargin: CoreFoundation.CGFloat
+  @objc final public var namTimeoutMillis: Swift.Int
+  @objc final public var namAdChoicePosition: APSSPSDK.APSSPPrivacyIconPosition
+  @objc final public var namActivateObservingOnBackground: Swift.Bool
+  @objc final public var namEnableMediaBackgroundBlur: Swift.Bool
+  @objc final public var namDedupeManager: Swift.AnyObject?
+  @objc final public var namUseSimpleAd: Swift.Bool
+  @objc final public var adFitTestMode: Swift.Bool
+  @objc final public var adFitBizBoard: Swift.Bool
+  @objc final public var adFitVideoAutoPlayPolicy: Swift.Int
+  @objc override dynamic public init()
   @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency final public func loadRequest()
-  @objc @_Concurrency.MainActor @preconcurrency final public func stopAd()
+}
+public protocol APSSPNativeViewAdapterDelegate : AnyObject {
+  func nativeLoadSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func nativeLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func nativeClicked(message: Swift.String)
+  func nativeImpression(message: Swift.String)
+}
+public protocol APSSPNativeAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPNativeViewAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var render: Swift.AnyObject? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPNativeViewAdapterDelegate)
+  func disconnectDelegate()
+  func stop()
+}
+public enum APSSPAdapterInfo : Swift.String {
+  case isNativeBanner
+  case FBbiddingData
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public protocol APSSPNativeAdapterInappBiddingProtocol : APSSPSDK.APSSPNativeAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any?])
+  #endif
+  func getBiddingToken() -> Swift.String
 }
 @objc public enum APSSPModalAdStatus : Swift.Int {
   case `init` = 0
@@ -807,51 +1099,318 @@ extension APSSPSDK.APSSPWKScriptMessageHandler : APSSPSDK.APSSPVideoMixAdDelegat
   @discardableResult
   @objc final public func present(from viewController: UIKit.UIViewController) -> Swift.Bool
 }
-@objc public protocol APSSPCustomAdDelegate {
-  @objc optional func apsspCustomAdLoadSuccess(_ customAd: APSSPSDK.APSSPCustomAd, adData: Swift.String)
-  @objc optional func apsspCustomAdLoadFail(_ customAd: APSSPSDK.APSSPCustomAd, error: APSSPSDK.APSSPNetworkError)
-}
-@objc final public class APSSPCustomAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPCustomAdDelegate)?
-  @objc final public var placementId: Swift.String {
-    get
+@_inheritsConvenienceInitializers @objc final public class APSSPMediationViewBinder : ObjectiveC.NSObject {
+  @objc weak final public var containerView: UIKit.UIView?
+  @objc weak final public var titleLabel: UIKit.UILabel?
+  @objc weak final public var bodyLabel: UIKit.UILabel?
+  @objc weak final public var ctaButton: UIKit.UIButton?
+  @objc weak final public var iconImageView: UIKit.UIImageView?
+  @objc weak final public var mediaContainerView: UIKit.UIView?
+  @objc weak final public var mainImageView: UIKit.UIImageView?
+  @objc weak final public var advertiserLabel: UIKit.UILabel?
+  @objc weak final public var starRatingView: UIKit.UIView?
+  @objc weak final public var priceLabel: UIKit.UILabel?
+  @objc weak final public var storeLabel: UIKit.UILabel?
+  @objc weak final public var logoImageView: UIKit.UIImageView?
+  @objc weak final public var sponsoredLabel: UIKit.UILabel?
+  @objc weak final public var socialContextLabel: UIKit.UILabel?
+  @objc weak final public var adChoiceContainerView: UIKit.UIView?
+  @objc weak final public var adFitProfileNameLabel: UIKit.UILabel?
+  @objc weak final public var adFitProfileIconView: UIKit.UIImageView?
+  @objc final public var isContentViewMode: Swift.Bool {
+    @objc get
   }
-  @objc final public var status: APSSPSDK.APSSPCustomAdStatus {
-    get
+  @objc weak final public var placeholderView: UIKit.UIView?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc final public var resolvedPlaceholder: UIKit.UIView? {
+    @objc get
   }
-  @objc public init(appKey: Swift.String, placementId: Swift.String, adType: APSSPSDK.APSSPCustomAdType)
+  #endif
+  @objc override dynamic public init()
+  @objc convenience public init(nibName: Swift.String, bundle: Foundation.Bundle = .main)
+  convenience public init(contentViewProvider: @escaping () -> APSSPSDK.APSSPUnifiedNativeAdView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func makeContentView() -> APSSPSDK.APSSPUnifiedNativeAdView?
+  #endif
+  @objc final public func hideOptionalViews(except visibleKeys: Swift.Set<Swift.String>)
+  @objc final public func hideAllOptionalViews()
+  @objc final public func insertMediaView(_ mediaView: UIKit.UIView)
   @objc deinit
-  @objc final public func loadAd()
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class APSSPUnifiedNativeAdView : UIKit.UIView {
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var titleLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var bodyLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var iconImageView: UIKit.UIImageView?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var ctaButton: UIKit.UIButton?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var mediaContainerView: UIKit.UIView?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var advertiserLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var starRatingView: UIKit.UIView?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var priceLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var storeLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var sponsoredLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var socialContextLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var mainImageView: UIKit.UIImageView?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var adChoiceContainerView: UIKit.UIView?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var adFitProfileNameLabel: UIKit.UILabel?
+  @objc @IBOutlet @_Concurrency.MainActor @preconcurrency public var adFitProfileIconView: UIKit.UIImageView?
+  public enum OptionalKey : Swift.String {
+    case advertiser
+    case starRating
+    case price
+    case store
+    case sponsored
+    case socialContext
+    case mainImage
+    case adChoice
+    case adFitProfileName
+    case adFitProfileIcon
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func hideOptionalViews(except visibleKeys: Swift.Set<APSSPSDK.APSSPUnifiedNativeAdView.OptionalKey>)
+  @objc @_Concurrency.MainActor @preconcurrency public func hideOptionalViews(exceptKeys visibleKeys: Swift.Set<Swift.String>)
+  @objc @_Concurrency.MainActor @preconcurrency public func hideAllOptionalViews()
+  @objc @_Concurrency.MainActor @preconcurrency public func resetContent()
+  @objc @_Concurrency.MainActor @preconcurrency public var starRating: Foundation.NSNumber? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency public func updateStarRating(_ rating: Foundation.NSNumber?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @_Concurrency.MainActor @preconcurrency open func applyStarRating(_ rating: Foundation.NSNumber?)
+  #endif
+  @objc @_Concurrency.MainActor @preconcurrency public func hideEmptyViews(hidesIconWhenEmpty: Swift.Bool = true, hidesEmptySlots: Swift.Bool = true)
+  @available(*, deprecated, renamed: "hideEmptyViews(hidesIconWhenEmpty:)")
+  @objc @_Concurrency.MainActor @preconcurrency public func hideEmptyRequiredViews(hidesIconWhenEmpty: Swift.Bool = true)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class APSSPUnifiedNativeAssembler : ObjectiveC.NSObject {
+  @objc public static func wrap(_ content: UIKit.UIView, in container: UIKit.UIView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  @objc public static func fillSlot(_ slot: UIKit.UIView?, with view: UIKit.UIView) -> Swift.Bool
+  #endif
+  @objc public static func attach(_ view: UIKit.UIView, to placeholder: UIKit.UIView)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public static func clear(_ placeholder: UIKit.UIView?)
+  #endif
+  @objc deinit
+}
+public protocol APSSPInterstitialVideoAdapterDelegate : AnyObject {
+  func interstitialVideoLoadSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func interstitialVideoLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func interstitialVideoShowSuccess(message: Swift.String)
+  func interstitialVideoShowFail(message: Swift.String)
+  func interstitialVideoClicked(message: Swift.String)
+  func interstitialVideoClosed(message: Swift.String)
+}
+public protocol APSSPInterstitialVideoAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPInterstitialVideoAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPInterstitialVideoAdapterDelegate)
+  func disconnectDelegate()
+  func present(from: UIKit.UIViewController, completion: @escaping () -> Swift.Void)
+}
+public protocol APSSPInterstitialVideoAdapterInappBiddingProtocol : APSSPSDK.APSSPInterstitialVideoAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
+  #endif
+  func getBiddingToken() -> Swift.String
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class APSSPBaseNativeAdView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+public protocol APSSPInitializationProtocol : AnyObject {
+  init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func start(keys: [Swift.String : Swift.String], completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var sdkVersion: Swift.String? { get }
+  #endif
+}
+public protocol APSSPRewardVideoAdapterDelegate : AnyObject {
+  func rewardVideoLoadSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func rewardVideoLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func rewardVideoShowSuccess(message: Swift.String)
+  func rewardVideoShowFail(message: Swift.String)
+  func rewardVideoClicked(message: Swift.String)
+  func rewardVideoClosed(message: Swift.String)
+  func rewardVideoCompleted()
+}
+public protocol APSSPRewardVideoAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPRewardVideoAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPRewardVideoAdapterDelegate)
+  func disconnectDelegate()
+  func present(from: UIKit.UIViewController, completion: @escaping () -> Swift.Void)
+}
+public protocol APSSPRewardVideoAdapterInappBiddingProtocol : APSSPSDK.APSSPRewardVideoAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
+  #endif
+  func getBiddingToken() -> Swift.String
+}
+public protocol APSSPUnifiedNativeAdapterDelegate : AnyObject {
+  func unifiedNativeLoadSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func unifiedNativeLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func unifiedNativeClicked(message: Swift.String)
+  func unifiedNativeImpression(message: Swift.String)
+}
+public protocol APSSPUnifiedNativeAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPUnifiedNativeAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  var viewBinder: APSSPSDK.APSSPMediationViewBinder { get }
+  #if compiler(>=5.3) && $NonescapableTypes
+  var config: APSSPSDK.APSSPNativeAdConfig? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPUnifiedNativeAdapterDelegate)
+  func disconnectDelegate()
+  func stop()
+}
+public protocol APSSPUnifiedNativeAdapterInAppBiddingProtocol : APSSPSDK.APSSPUnifiedNativeAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappBiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any?])
+  #endif
+  func getBiddingToken() -> Swift.String
+}
+@objc public protocol APSSPVideoMixAdDelegate {
+  @objc optional func apsspVideoMixAdLoadSuccess(videoMixAd: APSSPSDK.APSSPVideoMixAd, videoMixAdType: APSSPSDK.APSSPVideoMixAdType)
+  @objc optional func apsspVideoMixAdLoadFail(videoMixAd: APSSPSDK.APSSPVideoMixAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func apsspVideoMixAdShowSuccess(videoMixAd: APSSPSDK.APSSPVideoMixAd)
+  @objc optional func apsspVideoMixAdShowFail(videoMixAd: APSSPSDK.APSSPVideoMixAd)
+  @objc optional func apsspVideoMixAdClosed(videoMixAd: APSSPSDK.APSSPVideoMixAd, videoMixAdType: APSSPSDK.APSSPVideoMixAdType)
+  @objc optional func apsspVideoMixAdPlayCompleted(videoMixAd: APSSPSDK.APSSPVideoMixAd, adNetworkNo: Swift.Int, completed: Swift.Bool)
+  @objc optional func apsspVideoMixAdClicked(videoMixAd: APSSPSDK.APSSPVideoMixAd)
+}
+@objc final public class APSSPVideoMixAd : ObjectiveC.NSObject {
+  @objc weak final public var delegate: (any APSSPSDK.APSSPVideoMixAdDelegate)?
+  @objc final public var appKey: Swift.String?
+  @objc final public var placementId: Swift.String
+  @objc final public var adRequestNo: Swift.String?
+  @objc final public var isReady: Swift.Bool {
+    get
+  }
+  @objc final public var currentNetwork: Swift.Int {
+    get
+  }
+  @objc final public var videoMixAdIsVisible: Swift.Bool {
+    get
+  }
+  @objc final public var adStatus: APSSPSDK.APSSPFullscreenAdStatusInfo {
+    @objc get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
+  #endif
+  @objc deinit
+  @discardableResult
+  @objc final public func present(from: UIKit.UIViewController) -> Swift.Bool
+  @objc final public func load()
   @objc final public func stopAd()
-  @objc final public func reportImpression()
-  @objc final public func reportClick()
-  @objc final public func getImpTrackersList() -> [Swift.String]
-  @objc final public func getClickTrackersList() -> [Swift.String]
 }
-@objc public protocol APSSPPopContentsAdDelegate {
-  @objc optional func apsspPopContentsAdOpenSuccess(_ contentsAd: APSSPSDK.APSSPPopContentsAd)
-  @objc optional func apsspPopContentsAdOpenFail(_ contentsAd: APSSPSDK.APSSPPopContentsAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspPopContentsAdClosed(_ contentsAd: APSSPSDK.APSSPPopContentsAd)
+public protocol APSSPInterstitialAdapterDelegate : AnyObject {
+  func interstitialLoadSuccess()
+  #if compiler(>=5.3) && $NonescapableTypes
+  func interstitialLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
+  #endif
+  func interstitialShowSuccess(message: Swift.String)
+  func interstitialShowFail(message: Swift.String)
+  func interstitialClicked(message: Swift.String)
+  func interstitialClosed(message: Swift.String)
 }
-@objc final public class APSSPPopContentsAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPPopContentsAdDelegate)?
-  @objc weak final public var viewController: UIKit.UIViewController?
-  @objc public init(appKey: Swift.String, popContentsPlacementId: Swift.String, viewController: UIKit.UIViewController)
+public protocol APSSPInterstitialAdapterProtocol : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  var delegate: (any APSSPSDK.APSSPInterstitialAdapterDelegate)? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  var rootViewController: UIKit.UIViewController? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
+  #endif
+  func connectDelegate(delegate: any APSSPSDK.APSSPInterstitialAdapterDelegate)
+  func disconnectDelegate()
+  func present(from: UIKit.UIViewController, completion: () -> Swift.Void)
+}
+public protocol APSSPInterstitialAdapterInappBiddingProtocol : APSSPSDK.APSSPInterstitialAdapterProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
+  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
+  #endif
+  func getBiddingToken() -> Swift.String
+}
+@objc public enum APSSPReactNativeAdStatus : Swift.Int {
+  case initialized
+  case running
+  case stopped
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol APSSPReactNativeAdDelegate : ObjectiveC.NSObjectProtocol {
+  @objc optional func reactNativeAdLoadSuccess(reactNativeAd: APSSPSDK.APSSPReactNativeAd, adSize: CoreFoundation.CGSize, networkNo: Swift.Int)
+  @objc optional func reactNativeAdLoadFail(reactNativeAd: APSSPSDK.APSSPReactNativeAd, error: APSSPSDK.APSSPNetworkError)
+  @objc optional func reactNativeAdImpression(reactNativeAd: APSSPSDK.APSSPReactNativeAd)
+  @objc optional func reactNativeAdClicked(reactNativeAd: APSSPSDK.APSSPReactNativeAd)
+  @objc optional func reactNativeAdSizeChanged(reactNativeAd: APSSPSDK.APSSPReactNativeAd, adSize: CoreFoundation.CGSize)
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPReactNativeAd : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPReactNativeAdDelegate)?
+  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String {
+    get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency final public var status: APSSPSDK.APSSPReactNativeAdStatus {
+    get
+  }
+  @objc @_Concurrency.MainActor @preconcurrency public init(frame: CoreFoundation.CGRect, appKey: Swift.String, placementId: Swift.String, viewController: UIKit.UIViewController)
   @objc deinit
-  @objc final public func openPopContents()
-}
-@objc public protocol APSSPContentsAdDelegate {
-  @objc optional func apsspContentsAdOpenSuccess(_ contentsAd: APSSPSDK.APSSPContentsAd)
-  @objc optional func apsspContentsAdOpenFail(_ contentsAd: APSSPSDK.APSSPContentsAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func apsspContentsAdClosed(_ contentsAd: APSSPSDK.APSSPContentsAd)
-  @objc optional func apsspContentsAdComplete(_ contentsAd: APSSPSDK.APSSPContentsAd, reward: Swift.Int, rewardKey: Swift.String)
-}
-@objc final public class APSSPContentsAd : ObjectiveC.NSObject {
-  @objc weak final public var delegate: (any APSSPSDK.APSSPContentsAdDelegate)?
-  @objc weak final public var viewController: UIKit.UIViewController?
-  @objc public init(appKey: Swift.String, contentsPlacementId: Swift.String, viewController: UIKit.UIViewController)
-  @objc deinit
-  @objc final public func openContents()
+  @objc @_Concurrency.MainActor @preconcurrency final public func loadRequest()
+  @objc @_Concurrency.MainActor @preconcurrency final public func stopAd()
 }
 @objc public enum APSSPNetworkError : Swift.Int, Swift.Error {
   case serverError = 200
@@ -927,207 +1486,6 @@ extension APSSPSDK.APSSPWKScriptMessageHandler : APSSPSDK.APSSPVideoMixAdDelegat
   @objc override dynamic public init()
   @objc deinit
 }
-public protocol APSSPNativeViewAdapterDelegate : AnyObject {
-  func nativeLoadSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func nativeLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func nativeClicked(message: Swift.String)
-  func nativeImpression(message: Swift.String)
-}
-public protocol APSSPNativeAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPNativeViewAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var render: Swift.AnyObject? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPNativeViewAdapterDelegate)
-  func disconnectDelegate()
-  func stop()
-}
-public enum APSSPAdapterInfo : Swift.String {
-  case isNativeBanner
-  case FBbiddingData
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
-  #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public protocol APSSPNativeAdapterInappBiddingProtocol : APSSPSDK.APSSPNativeAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any?])
-  #endif
-  func getBiddingToken() -> Swift.String
-}
-public protocol APSSPInterstitialVideoAdapterDelegate : AnyObject {
-  func interstitialVideoLoadSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func interstitialVideoLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func interstitialVideoShowSuccess(message: Swift.String)
-  func interstitialVideoShowFail(message: Swift.String)
-  func interstitialVideoClicked(message: Swift.String)
-  func interstitialVideoClosed(message: Swift.String)
-}
-public protocol APSSPInterstitialVideoAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPInterstitialVideoAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPInterstitialVideoAdapterDelegate)
-  func disconnectDelegate()
-  func present(from: UIKit.UIViewController, completion: @escaping () -> Swift.Void)
-}
-public protocol APSSPInterstitialVideoAdapterInappBiddingProtocol : APSSPSDK.APSSPInterstitialVideoAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
-  #endif
-  func getBiddingToken() -> Swift.String
-}
-public protocol APSSPBannerAdapterDelegate : AnyObject {
-  func bannerViewSuccess(bannerView: UIKit.UIView)
-  #if compiler(>=5.3) && $NonescapableTypes
-  func bannerViewFailed(bannerView: UIKit.UIView, error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func bannerViewClicked(message: Swift.String)
-  func bannerViewImpression(message: Swift.String)
-}
-public protocol APSSPBannerAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPBannerAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPBannerAdapterDelegate)
-  func disconnectDelegate()
-  func stop()
-}
-public protocol APSSPBannerAdapterInappBiddingProtocol : APSSPSDK.APSSPBannerAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappbiddingPlacementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?)
-  #endif
-  func getBiddingToken() -> Swift.String
-}
-public protocol APSSPInitializationProtocol : AnyObject {
-  init()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func start(keys: [Swift.String : Swift.String], completion: @escaping (Swift.Bool, Swift.String?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var sdkVersion: Swift.String? { get }
-  #endif
-}
-public protocol APSSPInterstitialAdapterDelegate : AnyObject {
-  func interstitialLoadSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func interstitialLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func interstitialShowSuccess(message: Swift.String)
-  func interstitialShowFail(message: Swift.String)
-  func interstitialClicked(message: Swift.String)
-  func interstitialClosed(message: Swift.String)
-}
-public protocol APSSPInterstitialAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPInterstitialAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPInterstitialAdapterDelegate)
-  func disconnectDelegate()
-  func present(from: UIKit.UIViewController, completion: () -> Swift.Void)
-}
-public protocol APSSPInterstitialAdapterInappBiddingProtocol : APSSPSDK.APSSPInterstitialAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
-  #endif
-  func getBiddingToken() -> Swift.String
-}
-public protocol APSSPRewardVideoAdapterDelegate : AnyObject {
-  func rewardVideoLoadSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func rewardVideoLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func rewardVideoShowSuccess(message: Swift.String)
-  func rewardVideoShowFail(message: Swift.String)
-  func rewardVideoClicked(message: Swift.String)
-  func rewardVideoClosed(message: Swift.String)
-  func rewardVideoCompleted()
-}
-public protocol APSSPRewardVideoAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPRewardVideoAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPRewardVideoAdapterDelegate)
-  func disconnectDelegate()
-  func present(from: UIKit.UIViewController, completion: @escaping () -> Swift.Void)
-}
-public protocol APSSPRewardVideoAdapterInappBiddingProtocol : APSSPSDK.APSSPRewardVideoAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
-  #endif
-  func getBiddingToken() -> Swift.String
-}
-public protocol APSSPVideoMixAdAdapterDelegate : AnyObject {
-  func videoMixAdLoadSuccess(type: APSSPSDK.APSSPVideoMixAdType)
-  #if compiler(>=5.3) && $NonescapableTypes
-  func videoMixAdLoadFail(error: APSSPSDK.APSSPNetworkError, type: APSSPSDK.APSSPVideoMixAdType, errorMessage: Swift.String?)
-  #endif
-  func videoMixAdShowSuccess(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
-  func videoMixAdShowFail(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
-  func videoMixAdClicked(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
-  func videoMixAdClosed(message: Swift.String, type: APSSPSDK.APSSPVideoMixAdType)
-  func videoMixAdCompleteTrackingEvent(adNetworkNo: Swift.Int, isCompleted: Swift.Bool, type: APSSPSDK.APSSPVideoMixAdType)
-}
-public protocol APSSPVideoMixAdAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var videoMixDelegate: (any APSSPSDK.APSSPVideoMixAdAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
-  #endif
-  func connectVideoMixDelegate(delegate: any APSSPSDK.APSSPVideoMixAdAdapterDelegate)
-  func disconnectVideoMixDelegate()
-  func present(from: UIKit.UIViewController, completion: @escaping () -> Swift.Void)
-}
-public protocol APSSPVideoMixAdAdapterInappBiddingProtocol : APSSPSDK.APSSPVideoMixAdAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappbiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?)
-  #endif
-  func getBiddingToken() -> Swift.String
-}
 @objc public enum APSSPAdType : Swift.Int {
   case banner = 1
   case interstitial = 2
@@ -1145,283 +1503,9 @@ public protocol APSSPVideoMixAdAdapterInappBiddingProtocol : APSSPSDK.APSSPVideo
     get
   }
 }
-public protocol APSSPModalAdapterDelegate : AnyObject {
-  func modalLoadSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func modalLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func modalShowSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func modalShowFail(errorMessage: Swift.String?)
-  #endif
-  func modalClicked()
-  func modalClosed()
-  func modalImpClickTracking(_ url: Swift.String)
-}
-public protocol APSSPModalAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPModalAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPModalAdapterDelegate)
-  func disconnectDelegate()
-  func loadAd()
-  func showAd()
-  func stop()
-}
-@_hasMissingDesignatedInitializers final public class APSSPAdapterRegistry : @unchecked Swift.Sendable {
-  public static let shared: APSSPSDK.APSSPAdapterRegistry
-  final public func discover()
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func factory(for networkID: Swift.Int) -> (any APSSPSDK.APSSPAdapterFactory.Type)?
-  #endif
-  final public func isInstalled(networkID: Swift.Int) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func sdkVersion(for networkID: Swift.Int) -> Swift.String?
-  #endif
-  final public var registeredNetworkIDs: [Swift.Int] {
-    get
-  }
-  @objc deinit
-}
-public protocol APSSPAdapterFactory : AnyObject {
-  static var networkID: Swift.Int { get }
-  #if compiler(>=5.3) && $NonescapableTypes
-  static var sdkVersion: Swift.String? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeInitializationAdapter() -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeBiddingVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  static func makeModalAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-}
-extension APSSPSDK.APSSPAdapterFactory {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static var sdkVersion: Swift.String? {
-    get
-  }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeInitializationAdapter() -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingBannerAdapter(placementDic: [Swift.String : Swift.String], bannerType: APSSPSDK.APSSPBannerSize, rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingInterstitialAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingInterstitialVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingRewardVideoAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, render: Swift.AnyObject, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingUnifiedNativeAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeBiddingVideoMixAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?) -> Swift.AnyObject?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeModalAdapter(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, info: [Swift.String : Any]) -> Swift.AnyObject?
-  #endif
-}
-@_inheritsConvenienceInitializers @objc final public class APSSPMediationViewBinder : ObjectiveC.NSObject {
-  @objc weak final public var containerView: UIKit.UIView?
-  @objc weak final public var titleLabel: UIKit.UILabel?
-  @objc weak final public var bodyLabel: UIKit.UILabel?
-  @objc weak final public var ctaButton: UIKit.UIButton?
-  @objc weak final public var iconImageView: UIKit.UIImageView?
-  @objc weak final public var mediaContainerView: UIKit.UIView?
-  @objc weak final public var mainImageView: UIKit.UIImageView?
-  @objc weak final public var advertiserLabel: UIKit.UILabel?
-  @objc weak final public var starRatingView: UIKit.UIView?
-  @objc weak final public var priceLabel: UIKit.UILabel?
-  @objc weak final public var storeLabel: UIKit.UILabel?
-  @objc weak final public var logoImageView: UIKit.UIImageView?
-  @objc weak final public var sponsoredLabel: UIKit.UILabel?
-  @objc weak final public var socialContextLabel: UIKit.UILabel?
-  @objc weak final public var adChoiceContainerView: UIKit.UIView?
-  @objc weak final public var adFitProfileNameLabel: UIKit.UILabel?
-  @objc weak final public var adFitProfileIconView: UIKit.UIImageView?
-  @objc override dynamic public init()
-  @objc final public func hideOptionalViews(except visibleKeys: Swift.Set<Swift.String>)
-  @objc final public func hideAllOptionalViews()
-  @objc final public func insertMediaView(_ mediaView: UIKit.UIView)
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc final public class APSSPNativeAdConfig : ObjectiveC.NSObject {
-  @objc final public var privacyIconVisibility: Swift.Bool
-  @objc final public var privacyIconPosition: APSSPSDK.APSSPPrivacyIconPosition
-  @objc final public var privacyIconWidth: CoreFoundation.CGFloat
-  @objc final public var privacyIconHeight: CoreFoundation.CGFloat
-  @objc final public var privacyIconMargin: UIKit.UIEdgeInsets
-  @objc final public var privacyIconCornerRadius: CoreFoundation.CGFloat
-  @objc final public var templateBackgroundColor: UIKit.UIColor
-  @objc final public var templatePrivacyIconPosition: APSSPSDK.APSSPPrivacyIconPosition
-  @objc final public var templatePrivacyIconCornerRadius: CoreFoundation.CGFloat
-  @objc final public var templateMainImageCornerRadius: CoreFoundation.CGFloat
-  @objc final public var templateIconImageCornerRadius: CoreFoundation.CGFloat
-  @objc final public var templatePrivacyIconLRMargin: CoreFoundation.CGFloat
-  @objc final public var templatePrivacyIconTBMargin: CoreFoundation.CGFloat
-  @objc final public var namTimeoutMillis: Swift.Int
-  @objc final public var namAdChoicePosition: APSSPSDK.APSSPPrivacyIconPosition
-  @objc final public var namActivateObservingOnBackground: Swift.Bool
-  @objc final public var namEnableMediaBackgroundBlur: Swift.Bool
-  @objc final public var namDedupeManager: Swift.AnyObject?
-  @objc final public var adFitTestMode: Swift.Bool
-  @objc final public var adFitBizBoard: Swift.Bool
-  @objc final public var adFitVideoAutoPlayPolicy: Swift.Int
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public protocol APSSPUnifiedNativeAdDelegate : ObjectiveC.NSObjectProtocol {
-  @objc optional func unifiedNativeAdLoadSuccess(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
-  @objc optional func unifiedNativeAdLoadFail(nativeAd: APSSPSDK.APSSPUnifiedNativeAd, error: APSSPSDK.APSSPNetworkError)
-  @objc optional func unifiedNativeAdClicked(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
-  @objc optional func unifiedNativeAdImpression(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
-  @objc optional func unifiedNativeAdHidden(nativeAd: APSSPSDK.APSSPUnifiedNativeAd)
-}
-@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency final public class APSSPUnifiedNativeAd : UIKit.UIView {
-  @objc @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any APSSPSDK.APSSPUnifiedNativeAdDelegate)?
-  @objc @_Concurrency.MainActor @preconcurrency final public var appKey: Swift.String?
-  @objc @_Concurrency.MainActor @preconcurrency final public var placementId: Swift.String {
-    get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency final public var isExpired: Swift.Bool {
-    @objc get
-  }
-  @objc @_Concurrency.MainActor @preconcurrency final public var adStatus: APSSPSDK.APSSPNativeAdStatusInfo {
-    @objc get
-  }
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc @_Concurrency.MainActor @preconcurrency public init(appKey: Swift.String? = nil, placementId: Swift.String, rootViewController: UIKit.UIViewController? = nil)
-  #endif
-  @objc deinit
-  @objc @_Concurrency.MainActor @preconcurrency final public func setViewBinder(_ binder: APSSPSDK.APSSPMediationViewBinder)
-  @objc @_Concurrency.MainActor @preconcurrency final public func setConfig(_ config: APSSPSDK.APSSPNativeAdConfig)
-  @objc @_Concurrency.MainActor @preconcurrency final public func load()
-  @objc @_Concurrency.MainActor @preconcurrency final public func stop()
-  @objc @_Concurrency.MainActor @preconcurrency final public func manualClickEvent()
-  @objc @_Concurrency.MainActor @preconcurrency final public func noAdViewHidden(_ hidden: Swift.Bool)
-}
-public protocol APSSPUnifiedNativeAdapterDelegate : AnyObject {
-  func unifiedNativeLoadSuccess()
-  #if compiler(>=5.3) && $NonescapableTypes
-  func unifiedNativeLoadFail(error: APSSPSDK.APSSPNetworkError, errorMessage: Swift.String?)
-  #endif
-  func unifiedNativeClicked(message: Swift.String)
-  func unifiedNativeImpression(message: Swift.String)
-}
-public protocol APSSPUnifiedNativeAdapterProtocol : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  var delegate: (any APSSPSDK.APSSPUnifiedNativeAdapterDelegate)? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  var rootViewController: UIKit.UIViewController? { get }
-  #endif
-  var viewBinder: APSSPSDK.APSSPMediationViewBinder { get }
-  #if compiler(>=5.3) && $NonescapableTypes
-  var config: APSSPSDK.APSSPNativeAdConfig? { get }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(placementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any?])
-  #endif
-  func connectDelegate(delegate: any APSSPSDK.APSSPUnifiedNativeAdapterDelegate)
-  func disconnectDelegate()
-  func stop()
-}
-public protocol APSSPUnifiedNativeAdapterInAppBiddingProtocol : APSSPSDK.APSSPUnifiedNativeAdapterProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
-  init(inappBiddingPlacementDic: [Swift.String : Swift.String], rootViewController: UIKit.UIViewController?, viewBinder: APSSPSDK.APSSPMediationViewBinder, config: APSSPSDK.APSSPNativeAdConfig?, info: [Swift.String : Any?])
-  #endif
-  func getBiddingToken() -> Swift.String
-}
 extension APSSPSDK.APSSPMediationCompany : Swift.Equatable {}
 extension APSSPSDK.APSSPMediationCompany : Swift.Hashable {}
 extension APSSPSDK.APSSPMediationCompany : Swift.RawRepresentable {}
-extension APSSPSDK.APSSPBannerAdStatus : Swift.Equatable {}
-extension APSSPSDK.APSSPBannerAdStatus : Swift.Hashable {}
-extension APSSPSDK.APSSPBannerAdStatus : Swift.RawRepresentable {}
-extension APSSPSDK.APSSPBannerView.AnimationType : Swift.Equatable {}
-extension APSSPSDK.APSSPBannerView.AnimationType : Swift.Hashable {}
-extension APSSPSDK.APSSPBannerView.AnimationType : Swift.RawRepresentable {}
-extension APSSPSDK.APSSPInterstitialAdStatus : Swift.Equatable {}
-extension APSSPSDK.APSSPInterstitialAdStatus : Swift.Hashable {}
-extension APSSPSDK.APSSPInterstitialAdStatus : Swift.RawRepresentable {}
 extension APSSPSDK.APSSPVideoMixAdType : Swift.Equatable {}
 extension APSSPSDK.APSSPVideoMixAdType : Swift.Hashable {}
 extension APSSPSDK.APSSPVideoMixAdType : Swift.RawRepresentable {}
@@ -1455,21 +1539,33 @@ extension APSSPSDK.APSSPMediationProvider : Swift.RawRepresentable {}
 extension APSSPSDK.APSSPSplashAdStatus : Swift.Equatable {}
 extension APSSPSDK.APSSPSplashAdStatus : Swift.Hashable {}
 extension APSSPSDK.APSSPSplashAdStatus : Swift.RawRepresentable {}
-extension APSSPSDK.APSSPReactNativeAdStatus : Swift.Equatable {}
-extension APSSPSDK.APSSPReactNativeAdStatus : Swift.Hashable {}
-extension APSSPSDK.APSSPReactNativeAdStatus : Swift.RawRepresentable {}
+extension APSSPSDK.APSSPInterstitialAdStatus : Swift.Equatable {}
+extension APSSPSDK.APSSPInterstitialAdStatus : Swift.Hashable {}
+extension APSSPSDK.APSSPInterstitialAdStatus : Swift.RawRepresentable {}
+extension APSSPSDK.APSSPBannerAdStatus : Swift.Equatable {}
+extension APSSPSDK.APSSPBannerAdStatus : Swift.Hashable {}
+extension APSSPSDK.APSSPBannerAdStatus : Swift.RawRepresentable {}
+extension APSSPSDK.APSSPBannerView.AnimationType : Swift.Equatable {}
+extension APSSPSDK.APSSPBannerView.AnimationType : Swift.Hashable {}
+extension APSSPSDK.APSSPBannerView.AnimationType : Swift.RawRepresentable {}
+extension APSSPSDK.APSSPAdapterInfo : Swift.Equatable {}
+extension APSSPSDK.APSSPAdapterInfo : Swift.Hashable {}
+extension APSSPSDK.APSSPAdapterInfo : Swift.RawRepresentable {}
 extension APSSPSDK.APSSPModalAdStatus : Swift.Equatable {}
 extension APSSPSDK.APSSPModalAdStatus : Swift.Hashable {}
 extension APSSPSDK.APSSPModalAdStatus : Swift.RawRepresentable {}
+extension APSSPSDK.APSSPUnifiedNativeAdView.OptionalKey : Swift.Equatable {}
+extension APSSPSDK.APSSPUnifiedNativeAdView.OptionalKey : Swift.Hashable {}
+extension APSSPSDK.APSSPUnifiedNativeAdView.OptionalKey : Swift.RawRepresentable {}
+extension APSSPSDK.APSSPReactNativeAdStatus : Swift.Equatable {}
+extension APSSPSDK.APSSPReactNativeAdStatus : Swift.Hashable {}
+extension APSSPSDK.APSSPReactNativeAdStatus : Swift.RawRepresentable {}
 extension APSSPSDK.APSSPNetworkError : Swift.Equatable {}
 extension APSSPSDK.APSSPNetworkError : Swift.Hashable {}
 extension APSSPSDK.APSSPNetworkError : Swift.RawRepresentable {}
 extension APSSPSDK.APSSPInitKey : Swift.Equatable {}
 extension APSSPSDK.APSSPInitKey : Swift.Hashable {}
 extension APSSPSDK.APSSPInitKey : Swift.RawRepresentable {}
-extension APSSPSDK.APSSPAdapterInfo : Swift.Equatable {}
-extension APSSPSDK.APSSPAdapterInfo : Swift.Hashable {}
-extension APSSPSDK.APSSPAdapterInfo : Swift.RawRepresentable {}
 extension APSSPSDK.APSSPAdType : Swift.Equatable {}
 extension APSSPSDK.APSSPAdType : Swift.Hashable {}
 extension APSSPSDK.APSSPAdType : Swift.RawRepresentable {}
