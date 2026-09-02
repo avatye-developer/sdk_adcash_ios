@@ -16,10 +16,14 @@ let package = Package(
     ],
     dependencies: [
         // B안: SPM에도 광고 SDK(APSSPSDK)를 의존성으로 포함해 소비앱에 함께 노출한다.
-        // CocoaPods 핀과 동일하게 정확한 버전(3.2.2)으로 고정.
+        //
+        // exact 가 아니라 범위인 이유:
+        //   APSSPSDK 3.4.0 부터 미디에이션 어댑터가 네트워크별 저장소로 분리됐고, 각 어댑터가
+        //   core 를 `from:` 으로 문다. 여기서 exact 로 상한을 못박으면 어댑터가 상위 core 를
+        //   요구하는 순간 소비앱에서 해석이 실패한다. 하한은 CocoaPods 핀과 같게 유지한다.
         .package(
             url: "https://github.com/IGAWorksDev/ap-APSSPSDK-SPM",
-            exact: "3.2.2"
+            .upToNextMajor(from: "3.4.0")
         )
     ],
     targets: [
