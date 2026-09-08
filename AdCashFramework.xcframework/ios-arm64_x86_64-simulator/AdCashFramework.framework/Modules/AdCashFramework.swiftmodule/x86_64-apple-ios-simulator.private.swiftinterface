@@ -120,7 +120,9 @@ extension AdCashFramework.BannerAdView : AdCashFramework.BannerAdLoaderDelegate 
 }
 @objc(AVABannerAdLoader) public class BannerAdLoader : ObjectiveC.NSObject {
   @objc weak public var delegate: (any AdCashFramework.BannerAdLoaderDelegate)?
-  @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize, adView: UIKit.UIView? = nil)
+  @objc public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize)
+  @available(*, deprecated, message: "adView 인자는 동작하지 않습니다. init(rootVC:placementId:size:) 를 사용하고, 광고 뷰는 onBannerLoaded(_:adView:size:) 로 받으세요.")
+  @objc convenience public init(rootVC: UIKit.UIViewController, placementId: Swift.String, size: AdCashFramework.BannerAdSize, adView: UIKit.UIView?)
   @discardableResult
   @objc public func setConfig(appId: Swift.String, appSecretKey: Swift.String) -> Self
   @objc public func requestAd()

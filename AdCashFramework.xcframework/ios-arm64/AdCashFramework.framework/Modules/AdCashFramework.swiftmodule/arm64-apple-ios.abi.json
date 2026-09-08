@@ -3332,6 +3332,48 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(rootVC:placementId:size:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BannerAdLoader",
+                "printedName": "AdCashFramework.BannerAdLoader",
+                "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BannerAdSize",
+                "printedName": "AdCashFramework.BannerAdSize",
+                "usr": "c:@M@AdCashFramework@E@BannerAdSize"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)initWithRootVC:placementId:size:",
+            "mangledName": "$s15AdCashFramework06BannerA6LoaderC6rootVC11placementId4sizeACSo16UIViewControllerC_SSAA0dA4SizeOtcfc",
+            "moduleName": "AdCashFramework",
+            "objc_name": "initWithRootVC:placementId:size:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(rootVC:placementId:size:adView:)",
             "children": [
               {
@@ -3370,7 +3412,6 @@
                     "usr": "c:objc(cs)UIView"
                   }
                 ],
-                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
@@ -3378,13 +3419,16 @@
             "usr": "c:@M@AdCashFramework@objc(cs)AVABannerAdLoader(im)initWithRootVC:placementId:size:adView:",
             "mangledName": "$s15AdCashFramework06BannerA6LoaderC6rootVC11placementId4size6adViewACSo16UIViewControllerC_SSAA0dA4SizeOSo0M0CSgtcfc",
             "moduleName": "AdCashFramework",
+            "deprecated": true,
             "objc_name": "initWithRootVC:placementId:size:adView:",
             "declAttributes": [
+              "Convenience",
               "AccessControl",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
-            "init_kind": "Designated"
+            "init_kind": "Convenience"
           },
           {
             "kind": "Function",
@@ -7086,14 +7130,14 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1221,
+      "offset": 1197,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3253,
+      "offset": 3442,
       "length": 1,
       "value": "0"
     },
@@ -7121,21 +7165,21 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2504,
+      "offset": 2470,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2566,
+      "offset": 2532,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 7317,
+      "offset": 8543,
       "length": 1,
       "value": "0"
     },
@@ -7338,7 +7382,7 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9011,
+      "offset": 9190,
       "length": 1,
       "value": "0"
     },

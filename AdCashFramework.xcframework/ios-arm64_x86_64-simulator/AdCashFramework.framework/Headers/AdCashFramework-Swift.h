@@ -425,7 +425,16 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NAMType)
 SWIFT_CLASS_NAMED("BannerAdLoader")
 @interface AVABannerAdLoader : NSObject
 @property (nonatomic, weak) id <BannerAdLoaderDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId size:(enum BannerAdSize)size adView:(UIView * _Nullable)adView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId size:(enum BannerAdSize)size OBJC_DESIGNATED_INITIALIZER;
+/// warning:
+/// <code>adView</code> 인자는 <em>4.0.0 이후 아무 동작도 하지 않는다.</em>
+/// 2.x 의 레거시 <code>AdPopcornSSPBannerView(..., view:rootViewController:)</code> 는 배너를 그려 넣을 호스트 뷰를
+/// 인자로 받았고 이 값이 거기에 전달됐다. APSSPSDK 의 <code>APSSPBannerView(appKey:placementId:bannerSize:)</code> 에는
+/// 그 인자가 없어(rootViewController 는 프로퍼티로 분리) 전달 경로가 사라졌다.
+/// 로드 성공 시 델리게이트로 넘어가는 뷰는 이 인자와 무관하게 항상 SSP/House/Native 가 만든 실제 광고 뷰다.
+/// 인자를 실제 컨테이너로 되살리면 <code>onBannerLoaded</code> 가 넘기는 뷰의 정체가 바뀌는 동작 변경이 되므로,
+/// 되살리지 않고 표시만 남긴다. 시그니처는 이 인자를 넘기는 배포된 소비앱의 컴파일 호환을 위해 유지한다.
+- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId size:(enum BannerAdSize)size adView:(UIView * _Nullable)adView SWIFT_DEPRECATED_MSG("adView 인자는 동작하지 않습니다. init(rootVC:placementId:size:) 를 사용하고, 광고 뷰는 onBannerLoaded(_:adView:size:) 로 받으세요.");
 - (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;
 - (void)requestAd;
 - (void)removeAd;
@@ -997,7 +1006,16 @@ SWIFT_ENUM_FWD_DECL(NSInteger, NAMType)
 SWIFT_CLASS_NAMED("BannerAdLoader")
 @interface AVABannerAdLoader : NSObject
 @property (nonatomic, weak) id <BannerAdLoaderDelegate> _Nullable delegate;
-- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId size:(enum BannerAdSize)size adView:(UIView * _Nullable)adView OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId size:(enum BannerAdSize)size OBJC_DESIGNATED_INITIALIZER;
+/// warning:
+/// <code>adView</code> 인자는 <em>4.0.0 이후 아무 동작도 하지 않는다.</em>
+/// 2.x 의 레거시 <code>AdPopcornSSPBannerView(..., view:rootViewController:)</code> 는 배너를 그려 넣을 호스트 뷰를
+/// 인자로 받았고 이 값이 거기에 전달됐다. APSSPSDK 의 <code>APSSPBannerView(appKey:placementId:bannerSize:)</code> 에는
+/// 그 인자가 없어(rootViewController 는 프로퍼티로 분리) 전달 경로가 사라졌다.
+/// 로드 성공 시 델리게이트로 넘어가는 뷰는 이 인자와 무관하게 항상 SSP/House/Native 가 만든 실제 광고 뷰다.
+/// 인자를 실제 컨테이너로 되살리면 <code>onBannerLoaded</code> 가 넘기는 뷰의 정체가 바뀌는 동작 변경이 되므로,
+/// 되살리지 않고 표시만 남긴다. 시그니처는 이 인자를 넘기는 배포된 소비앱의 컴파일 호환을 위해 유지한다.
+- (nonnull instancetype)initWithRootVC:(UIViewController * _Nonnull)rootVC placementId:(NSString * _Nonnull)placementId size:(enum BannerAdSize)size adView:(UIView * _Nullable)adView SWIFT_DEPRECATED_MSG("adView 인자는 동작하지 않습니다. init(rootVC:placementId:size:) 를 사용하고, 광고 뷰는 onBannerLoaded(_:adView:size:) 로 받으세요.");
 - (nonnull instancetype)setConfigWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey;
 - (void)requestAd;
 - (void)removeAd;
