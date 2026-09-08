@@ -6681,7 +6681,8 @@
             "moduleName": "AdCashFramework",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7085,14 +7086,14 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 749,
+      "offset": 1221,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2290,
+      "offset": 3253,
       "length": 1,
       "value": "0"
     },
@@ -7120,14 +7121,21 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 1936,
+      "offset": 2504,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2566,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/BannerAdLoader.swift",
       "kind": "IntegerLiteral",
-      "offset": 6489,
+      "offset": 7317,
       "length": 1,
       "value": "0"
     },
@@ -7169,7 +7177,14 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
       "kind": "BooleanLiteral",
-      "offset": 2629,
+      "offset": 2517,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/InterstitialAdLoader.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3476,
       "length": 5,
       "value": "false"
     },
@@ -7309,21 +7324,21 @@
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1501,
+      "offset": 2082,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1534,
+      "offset": 2115,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdLoader\/AdView\/NativeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7302,
+      "offset": 9011,
       "length": 1,
       "value": "0"
     },

@@ -407,6 +407,11 @@ SWIFT_CLASS("_TtC15AdCashFramework15AdCashMediation")
 @class UIView;
 SWIFT_CLASS("_TtC15AdCashFramework14AdCashNativeAd")
 @interface AdCashNativeAd : NSObject
+/// NAM(네이버) 렌더러를 등록한다. <code>requestAd()</code> 전에 호출해야 한다.
+/// \param namNativeAdRenderer <code>APSSPNAMNativeAdRenderer</code>. 타입이 NAM adapter pod 소속이라 <code>Any!</code> 로 받는다.
+///
+/// \param superView 현재 사용하지 않는다(<code>NativeAdView.applyNAMRenderer</code> 참고). 호환을 위해 유지.
+///
 - (void)setNAMRenderer:(id _Null_unspecified)namNativeAdRenderer superView:(UIView * _Nonnull)superView;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
