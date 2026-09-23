@@ -3845,6 +3845,320 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AdCashInitStatus",
+        "printedName": "AdCashInitStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notStarted",
+            "printedName": "notStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdCashInitStatus.Type) -> AdCashFramework.AdCashInitStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdCashInitStatus",
+                    "printedName": "AdCashFramework.AdCashInitStatus",
+                    "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.AdCashInitStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdCashInitStatus",
+                        "printedName": "AdCashFramework.AdCashInitStatus",
+                        "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdCashFramework@E@AdCashInitStatus@AdCashInitStatusNotStarted",
+            "mangledName": "$s15AdCashFramework0aB10InitStatusO10notStartedyA2CmF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "completed",
+            "printedName": "completed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdCashInitStatus.Type) -> AdCashFramework.AdCashInitStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdCashInitStatus",
+                    "printedName": "AdCashFramework.AdCashInitStatus",
+                    "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.AdCashInitStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdCashInitStatus",
+                        "printedName": "AdCashFramework.AdCashInitStatus",
+                        "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdCashFramework@E@AdCashInitStatus@AdCashInitStatusCompleted",
+            "mangledName": "$s15AdCashFramework0aB10InitStatusO9completedyA2CmF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdCashInitStatus.Type) -> AdCashFramework.AdCashInitStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdCashInitStatus",
+                    "printedName": "AdCashFramework.AdCashInitStatus",
+                    "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "AdCashFramework.AdCashInitStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdCashInitStatus",
+                        "printedName": "AdCashFramework.AdCashInitStatus",
+                        "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@AdCashFramework@E@AdCashInitStatus@AdCashInitStatusFailed",
+            "mangledName": "$s15AdCashFramework0aB10InitStatusO6failedyA2CmF",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AdCashFramework0aB10InitStatusO11descriptionSSvp",
+            "mangledName": "$s15AdCashFramework0aB10InitStatusO11descriptionSSvp",
+            "moduleName": "AdCashFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AdCashFramework0aB10InitStatusO11descriptionSSvg",
+                "mangledName": "$s15AdCashFramework0aB10InitStatusO11descriptionSSvg",
+                "moduleName": "AdCashFramework",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AdCashFramework.AdCashInitStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdCashInitStatus",
+                    "printedName": "AdCashFramework.AdCashInitStatus",
+                    "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:15AdCashFramework0aB10InitStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s15AdCashFramework0aB10InitStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "AdCashFramework",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:15AdCashFramework0aB10InitStatusO8rawValueSivp",
+            "mangledName": "$s15AdCashFramework0aB10InitStatusO8rawValueSivp",
+            "moduleName": "AdCashFramework",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15AdCashFramework0aB10InitStatusO8rawValueSivg",
+                "mangledName": "$s15AdCashFramework0aB10InitStatusO8rawValueSivg",
+                "moduleName": "AdCashFramework",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@AdCashFramework@E@AdCashInitStatus",
+        "mangledName": "$s15AdCashFramework0aB10InitStatusO",
+        "moduleName": "AdCashFramework",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "AdCashInit",
         "printedName": "AdCashInit",
         "children": [
@@ -3958,6 +4272,48 @@
               "Final",
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "whenInitialized",
+            "printedName": "whenInitialized(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(AdCashFramework.AdCashInitStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AdCashInitStatus",
+                    "printedName": "AdCashFramework.AdCashInitStatus",
+                    "usr": "c:@M@AdCashFramework@E@AdCashInitStatus"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@AdCashFramework@objc(cs)AdCashInit(cm)whenInitialized:",
+            "mangledName": "$s15AdCashFramework0aB4InitC15whenInitializedyyyAA0abD6StatusOcFZ",
+            "moduleName": "AdCashFramework",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -7185,10 +7541,38 @@
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdCashInit.swift",
-      "kind": "BooleanLiteral",
-      "offset": 323,
-      "length": 5,
-      "value": "false"
+      "kind": "IntegerLiteral",
+      "offset": 432,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdCashInit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 518,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdCashInit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 630,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdCashInit.swift",
+      "kind": "StringLiteral",
+      "offset": 3618,
+      "length": 34,
+      "value": "\"com.avatye.adcash.apsspInitState\""
+    },
+    {
+      "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/AdCashInit.swift",
+      "kind": "Array",
+      "offset": 3829,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/jun\/XcodeProject\/PointHomeSdk\/src_adcash_ios\/AdCashFramework\/classes\/Util\/CommonUtil.swift",

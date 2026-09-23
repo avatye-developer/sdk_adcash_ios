@@ -136,10 +136,24 @@ extension AdCashFramework.BannerAdLoader : AdCashFramework.AdViewDelegate {
   public func onViewFailed(error: AdCashFramework.AdCashErrorModel)
   public func onViewClicked()
 }
+@objc public enum AdCashInitStatus : Swift.Int, Swift.CustomStringConvertible {
+  case notStarted = 0
+  case completed = 1
+  case failed = 2
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class AdCashInit : ObjectiveC.NSObject {
   @objc public static func setting(appId: Swift.String, appSecretKey: Swift.String, logLevel: AdCashFramework.LogLevel = .info)
   @objc public static func avatyeSetting(logLevel: AdCashFramework.LogLevel = .info)
   @objc public static func devModeChange(value: Swift.String? = nil)
+  @objc public static func whenInitialized(_ completion: @escaping (AdCashFramework.AdCashInitStatus) -> Swift.Void)
   @objc public static func trackSetting()
   @objc override dynamic public init()
   @objc deinit
@@ -254,3 +268,6 @@ extension AdCashFramework.BannerAdSize : Swift.RawRepresentable {}
 extension AdCashFramework.InterstitialAdType : Swift.Equatable {}
 extension AdCashFramework.InterstitialAdType : Swift.Hashable {}
 extension AdCashFramework.InterstitialAdType : Swift.RawRepresentable {}
+extension AdCashFramework.AdCashInitStatus : Swift.Equatable {}
+extension AdCashFramework.AdCashInitStatus : Swift.Hashable {}
+extension AdCashFramework.AdCashInitStatus : Swift.RawRepresentable {}

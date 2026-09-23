@@ -384,14 +384,43 @@ SWIFT_CLASS("_TtC15AdCashFramework16AdCashErrorModel")
 @end
 
 SWIFT_ENUM_FWD_DECL(NSInteger, LogLevel)
+SWIFT_ENUM_FWD_DECL(NSInteger, AdCashInitStatus)
 SWIFT_CLASS("_TtC15AdCashFramework10AdCashInit")
 @interface AdCashInit : NSObject
 + (void)settingWithAppId:(NSString * _Nonnull)appId appSecretKey:(NSString * _Nonnull)appSecretKey logLevel:(enum LogLevel)logLevel;
 + (void)avatyeSettingWithLogLevel:(enum LogLevel)logLevel;
 + (void)devModeChangeWithValue:(NSString * _Nullable)value;
+/// 광고 SDK 초기화가 끝나면 <code>completion</code> 을 메인 큐에서 <em>한 번</em> 호출한다.
+/// <code>setting(...)</code> 또는 로더의 <code>setConfig(...)</code> 가 시작한 초기화는 비동기로 진행된다. 초기화가
+/// 끝나기 전에 광고를 요청하면 미디에이션 네트워크가 아직 준비되지 않아 지면을 잃을 수 있으므로,
+/// 첫 광고 요청을 이 콜백 뒤로 미루는 것을 권장한다.
+/// 지속 구독이 아니라 <em>일회성</em>이다. 호출 시점에 초기화가 진행 중이면 끝날 때까지 기다렸다
+/// 알리고, 그 외에는 현재 상태를 즉시 알린다. 한 번 알린 뒤에는 다시 호출되지 않는다.
+/// | 호출 시점 | 전달되는 상태 |
+/// |—|—|
+/// | 초기화 완료됨 | 즉시 <code>.completed</code> |
+/// | 초기화 진행 중 | 완료 시 <code>.completed</code> 또는 <code>.failed</code> |
+/// | 실패한 상태 | 즉시 <code>.failed</code> |
+/// | 시작된 적 없음 | 즉시 <code>.notStarted</code> |
+/// <code>.notStarted</code> 에서 붙잡지 않는 이유는, 아무도 초기화를 시작하지 않은 앱의 콜백이 영영
+/// 묶이는 것을 막기 위해서다. 초기화를 먼저 시작한 뒤 호출해야 대기 동작을 얻는다.
+/// important:
+/// 완료 판정은 내부 미디에이션 SDK 의 초기화 콜백에 의존한다. 그 콜백이 오지 않으면
+/// 이 메서드도 호출되지 않으므로, 무한정 기다리면 곤란한 호출자는 자체 시한을 둔다.
++ (void)whenInitialized:(void (^ _Nonnull)(enum AdCashInitStatus))completion;
 + (void)trackSetting;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+/// <code>AdCashInit.whenInitialized(_:)</code> 가 돌려주는 초기화 상태.
+typedef SWIFT_ENUM(NSInteger, AdCashInitStatus, open) {
+/// 초기화가 시작된 적이 없다. (<code>setting(...)</code> 도 로더의 <code>setConfig(...)</code> 도 호출되지 않음)
+  AdCashInitStatusNotStarted = 0,
+/// 초기화가 끝났다. 광고를 요청해도 된다.
+  AdCashInitStatusCompleted = 1,
+/// 초기화를 시도했으나 실패했다. 다음 광고 요청이 재시도한다.
+  AdCashInitStatusFailed = 2,
+};
 
 SWIFT_CLASS("_TtC15AdCashFramework15AdCashMediation")
 @interface AdCashMediation : NSObject
