@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "AvatyeAdCash"
-  spec.version = "4.2.2"
+  spec.version = "4.2.3"
   spec.summary = "Avatye AdCash support framework"
   spec.description = <<-DESC
                         Support to present Banner and Interstitial type Advertise.
